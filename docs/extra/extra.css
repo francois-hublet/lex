@@ -1,0 +1,103 @@
+/* 1. Main body text links */
+.md-typeset a {
+  color: #f48506; 
+}
+
+.md-typeset a:hover {
+  color: #e6a774; 
+}
+
+/* 2. Active Table of Contents link */
+.md-nav__link--active {
+  color: #f48506 !important;
+}
+
+/* 3. Hover state for Table of Contents links */
+.md-nav__link:hover {
+  color:  #e6a774 !important;
+}
+
+/* 1. Zwingt die gesamte Seitenleiste (Sidebar), dein Grün als "Hauptfarbe" zu nutzen */
+.md-sidebar--primary,
+.md-nav {
+  --md-primary-fg-color: #f48506 !important;
+  --md-accent-fg-color: #f48506 !important;
+}
+
+/* 2. Zur absoluten Sicherheit: Der direkte Holzhammer für geöffnete Kategorien */
+.md-nav__item--nested > .md-nav__toggle:checked ~ .md-nav__link {
+  color: #f48506 !important;
+}
+
+/* 3. Färbt den Aufklapp-Pfeil (Icon) der geöffneten Kategorie grün */
+.md-nav__item--nested > .md-nav__toggle:checked ~ .md-nav__link::after {
+  color: #f48506 !important;
+}
+
+/* 4. Hover-Effekt auf dem Label */
+.md-nav__item--nested > .md-nav__link:hover,
+.md-nav__item--nested > .md-nav__toggle:checked ~ .md-nav__link:hover {
+  color: #f48506 !important; /* Monokai Gelb */
+}
+
+/* Desing of info blocks start */
+
+/* 1. Den Header (Titel-Bereich) der Box reparieren */
+.md-typeset .admonition-title,
+.md-typeset summary {
+  background-color: rgba(0, 0, 0, 0.2) !important; 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important; 
+  
+  /* WICHTIG: Hier lassen wir links 2.5rem Platz für das Icon! */
+  padding: 0.6rem 1rem 0.6rem 2.5rem !important; 
+  
+  font-weight: 600 !important;
+  letter-spacing: 0.3px;
+  position: relative; /* Nötig, damit das Icon richtig platziert wird */
+}
+
+/* 2. Das Icon perfekt ausrichten und einfärben */
+.md-typeset .admonition-title::before,
+.md-typeset summary::before {
+  left: 0.8rem !important; /* Rückt das Icon ein kleines Stück nach rechts ein */
+  top: 50% !important;     /* Zentriert das Icon exakt auf der halben Höhe... */
+  transform: translateY(-50%) !important; /* ...und gleicht die eigene Höhe aus */
+  
+  /* Zwingt das Icon, dein Monokai-Grün anzunehmen */
+  background-color: #f48506 !important; 
+}
+
+/* 2. Modernes, klares "Card" Design für ALLE Info-Boxen */
+.md-typeset .admonition,
+.md-typeset details {
+  /* Oben, rechts und unten ein sehr dezenter, leicht sichtbarer Rahmen */
+  border-top: 0.5px solid #000000 !important;
+  border-right: 0.5px solid #000000 !important;
+  border-bottom: 0.5px solid #000000  !important;
+  border-left: 0.5px solid #000000 !important;
+  
+  border-radius: 6px !important; /* Weiche Ecken */
+}
+
+/* Desing of info blocks end */
+
+/* Design of standard code blocks start  */ 
+/* --- Styling für Standard-Codeblöcke (die nicht von Shiki verarbeitet werden) --- */
+
+html .md-typeset pre:not(.shiki) {
+  background-color: #2D2A2E !important; /* Monokai Hintergrundfarbe */
+  border-radius: 6px !important;        /* Alle 4 Ecken abrunden */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Gleicher Schatten wie unten */
+  margin: 0 0 1.5em 0 !important;       /* Abstand nach unten */
+  border: none !important;              /* Entfernt den Standard-Rahmen von MkDocs */
+  padding: 0.8rem 1rem !important;      /* Innenabstand, damit der Text nicht am Rand klebt */
+}
+
+/* Textfarbe und Hintergrund des inneren <code>-Tags anpassen */
+html .md-typeset pre:not(.shiki) > code {
+  background-color: transparent !important;
+  color: #cccccc !important; /* Neutrale, helle Textfarbe (Hellgrau) */
+  box-shadow: none !important;
+}
+
+/* Design of standard code blocks end */

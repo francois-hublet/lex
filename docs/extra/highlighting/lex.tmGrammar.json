@@ -1,0 +1,300 @@
+{
+	"scopeName": "source.lex",
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Lex",
+	"patterns": [
+		{ "include": "#comment" },
+		{ "include": "#import" },
+		{ "include": "#section" },
+		{ "include": "#formula" },
+		{
+            "match": "\\[\\)|\\(\\]",
+            "name": "punctuation.definition.bracket.interval"
+        }
+	],
+	"repository": {
+		"import": {
+			"patterns": [
+				{
+					"match": "\\b(import)(?:\\s+(formex|akomantoso))?(?:\\s+([a-zA-Z0-9_.-]+))?\\b",
+					"captures": {
+						"1": {
+							"name": "keyword"
+						},
+						"2": {
+							"name": "support"
+						},
+						"3": {
+							"name": "entity.name"
+						}
+					}
+				},
+				{
+					"match": "\\b(refine)(?:\\s+([a-zA-Z0-9_]+))?\\b",
+					"captures": {
+						"1": {
+							"name": "keyword"
+						},
+						"2": {
+							"name": "entity.name"
+						}
+					}
+				}
+			]
+
+		},
+		"section": {
+			"patterns": [
+				{
+						"begin": "\\b(law|title|chapter|section|article|paragraph|point|subpoint)\\b",
+						"beginCaptures": {
+							"1": {
+								"name": "keyword.control"
+							}
+						},
+						"end": "(?=$|\\n)",
+						"patterns": [
+							{
+								"name": "string.quoted.double",
+								"begin": "\"",
+								"end": "\"",
+								"patterns": [
+									{
+										"name": "constant.character.escape",
+										"match": "\\."
+									}
+								]
+							},
+							{
+								"name": "comment.block.documentation",
+								"begin": "\"",
+								"end": "\"",
+								"patterns": [
+									{
+										"name": "constant.character.escape",
+										"match": "\\."
+									}
+								]
+							}
+						]
+				}
+			]
+		},
+		"formula": {
+			"patterns": [
+				{
+					"include": "#rString"
+				},
+				{
+					"match": "\\b(EQUIV|IMPLIES|OR|AND|NOT|EXISTS|FORALL)\\b",
+					"name": "keyword.operator"
+				},
+				{
+					"match": "\\?",
+					"name": "keyword.operator"
+				},
+				{
+					"match": "\\b(fix|whenever|oblige|permit|constitute|except|scope|let)\\b",
+					"name": "keyword.control"
+				},
+				{
+					"match": "\\b(NEXT|PREV|PREVIOUS|ONCE|EVENTUALLY|HISTORICALLY|GLOBALLY_PAST|ALWAYS|GLOBALLY|SINCE|UNTIL|TRIGGER|RELEASE)\\b",
+					"name": "keyword.operator"
+				},
+				{
+					"match": "\\b(S|U|R|T|X|Y|G|F)\\b",
+					"name": "keyword.operator"
+				},
+				{
+					"match": "(¬|∧|∨|→|↔|∃|∀|○|●|□|◊|■|⧫|<\\-)",
+					"name": "keyword.operator"
+				},
+				{
+					"match": "\\b(refine|assume|strengthen|weaken|by)\\b",
+					"name": "keyword.control"
+				},
+				{
+					"match": "\\b(refine|assume|strengthen|weaken|by)\\b",
+					"name": "keyword.control"
+				},
+				{
+					"match": "\\b(LET|IN)\\b",
+					"name": "keyword.control"
+				},
+				{
+					"match": "\\b(causing|suppressing)\\b",
+					"name": "keyword.other"
+				},
+				{
+					"match": "\\b(type|is|event|predicate|rule|replace)\\b",
+					"name": "storage.type"
+				},
+				{
+					"match": "\\b(string|int|float|causable|suppressable|observable|internal|enforceable|transparently)\\b",
+					"name": "support.type"
+				},
+				{
+					"match": "\\b(fulfilled)\\b",
+					"name": "keyword.other"
+				},
+				{
+					"match": "\\b(false|true)\\b",
+					"name": "constant.language.boolean"
+				},
+				{
+					"match": "(⊥|⊤)",
+					"name": "constant.language.boolean"
+				},
+				{
+					"include": "#bound"
+				},
+				{
+					"include": "#predicate"
+				},
+				{
+					"include": "#aggreg"
+				},
+				{
+					"include": "#integer"
+				},
+				{
+					"include": "#rational"
+				},
+				{
+					"include": "#var"
+				},
+				{
+					"include": "#string"
+				}
+			],
+			"repository": {
+				"predicate": {
+					"patterns": [
+						{
+							"match": "(tpts|tp|ts)\\s*\\((.*)\\)",
+							"captures": {
+								"1": {
+									"name": "keyword.operator"
+								},
+								"2": {
+									"patterns": [
+										{
+											"include": "$self"
+										}
+									]
+								}
+							}
+						}
+					]
+				},
+				"var": {
+					"name": "variable",
+					"patterns": [
+						{
+							"match": "_",
+							"name": "variable"
+						},
+						{
+							"match": "\\b[a-zA-Z]+(?:\\w|-|\/|:|'|\")*",
+							"name": "variable"
+						}
+					]
+				},
+				"bound": {
+					"match": "\\b(-?[0-9]+)([smhd]?)\\b",
+					"captures": {
+						"1": {
+							"name": "constant.numeric"
+						},
+						"2": {
+							"name": "constant.unit"
+						}
+					}
+				},
+				"cst": {
+					"name": "constant",
+					"patterns": [
+						{
+							"include": "#rational"
+						},
+						{
+							"include": "#integer"
+						},
+						{
+							"name": "empty"
+						}
+					]
+				},
+				"integer": {
+					"name": "constant.numeric",
+					"match": "\\b-?[0-9]+\\b"
+				},
+				"rational": {
+					"name": "constant.numeric",
+					"match": "\\b-?[0-9]+\\.[0-9]*\\b"
+				},
+				"aggreg": {
+					"match": "\\b(CNT|MIN|MAX|SUM|AVG|MED)\\b",
+					"name": "keyword.operator"
+				},
+				"string": {
+					"name": "string.quoted.double",
+					"begin": "\"",
+					"end": "\"",
+					"patterns": [
+						{
+							"name": "constant.character.escape.untitled",
+							"match": "\\."
+						}
+					]
+				},
+				"rString": {
+					"name": "string.regexp",
+					"begin": "r\"",
+					"end": "\"",
+					"patterns": [
+						{
+							"name": "constant.character.escape.untitled",
+							"match": "\\."
+						}
+					]
+				},
+				"sString": {
+					"name": "string.quoted.single",
+					"begin": "'",
+					"end": "'",
+					"patterns": [
+						{
+							"name": "constant.character.escape.untitled",
+							"match": "\\."
+						}
+					]
+				},
+				"dString": {
+					"name": "string.quoted.description",
+					"begin": "\"",
+					"end": "\"",
+					"patterns": [
+						{
+							"name": "constant.character.escape.untitled",
+							"match": "\\."
+						}
+					]
+				}
+			}
+		},
+		"comment": {
+			"patterns": [
+				{
+					"include": "#line-comment"
+				}
+			],
+			"repository": {
+				"line-comment": {
+					"match": "#.*",
+					"name": "comment.line"
+				}
+			}
+		}
+	}
+}

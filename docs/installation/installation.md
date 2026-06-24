@@ -1,17 +1,3 @@
-Lex - A Language for Compliance by Design
-=========================================
-
-![Lex Logo](docs/images/Logo.png "lex")
-
-## Repository Overview
-
-This repository contains:
-- A copy of the [EnfGuard](https://github.com/runtime-enforcement/enfguard) tool in the `enfguard/` submodule
-- The Instrlib library (`Instrlib/`)
-- The source code of Lex (`src/` and `bin/`)
-- A VS Code extension for Lex syntax highlighting (`vscode/lex/`)
-- Documentation (`doc/`) and examples (`example/`)
-
 ## Installation
 
 Lex supports two setup options:
@@ -19,9 +5,12 @@ Lex supports two setup options:
 1. Local install
 2. Docker
 
+---
+
 ### Option 1: Local install
 
 Requirements:
+
 - [opam](https://opam.ocaml.org/doc/Install.html)
 - OCaml 4.13.1
 - [dune](https://dune.build/)
@@ -42,6 +31,8 @@ Optional (install CLI globally in current switch):
 opam install . -y
 ```
 
+---
+
 ### Option 2: Docker
 
 Requirements:
@@ -59,6 +50,8 @@ Open an interactive shell in the prepared environment:
 ```bash
 docker run --rm -it lex:latest
 ```
+
+---
 
 ## Usage
 

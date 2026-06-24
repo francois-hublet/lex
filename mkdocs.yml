@@ -1,0 +1,61 @@
+site_name: Lex — A Language for Compliance by Design
+site_url: 
+repo_url: https://gitlab.inf.ethz.ch/OU-BASIN/lex
+repo_name: source code
+
+theme: 
+  name: material 
+  logo: images/Logo.png
+  palette:
+    - scheme: default
+      primary: white
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+nav: 
+  - Home: index.md
+  - Installation: installation/installation.md
+  - Tutorials:
+    - GDPR: tutorials/gdpr.md
+    - BGG: tutorials/bgg.md
+    - IRC: tutorials/irc.md
+  - Syntax Reference: 
+      - Overview: syntax/0_Overview.md
+      - Imports: syntax/1_Imports.md
+      - Lables: syntax/2_Labels.md
+      - Types: syntax/3_Types.md
+      - Functions: syntax/4_Functions.md
+      - Events: syntax/5_Events.md
+      - Rules: syntax/6_Rules.md
+      - Comments: syntax/7_Comments.md
+      - Cheatsheet: syntax/cheatsheet.pdf
+  - Applications: 
+      - Enforcement: enforcement.md
+      - Lexbots: lexbots.md
+  - Relevant Publications: relevant.md
+  - About: about.md
+
+markdown_extensions: 
+  - admonition
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      use_pygments: false
+
+extra_css:
+  - extra/highlighting/shiki.css
+  - extra/extra.css
+
+extra_javascript:
+  - javascripts/loader.js
