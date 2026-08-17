@@ -6,10 +6,21 @@ module Time = MFOTL_lib.Time
 let debug_main = ref false
 let debug msg = if !debug_main then Errors.debug_print ~f_name:(Some "main.ml") msg
 
-let modes = "mfotl (default), doc, template"
+let modes = "mfotl (default), doc, owl, owlgraph, template"
 let input_formats = "formex (default), akomaNtoso"
 
-let loop filename mode f o b to_ unroll label () =
+(* Keeps only the declarations of one section, e.g. "article 6" *)
+let restrict section eprog =
+  match section with
+  | None -> eprog, ""
+  | Some spec ->
+     (try Owl.restrict_to_section spec eprog with
+      | Owl.Section_error msg ->
+         print_endline ("Cannot restrict to section: " ^ msg);
+         exit (-1)),
+     Owl.section_suffix spec
+
+let loop filename mode f o b to_ unroll label ns section () =
   let open Errors.OrErrors in
   let lexpath = Filename.dirname (Sys.get_argv()).(0) in
   let filepath = Filename.dirname filename
@@ -42,6 +53,32 @@ let loop filename mode f o b to_ unroll label () =
          print_string (Errors.to_string_multiple errs);
          exit (-1)
     end
+  | Some "owl" -> begin
+      match Modules.do_type [lexpath] b filepath basename with
+      | Ok (_, eprog) ->
+         let name = Filename.chop_extension basename in
+         let base = Option.value ns ~default:(Owl.default_ontology_iri name) in
+         let eprog, suffix = restrict section eprog in
+         let source = basename ^ Option.value_map section ~default:"" ~f:(Printf.sprintf ", %s") in
+         let outname = Option.value o ~default:(filename ^ suffix ^ ".owl") in
+         Owl.to_file ~source ~base outname eprog
+      | Errors errs ->
+         print_string (Errors.to_string_multiple errs);
+         exit (-1)
+    end
+  | Some "owlgraph" -> begin
+      match Modules.do_type [lexpath] b filepath basename with
+      | Ok (_, eprog) ->
+         let eprog, suffix = restrict section eprog in
+         let outname = Option.value o ~default:(filename ^ suffix ^ ".png") in
+         (try Owl.to_png outname eprog with
+          | Owl.Graphviz_error msg ->
+             print_endline ("Cannot draw the ontology: " ^ msg);
+             exit (-1))
+      | Errors errs ->
+         print_string (Errors.to_string_multiple errs);
+         exit (-1)
+    end
   | Some "template" -> begin
       let format, xml = match f with
         | Some "akomaNtoso" -> Lex.IAkomaNtoso, AkomaNtoso.read_file filepath basename
@@ -68,6 +105,9 @@ let () =
                   +> flag "-to" (optional string) ~doc:"Z3 timeout"
                   +> flag "-unroll" no_arg ~doc:"unroll let bindings in output"
                   +> flag "-label" no_arg ~doc:"label obligations with position in file"
+                  +> flag "-ns" (optional string) ~doc:"ontology IRI used by -mode owl"
+                  +> flag "-section" (optional string)
+                       ~doc:"restrict -mode owl and -mode owlgraph to a section, e.g. \"article 6\""
                   )
     loop
   |> Command_unix.run
