@@ -11,14 +11,16 @@ WORKDIR /app
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         build-essential \
+        libz3-4 \
         psmisc \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && ln -s /usr/lib/x86_64-linux-gnu/libz3.so.4 /usr/lib/x86_64-linux-gnu/libz3.so
 
 COPY GDPRSocial/requirements.txt ./requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY GDPRSocial /app
-RUN rm -f /app/instrlib
+RUN rm -rf /app/instrlib
 COPY instrlib /app/instrlib
 COPY --from=enfflash /opt/whyenf/enfguard /opt/whyenf/enfguard
 COPY --from=enfflash /usr/local/bin/enfflash /usr/local/bin/enfflash

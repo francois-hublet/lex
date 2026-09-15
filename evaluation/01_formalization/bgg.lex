@@ -229,3 +229,6 @@ rule
     betrifft(a, "Verweigerung der Ermächtigung zur Strafverfolgung von Behördenmitgliedern oder von Bundespersonal")
   except
     article "82" paragraph "1"
+
+
+

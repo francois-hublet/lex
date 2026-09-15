@@ -147,337 +147,337 @@ refine type file         is file_id
 
 note "### Events that are not taking place ###"
 
-assume false AdequacyDecision
+assume false AdequacyDecision  # legal
     """No transfers are taking place."""
     
-assume false AssessTransfer
+assume false AssessTransfer  # legal
     """No transfers are taking place."""
 
-assume false AuthorizeConsent
+assume false AuthorizeConsent  # legal
     """No delegation of consent in our model."""
 
-assume false ChargeForRequest
+assume false ChargeForRequest  # functional
     """We are never charging users for requests."""
 
-assume false ConcernsCriminalRegister
+assume false ConcernsCriminalRegister  # functional
     """We are never storing criminal register data."""
 
-assume false DisproportionateEffortToInform
+assume false DisproportionateEffortToInform  # functional
     """We never consider that it requires a disproportionate effort to inform third-parties."""
 
-assume false EndContract
+assume false EndContract  # functional
     """No contracts are being concluded."""
 
-assume false FulfillsConsultationConditions
+assume false FulfillsConsultationConditions  # functional
     """No transfers are taking place."""
 
-assume false HasEnforceableRights
+assume false HasEnforceableRights  # functional
     """No transfers are taking place."""
     
-assume false HasIntendedTransfer
+assume false HasIntendedTransfer  # legal
     """No transfers are taking place."""
 
-assume false HasPhilosophicalAim
+assume false HasPhilosophicalAim  # functional
     """No controller has a philosophical aim."""
 
-assume false HasPoliticalAim
+assume false HasPoliticalAim  # functional
     """No controller has a political aim."""
 
-assume false HasReligiousAim
+assume false HasReligiousAim  # functional
     """No controller has a religious aim."""
 
-assume false HasSupervisoryApproval
+assume false HasSupervisoryApproval  # legal
     """No transfers are taking place."""
 
-assume false HasTradeUnionAim
+assume false HasTradeUnionAim  # functional
     """No controller has a trade union aim."""
 
-assume false ImplementFundamentalRightsSafeguards
+assume false ImplementFundamentalRightsSafeguards  # functional
     """We do not claim the impementation of fundamental rights safeguards for the processing of special data categories."""
 
-assume false IsApprovedCertificationMechanism
+assume false IsApprovedCertificationMechanism  # functional
     """No transfers are taking place."""
 
-assume false IsApprovedCodeOfConduct
+assume false IsApprovedCodeOfConduct  # functional
     """No transfers are taking place."""
 
-assume false IsArchival
+assume false IsArchival  # legal
     """No archiving is performed."""
 
-assume false IsBindingCorporateRules
+assume false IsBindingCorporateRules  # functional
     """No transfers are taking place."""
 
-assume false IsCommissionStandardClauses
+assume false IsCommissionStandardClauses  # functional
     """No transfers are taking place."""
 
-assume true IsCommonlyUsedFormat
+assume true IsCommonlyUsedFormat  # legal
     """We only use structured file formats (JSON) for output."""
 
-assume false IsContractParty
+assume false IsContractParty  # functional
     """No contracts are being concluded."""
 
-assume true IsElectronicDeclaration
+assume true IsElectronicDeclaration  # legal
     """All declarations are electronic."""
     
-assume true IsElectronicRequest
+assume true IsElectronicRequest  # legal
     """All requests are electronic."""
 
-assume false IsImpossibleElectronic
+assume false IsImpossibleElectronic  # functional
     """All requests are electronic."""
 
-assume false IsInInterestOf
+assume false IsInInterestOf  # functional
     """No contracts are being concluded."""
 
-assume false IsJointController
+assume false IsJointController  # legal
     """There are no joint controllers."""
 
-assume false IsLegallyBindingInstrument
+assume false IsLegallyBindingInstrument  # functional
     """No transfers are taking place."""
 
-assume false IsLegitimateInterestRegister
+assume false IsLegitimateInterestRegister  # legal
     """No transfers are taking place."""
 
-assume false IsLimitedDSTransfer
+assume false IsLimitedDSTransfer  # legal
     """No transfers are taking place."""
 
-assume false IsLimitedRegisterData
+assume false IsLimitedRegisterData  # legal
     """No transfers are taking place."""
 
-assume true IsMachineReadableFormat
+assume true IsMachineReadableFormat  # legal
     """We only use structured file formats (JSON) for output."""
 
-assume false IsMember
+assume false IsMember  # legal
     """No membership in organizations is considered."""
 
-assume false IsNecessaryForArchivalPurposes
+assume false IsNecessaryForArchivalPurposes  # functional
     """No archiving is performed."""
 
-assume false IsNecessaryForContract
+assume false IsNecessaryForContract  # functional
     """No contracts are being concluded."""
 
-assume false IsNecessaryForEmploymentLaw
+assume false IsNecessaryForEmploymentLaw  # functional
     """We do not consider this legal basis."""
 
-assume false IsNecessaryForFreedomOfExpression
+assume false IsNecessaryForFreedomOfExpression  # functional
     """We do not consider this legal basis."""
 
-assume false IsNonProfit
+assume false IsNonProfit  # legal
     """No non-profit controller is involved."""
 
-assume false IsNotRepetitiveTransfer
+assume false IsNotRepetitiveTransfer  # legal
     """No transfers are taking place."""
 
-assume false IsOccasionalProcessing
+assume false IsOccasionalProcessing  # functional
     """All processing is habitual, not occasional."""
 
-assume false IsPublicAuthority
+assume false IsPublicAuthority  # functional
     """No public authority is involved."""
 
-assume false IsOpenRegisterData
+assume false IsOpenRegisterData  # functional
     """No open register is involved."""
 
-assume true IsOutsideDisclosure
+assume true IsOutsideDisclosure  # legal
     """Data is generally disclosed to outsiders."""
 
-assume false IsPerformanceOfPublicAuthorityTask
+assume false IsPerformanceOfPublicAuthorityTask  # functional
     """No public authority is involved."""
 
-assume false IsReasonableFee
+assume false IsReasonableFee  # legal
     """We generally do not impose fees."""
 
-assume false IsReasonablePeriod
+assume false IsReasonablePeriod  # functional
     """We do not wait to inform users."""
 
-assume false IsReception
+assume false IsReception  # legal
     """We do not receive data from other entities."""
 
-assume false IsRisksOfTransfer
+assume false IsRisksOfTransfer  # legal
     """No transfers are taking place."""
 
-assume false IsRiskyProcessing
+assume false IsRiskyProcessing  # legal
     """None of the activities performed is likely to result to a high risk to the rights and freedoms of individual persons."""
 
-assume false IsSpecialAuthorizedCriminalProcessing
+assume false IsSpecialAuthorizedCriminalProcessing  # legal
     """We do not process criminal data."""
 
-assume true IsStructuredFormat
+assume true IsStructuredFormat  # legal
     """We only use structured file formats (JSON) for output."""
 
-assume false IsSubjectToProfessionalSecrecy
+assume false IsSubjectToProfessionalSecrecy  # functional
     """No entity is subject to the obligation of professional secrecy."""
 
-assume false IsSupervisoryAuthorityStandardClauses
+assume false IsSupervisoryAuthorityStandardClauses  # functional
     """No transfers are taking place."""
 
-assume false IsUnfoundedOrExcessive
+assume false IsUnfoundedOrExcessive  # legal
     """We never qualify user requests as unfounded or excessive."""
 
-assume false JustifiesStorage
+assume false JustifiesStorage  # legal
     """No archiving is performed."""
 
-assume false MakePublic
+assume false MakePublic  # functional
     """We never assume that a data subject makes their data public."""
 
-assume false PrepareContract
+assume false PrepareContract  # functional
     """No contracts are being concluded."""
 
-assume false RefuseRequest
+assume false RefuseRequest  # functional
     """We never refuse requests."""
 
-assume false RequestContractPreparation
+assume false RequestContractPreparation  # functional
     """No contracts are being concluded."""
 
-assume false RequestExtension
+assume false RequestExtension  # functional
     """We never request an extension."""
 
-assume false RequestsNonElectronic
+assume false RequestsNonElectronic  # functional
     """All requests are electronic."""
 
-assume false StartContract
+assume false StartContract  # functional
     """No contracts are being concluded."""
 
-assume false Transfer
+assume false Transfer  # legal
     """No transfers are taking place."""
 
-assume true UndueDataDelay
+assume true UndueDataDelay  # functional
     """We do not wait to delete data."""
 
-assume true UndueDelay
+assume true UndueDelay  # functional
     """We do not wait to inform users."""
 
-assume false ValidRegisterConsultationRequest
+assume false ValidRegisterConsultationRequest  # legal
     """No transfers are taking place."""
 
-assume true DataIsNecessaryForJudicialClaims
+assume true DataIsNecessaryForJudicialClaims  # legal
     """We always take claims citing judicial reasons at face value."""
 
-assume false DemonstrateOverridingCompellingGrounds
+assume false DemonstrateOverridingCompellingGrounds  # functional
     """We never claim compelling groups that override the interests, rights, and freedoms of the data subject."""
 
-assume false HasDataSubjectCategory
+assume false HasDataSubjectCategory  # legal
     """No activities are specific to a particular data subject category."""
 
-assume false HasIntendedRecipientCategory
+assume false HasIntendedRecipientCategory  # legal
     """We have no intended recipient categories -- recipients are specified individually."""
 
-assume false HasStatutoryContractualRequirement
+assume false HasStatutoryContractualRequirement  # legal
     """No contracts are being concluded."""
 
-assume false HasStoragePeriod
+assume false HasStoragePeriod  # legal
     """No storage period is defined. Data is kept until users delete their account."""
 
-assume false HoldParentalResponsibility
+assume false HoldParentalResponsibility  # legal
     """Minors are not allowed to register to the service."""
 
-assume false IsChild
+assume false IsChild  # legal
     """Minors are not allowed to register to the service."""
 
-assume true IsClearAndPlainLanguage
+assume true IsClearAndPlainLanguage  # legal
     """The text of all declarations is contained in this refinement file. They use clear and plain language."""
 
-assume true IsConcise
+assume true IsConcise  # legal
     """The text of all declarations is contained in this refinement file. They are concise."""
 
-assume true IsTransparentDeclaration
+assume true IsTransparentDeclaration  # legal
     """The text of all declarations is contained in this refinement file. They are transparent."""
 
-assume false IsControllerRepresentative
+assume false IsControllerRepresentative  # legal
     """We do not need controller representatives since all controllers considered are based in the Union."""
 
-assume true IsDistinguishableFromOtherMatters
+assume true IsDistinguishableFromOtherMatters  # legal
     """The text of all declarations is contained in this refinement file. They are independent and clearly distinguishable from other."""
 
-assume true IsEasilyAccessible
+assume true IsEasilyAccessible  # legal
     """The text of all declarations is contained in this refinement file. They are easily accessible."""
 
-assume true IsIntelligible
+assume true IsIntelligible  # legal
     """The text of all declarations is contained in this refinement file. They are intelligible."""
 
-assume true IsExplicit
+assume true IsExplicit  # legal
     """The purposes (service, statistics, personalized_ad) are explicitly listed in the declaration at collection."""
 
-assume false IsExtensionNecessary
+assume false IsExtensionNecessary  # functional
     """We never claim that we need a time extension to process user requests."""
 
-assume false IsLegitimateActivity
+assume false IsLegitimateActivity  # legal
     """We never claim a legitimate activity with respect to a controller with a political, philosophical, religious, or trade union aim."""
 
-assume true IsOfferOfInformationSocietyServices
+assume true IsOfferOfInformationSocietyServices  # functional
     """GDPRSocial, Inc. provides information society services."""
 
-assume true IsReasonForRequestExtension
+assume true IsReasonForRequestExtension  # functional
     """Irrelevant since we never extend requests."""
     
-assume true IsReasonForRequestRefusal
+assume true IsReasonForRequestRefusal  # functional
     """Irrelevant since we never refuse requests."""
 
-assume true IsReceptionSource
+assume true IsReceptionSource  # legal
     """Irrelevant since we never receive data from other sources."""
 
-assume true IsRespected
+assume true IsRespected  # legal
     """The storage criteria are respected as users' data is deleted when their accounts are."""
 
-assume true IsRisksOfTransfer
+assume true IsRisksOfTransfer  # legal
     """Irrelevant since no transfers are taking place."""
 
-assume true IsSpecified
+assume true IsSpecified  # legal
     """The purposes (service, statistics, personalized_ad) are specified in the declaration at collection."""
 
-assume true IsTransfer
+assume true IsTransfer  # legal
     """Irrelevant since no transfers are taking place."""
 
-assume true IsTransferBasis
+assume true IsTransferBasis  # legal
     """Irrelevant since no transfers are taking place."""
     
-assume false IsUnableToConsent
+assume false IsUnableToConsent  # functional
     """When creating an account, users must self-certify that they are physically and legally able to consent."""
 
-assume true ReportLastResortTransfer
+assume true ReportLastResortTransfer  # legal
     """Irrelevant since no transfers are taking place."""
 
-assume false Stored
+assume false Stored  # legal
     """Irrelevant since IsNecessary is true."""
 
-assume false TechnicalAndOrganisationalMeasures
+assume false TechnicalAndOrganisationalMeasures  # legal
     """We do not claim any technical and organizational measures for archival purposes."""
 
-assume false UseForCommunication
+assume false UseForCommunication  # functional
     """Irrelevant since we never delay informing users."""
 
-assume false ConsentDeclarationContainsOtherMatters
+assume false ConsentDeclarationContainsOtherMatters  # legal
     """Consent declarations never contain other matters."""
 
-assume true IsNewPurpose
+assume true IsNewPurpose  # legal
     """Irrelevant since Article 13(3) is replaced by rule no_new_purpose."""
 
-assume false IsStorage
+assume false IsStorage  # legal
     """We never assume that an activity is only a storage activity."""
 
-assume false IsFurtherCopy
+assume false IsFurtherCopy  # functional
     """We always assume that copies are not duplicates. As a result, no fee is to be paid."""
 
-assume true IsFair
+assume true IsFair  # legal
     """The automated enforcement of the GDPR requirements ensures fairness with respect to the user. Only strictly necessary data is used for each purpose."""
 
-assume true IsTransparent
+assume true IsTransparent  # legal
     """The automated enforcement of the GDPR requirements, in particular the ROPA logging mechanism, ensures transparency with respect to the user."""
 
-assume true EnsuresAppropriateSecurity
+assume true EnsuresAppropriateSecurity  # legal
     """GDPRSocial, Inc. uses a safe software stack to guarantee personal data security."""
 
-assume true IsAdequate
+assume true IsAdequate  # legal
     """The personal data processed by GDPRSocial, Inc. is adequate for each declared purpose: (1) for the 'service' purpose, user profile data (name, email), twits, replies, direct messages, follows, likes, and reposts are adequate to provide core social-networking functionality; (2) for the 'personalized_ad' purpose, twit content and page visit data are adequate to select relevant advertisements via TF-IDF content matching; (3) for the 'statistics' purpose, page visit timestamps and anonymised interaction counts are adequate to generate website analytics."""
 
-assume true IsLimitedToWhatIsNecessary
+assume true IsLimitedToWhatIsNecessary  # legal
     """Data collection is limited to what is strictly necessary for each purpose: (1) for the 'service' purpose, only the minimal profile fields (username, first name, last name, email) and user-generated content (twits of at most 140 characters, replies, direct messages) are collected; (2) for the 'personalized_ad' purpose, only the textual content of the currently displayed page is used for TF-IDF similarity matching — no browsing history, location data, or third-party tracking is employed; (3) for the 'statistics' purpose, only page visit records (URL, timestamp) are collected. No surplus personal data is gathered beyond what each purpose requires."""
 
-assume true IsNecessary
+assume true IsNecessary  # legal
     """Each category of personal data processed is necessary for its declared purpose: (1) user profile data is necessary to authenticate users and display authored content; (2) twit content, replies, reposts, likes, and follows are necessary to deliver the core social-networking service; (3) direct messages are necessary to enable private communication between users; (4) page visit data is necessary to compute website usage statistics; (5) twit content exposure to the ad recommender is necessary to select contextually relevant advertisements. None of these purposes can be fulfilled without processing the respective data."""
 
-assume true IsRelevant
+assume true IsRelevant  # legal
     """All personal data processed is directly relevant to its declared purpose: profile fields are relevant to user identification and account management; user-generated content (twits, replies, reposts, direct messages) is relevant to providing the social-networking service; textual content shown on pages is relevant to selecting personalized advertisements; and page visit records are relevant to generating website usage statistics. No data is collected that lacks a direct relationship to one of the declared purposes."""
 
-assume true IsUpToDate
+assume true IsUpToDate  # legal
     """Personal data is kept up to date through the following mechanisms: (1) users can edit their profile information (name, email) at any time via the account settings page; (2) twit content can be edited by its author, which updates the 'updated_on' timestamp; (3) users may request rectification of any inaccurate data under Article 16 GDPR, which is enforced automatically by the system; (4) ad recommendations are recomputed on each page load using the latest content, ensuring no stale data influences personalisation; (5) every reasonable step is taken to ensure that inaccurate data is erased or rectified without delay."""
 
 note "### Refinement to system events ###"

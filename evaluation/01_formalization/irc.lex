@@ -124,3 +124,8 @@ rule "test"
   oblige
     print_amount_excluded_from_gross_income(i, a)
   transparently enforceable causing effects
+
+
+
+
+

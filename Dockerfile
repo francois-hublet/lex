@@ -28,6 +28,6 @@ RUN opam update \
         pyml=20250807 \
         alcotest \
     && eval $(opam env) \
-    && dune build \
+    && dune build
 
 CMD ["bash"]

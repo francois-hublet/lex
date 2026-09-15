@@ -261,8 +261,6 @@ rule "temporal_storage_limitation"
     oblige
         IsNecessary(d, p)
     transparently enforceable suppressing condition[0]
-
-
 rule "storage_limitation_exception"
     whenever
         EXISTS p. HasPurpose(a, p) AND IsArchival(p) AND TechnicalAndOrganisationalMeasures(a) AND JustifiesStorage(a, d)
@@ -533,7 +531,6 @@ causable observable predicate IsRightToWithdrawConsent
     """Declaration {de} declares the existence of the right to withdraw consent at any time, without 
        affecting the lawfulness of processing based on consent before its withdrawal"""
     de : declaration
-
 
 rule
     whenever
