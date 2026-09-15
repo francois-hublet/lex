@@ -1777,5 +1777,6 @@ let do_type
     rule_tree         = tprog.rule_tree;
     ecrules;
     compilation_order = rule_order;
-    pols
+    pols;
+    eassumed          = Map.empty (module String)
   }

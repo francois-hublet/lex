@@ -129,6 +129,8 @@ type eprog =
     ecrules:           (int, ecrule, Int.comparator_witness) Map.t;
     compilation_order: int list;
     pols:              (string, Enftype.t, Base.String.comparator_witness) Map.t;
+    eassumed:          (ident, bool, Base.String.comparator_witness) Map.t;
+    (* maps the events a refinement assumes to the value it assumes for them *)
   }
 
 let eempty =
@@ -143,6 +145,7 @@ let eempty =
     ecrules           = Map.empty (module Int);
     compilation_order = [];
     pols              = Map.empty (module String);
+    eassumed          = Map.empty (module String);
   }
 
 (* Importation helpers *)
@@ -151,7 +154,8 @@ let import eprog eprog' =
   let f ~key:_ = function `Both (x, _) | `Left x | `Right x -> Some x in
   { eprog with ealiases   = Map.merge eprog.ealiases eprog'.ealiases ~f;
                eevents    = Map.merge eprog.eevents eprog'.eevents ~f;
-               efunctions = Map.merge eprog.efunctions eprog'.efunctions ~f }
+               efunctions = Map.merge eprog.efunctions eprog'.efunctions ~f;
+               eassumed   = Map.merge eprog.eassumed eprog'.eassumed ~f }
 
 let tprog_import tprog eprog' =
   let f ~key:_ = function `Both (x, _) | `Left x | `Right x -> Some x in
