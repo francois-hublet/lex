@@ -185,6 +185,31 @@ even if it is written under it.
 Without `-o`, the section is appended to the name of the output file, e.g.
 `gdpr.lex-article-6.png`.
 
+### Hiding a kind of declaration
+
+Two further flags drop part of the vocabulary:
+
+* `-hide-internal` drops the declarations that are internal, i.e. declared
+  `internal` in Lex or made internal by a refinement;
+* `-hide-assumed` drops the declarations whose value a refinement fixes with an
+  `assume` statement.
+
+```bash
+dune exec -- ./bin/main.exe evaluation/01_formalization/minitwit_gdpr.rex \
+  -mode owlgraph -hide-internal -hide-assumed
+```
+
+What is left is the vocabulary the refined system still has to observe or
+control at runtime. The flags combine with each other and with `-section`, and
+each adds its own suffix to the default output file name
+(`minitwit_gdpr.rex-no-internal-no-assumed.png`). A type is kept only as long as
+some remaining declaration needs it.
+
+Every assumed declaration is also internalized by the refinement that assumes
+it, so `-hide-internal` already drops the assumed ones; `-hide-assumed` on its
+own is the weaker filter, dropping only what a refinement pins down and keeping
+declarations that are internal for other reasons.
+
 To install the VS Code extension for `.lex` syntax highlighting:
 
 ```bash

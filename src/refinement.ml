@@ -193,8 +193,13 @@ let do_type (trefi: Trex.trefi) (b: Interval.v) : (Tlex.tprog * Erex.erefi) Erro
   (*print_endline (Tlex.string_of_tprog tprog);*)
   let* eprog = Enforceability.do_type ~mon_constrs:(trefi.tr_mon, trefi.tr_anti_mon) tprog b in
   let erules = Enforceability.erules_from_tcrules (Enforceability.create_tcrules tprog) in
+  (* The events whose value this refinement assumes, as opposed to the ones it
+     merely internalizes. *)
+  let eassumed =
+    List.fold trefi.trassumed ~init:(Map.empty (module String))
+      ~f:(fun m (_, name, b, _) -> Map.set m ~key:name ~data:b) in
   let erefi = {
-    eprog;
+    eprog = { eprog with eassumed };
     ertmts = List.map trefi.trtmts ~f:(type_estmt erules);
     lex_file = trefi.lex_file;
     base_file_type = trefi.base_file_type;

@@ -9,18 +9,27 @@ let debug msg = if !debug_main then Errors.debug_print ~f_name:(Some "main.ml") 
 let modes = "mfotl (default), doc, owl, owlgraph, template"
 let input_formats = "formex (default), akomaNtoso"
 
-(* Keeps only the declarations of one section, e.g. "article 6" *)
-let restrict section eprog =
-  match section with
-  | None -> eprog, ""
-  | Some spec ->
-     (try Owl.restrict_to_section spec eprog with
-      | Owl.Section_error msg ->
-         print_endline ("Cannot restrict to section: " ^ msg);
-         exit (-1)),
-     Owl.section_suffix spec
+(* Narrows an ontology down to a section, e.g. "article 6", and to a kind of
+   declaration. Each restriction adds its own suffix, so that the default output
+   file names of two different runs do not collide. *)
+let restrict section internal assumed eprog =
+  let eprog, suffix = match section with
+    | None -> eprog, ""
+    | Some spec ->
+       (try Owl.restrict_to_section spec eprog with
+        | Owl.Section_error msg ->
+           print_endline ("Cannot restrict to section: " ^ msg);
+           exit (-1)),
+       Owl.section_suffix spec in
+  let eprog, suffix =
+    if internal then Owl.hide_internal eprog, suffix ^ "-no-internal"
+    else eprog, suffix in
+  let eprog, suffix =
+    if assumed then Owl.hide_assumed eprog, suffix ^ "-no-assumed"
+    else eprog, suffix in
+  eprog, suffix
 
-let loop filename mode f o b to_ unroll label ns section () =
+let loop filename mode f o b to_ unroll label ns section internal assumed () =
   let open Errors.OrErrors in
   let lexpath = Filename.dirname (Sys.get_argv()).(0) in
   let filepath = Filename.dirname filename
@@ -58,7 +67,7 @@ let loop filename mode f o b to_ unroll label ns section () =
       | Ok (_, eprog) ->
          let name = Filename.chop_extension basename in
          let base = Option.value ns ~default:(Owl.default_ontology_iri name) in
-         let eprog, suffix = restrict section eprog in
+         let eprog, suffix = restrict section internal assumed eprog in
          let source = basename ^ Option.value_map section ~default:"" ~f:(Printf.sprintf ", %s") in
          let outname = Option.value o ~default:(filename ^ suffix ^ ".owl") in
          Owl.to_file ~source ~base outname eprog
@@ -69,7 +78,7 @@ let loop filename mode f o b to_ unroll label ns section () =
   | Some "owlgraph" -> begin
       match Modules.do_type [lexpath] b filepath basename with
       | Ok (_, eprog) ->
-         let eprog, suffix = restrict section eprog in
+         let eprog, suffix = restrict section internal assumed eprog in
          let outname = Option.value o ~default:(filename ^ suffix ^ ".png") in
          (try Owl.to_png outname eprog with
           | Owl.Graphviz_error msg ->
@@ -108,6 +117,10 @@ let () =
                   +> flag "-ns" (optional string) ~doc:"ontology IRI used by -mode owl"
                   +> flag "-section" (optional string)
                        ~doc:"restrict -mode owl and -mode owlgraph to a section, e.g. \"article 6\""
+                  +> flag "-hide-internal" no_arg
+                       ~doc:"drop internal declarations from -mode owl and -mode owlgraph"
+                  +> flag "-hide-assumed" no_arg
+                       ~doc:"drop the declarations a refinement assumes, from -mode owl and -mode owlgraph"
                   )
     loop
   |> Command_unix.run
