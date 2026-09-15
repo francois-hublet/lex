@@ -25,10 +25,13 @@ cd ~/Git/whyenf
 make build
 ```
 
-After this, the executable should be available at:
+After this, the executable is at `~/Git/whyenf/bin/enfflash.exe` (the target
+is named `enfflash` in the `enfflash` branch's `bin/dune`, despite the
+`enfguard`-named CLI flags below). Symlink it to the name the rest of these
+instructions use:
 
-```text
-~/Git/whyenf/enfguard
+```bash
+ln -sfn ~/Git/whyenf/bin/enfflash.exe ~/Git/whyenf/enfguard
 ```
 
 ### 2) Set up GDPRSocial
@@ -76,7 +79,7 @@ From this folder:
 
 ```bash
 # Enforced benchmark (requires a built enfguard executable):
-bash benchmark/privacy_testsuite/run_benchmark.sh gdpr ~/Git/whyenf/enfguard
+bash benchmark/privacy_testsuite/run_benchmark.sh minitwit_gdpr ~/Git/whyenf/enfguard
 
 # Un-instrumented baseline (no enforcer needed):
 bash benchmark/privacy_testsuite/run_benchmark.sh baseline
@@ -135,7 +138,7 @@ mkdir -p output
 docker run --rm -it \
   -v "$(pwd)/output:/app/output" \
   gdprsocial:latest \
-  bash benchmark/privacy_testsuite/run_benchmark.sh gdpr /opt/whyenf/enfguard
+  bash benchmark/privacy_testsuite/run_benchmark.sh minitwit_gdpr /opt/whyenf/enfguard
 
 # Un-instrumented baseline (no enforcer argument needed):
 docker run --rm -it \

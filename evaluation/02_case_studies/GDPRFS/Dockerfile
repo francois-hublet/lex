@@ -31,6 +31,7 @@ WORKDIR /app
 #   poppler-utils        – pdftotext for PDF content analysis
 #   build-essential      – compilers needed to build fuse-python C extension
 #   curl                 – used by entrypoint readiness checks (fast; avoids Python import)
+#   libz3-4              – runtime shared library for the enfguard/enfflash enforcer binary
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         build-essential \
@@ -38,10 +39,12 @@ RUN apt-get update \
         fuse \
         fuse3 \
         libfuse-dev \
+        libz3-4 \
         pkg-config \
         poppler-utils \
     && echo 'user_allow_other' >> /etc/fuse.conf \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && ln -s /usr/lib/x86_64-linux-gnu/libz3.so.4 /usr/lib/x86_64-linux-gnu/libz3.so
 
 # Install Python dependencies (includes fuse-python built against libfuse-dev above)
 COPY GDPRFS/requirements.txt ./requirements.txt

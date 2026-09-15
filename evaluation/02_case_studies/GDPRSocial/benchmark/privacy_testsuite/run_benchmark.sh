@@ -6,7 +6,7 @@
 #   ./benchmark/privacy_testsuite/run_benchmark.sh <policy> [<enfguard_exe>]
 #
 # For enforced policies supply the enfguard executable:
-#   ./benchmark/privacy_testsuite/run_benchmark.sh gdpr /opt/whyenf/enfguard
+#   ./benchmark/privacy_testsuite/run_benchmark.sh minitwit_gdpr /opt/whyenf/enfguard
 #
 # For the un-instrumented baseline no enforcer argument is required:
 #   ./benchmark/privacy_testsuite/run_benchmark.sh baseline

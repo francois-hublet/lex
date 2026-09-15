@@ -1,0 +1,4575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0">
+    <act name="publicLaw">
+        <meta>
+            <identification source="#ch.bk">
+                <FRBRWork>
+                    <FRBRthis value="https://fedlex.data.admin.ch/eli/cc/2006/218/20240201/main-text"/>
+                    <FRBRuri value="https://fedlex.data.admin.ch/eli/cc/2006/218/20240201"/>
+                    <FRBRdate date="2005-06-17" name="jolux:dateDocument"/>
+                    <FRBRdate date="2007-01-01" name="jolux:dateEntryInForce"/>
+                    <FRBRdate date="2024-02-01" name="jolux:dateApplicability"/>
+                    <FRBRauthor href="#ch.bk" as="#publisher"/>
+                    <FRBRauthor href="#ch.bk" as="#rightsHolder"/>
+                    <FRBRcountry value="CH"/>
+                    <FRBRnumber value="173.110"/>
+                    <FRBRname xml:lang="fr" value="Loi du 17 juin 2005 sur le Tribunal fédéral (LTF)" shortForm="LTF"/>
+                    <FRBRname xml:lang="de" value="Bundesgesetz vom 17. Juni 2005 über das Bundesgericht (Bundesgerichtsgesetz, BGG)" shortForm="BGG"/>
+                    <FRBRname xml:lang="rm" value="Lescha federala dals 17 da zercladur 2005 davart il Tribunal federal (Lescha davart il tribunal federal, LTF)" shortForm="LTF"/>
+                    <FRBRname xml:lang="it" value="Legge del 17 giugno 2005 sul Tribunale federale (LTF)" shortForm="LTF"/>
+                    <FRBRauthoritative value="true"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="https://fedlex.data.admin.ch/eli/cc/2006/218/20240201/de/main-text"/>
+                    <FRBRuri value="https://fedlex.data.admin.ch/eli/cc/2006/218/20240201/de"/>
+                    <FRBRdate date="2005-06-17" name="jolux:dateDocument"/>
+                    <FRBRdate date="2007-01-01" name="jolux:dateEntryInForce"/>
+                    <FRBRdate date="2024-02-01" name="jolux:dateApplicability"/>
+                    <FRBRauthor href="#ch.bk" as="#publisher"/>
+                    <FRBRauthor href="#ch.bk" as="#rightsHolder"/>
+                    <FRBRlanguage language="de"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="https://fedlex.data.admin.ch/eli/cc/2006/218/20240201/de/xml/main-text"/>
+                    <FRBRuri value="https://fedlex.data.admin.ch/eli/cc/2006/218/20240201/de/xml"/>
+                    <FRBRdate date="2005-06-17" name="jolux:dateDocument"/>
+                    <FRBRdate date="2007-01-01" name="jolux:dateEntryInForce"/>
+                    <FRBRdate date="2024-02-01" name="jolux:dateApplicability"/>
+                    <FRBRauthor href="#ch.bk" as="#publisher"/>
+                    <FRBRauthor href="#ch.bk" as="#rightsHolder"/>
+                    <FRBRformat value="xml" fedlex:generator="2024-q1-rel-1.5.9"
+                        xmlns:fedlex="http://fedlex.admin.ch/"/>
+                </FRBRManifestation>
+            </identification>
+            <references source="#ch.bk">
+                <TLCOrganization eId="ch.bk" href="https://fedlex.data.admin.ch/vocabulary/legal-institution/2" showAs="Bundeskanzlei"/>
+                <TLCRole eId="publisher" href="http://data.legilux.public.lu/resource/ontology/jolux#publisher" showAs="Editeur"/>
+                <TLCRole eId="rightsHolder" href="http://data.legilux.public.lu/resource/ontology/jolux#rightsHolder" showAs="Détenteur des droits"/>
+                <TLCReference name="language" href="http://publications.europa.eu/resource/authority/language/DEU" showAs="de"/>
+                <TLCReference name="format" href="https://fedlex.data.admin.ch/vocabulary/user-format/xml" showAs="xml"/>
+            </references>
+        </meta>
+        <preface>
+            <p>
+                <docNumber>173.110 </docNumber>
+            </p>
+            <p>
+                <docTitle>Bundesgesetz<br/>
+über das Bundesgericht</docTitle>
+            </p>
+            <p>(Bundesgerichtsgesetz, BGG)</p>
+            <p>vom 17. Juni 2005 (Stand am 1. Februar 2024)</p>
+        </preface>
+        <preamble>
+            <p>Die Bundesversammlung der Schweizerischen Eidgenossenschaft,</p>
+            <p>gestützt auf die Artikel 188–191<i>c</i> der Bundesverfassung<authorialNote>
+                <p>
+                    <ref href="https://fedlex.data.admin.ch/eli/cc/1999/404">SR <b>101</b>
+                    </ref>
+                </p>
+            </authorialNote>,            <br/>
+nach Einsicht in die Botschaft des Bundesrates vom 28. Februar 2001<authorialNote>
+            <p>
+                <ref href="https://fedlex.data.admin.ch/eli/fga/2001/731">BBl <b>2001</b> 4202</ref>
+            </p>
+        </authorialNote>,
+    </p>
+    <p>beschliesst:</p>
+</preamble>
+<body>
+    <chapter eId="chap_1">
+        <num>1. Kapitel: </num>
+        <heading>Stellung und Organisation</heading>
+        <section eId="chap_1/sec_1">
+            <num>1. Abschnitt: </num>
+            <heading>Stellung</heading>
+            <article eId="art_1">
+                <num>
+                    <b>Art. 1</b>
+                </num>
+                <heading>Oberste Recht sprechende Behörde</heading>
+                <paragraph eId="art_1/para_1">
+                    <num>1</num>
+                    <content>
+                        <p> Das Bundesgericht ist die oberste Recht sprechende Behörde des Bundes.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_1/para_2">
+                    <num>2</num>
+                    <content>
+                        <p> Es übt die Aufsicht über die Geschäftsführung des Bundesstrafgerichts, des Bundesverwaltungsgerichts und des Bundespatentgerichts aus.<authorialNote>
+                            <p> Fassung gemäss Anhang Ziff. 2 des BG vom 20. März 2009 über das Bundespatentgericht, in Kraft seit 1. Jan. 2012 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/72">AS <b>2010</b> 513</ref>,                            <ref href="https://fedlex.data.admin.ch/eli/oc/2011/306">
+                                <b>2011</b> 2241</ref>;                            <ref href="https://fedlex.data.admin.ch/eli/fga/2008/145">BBl <b>2008</b> 455</ref>).
+                        </p>
+                    </authorialNote>
+                </p>
+            </content>
+        </paragraph>
+        <paragraph eId="art_1/para_3">
+            <num>3</num>
+            <content>
+                <p> Es besteht aus 35–45 ordentlichen Bundesrichtern und Bundesrichterinnen.</p>
+            </content>
+        </paragraph>
+        <paragraph eId="art_1/para_4">
+            <num>4</num>
+            <content>
+                <p> Es besteht ausserdem aus nebenamtlichen Bundesrichtern und Bundesrichterinnen; deren Zahl beträgt höchstens zwei Drittel der Zahl der ordentlichen Richter und Richterinnen.<authorialNote>
+                    <p> Siehe auch Art. 132 Abs. 4 hiernach.</p>
+                </authorialNote>
+            </p>
+        </content>
+    </paragraph>
+    <paragraph eId="art_1/para_5">
+        <num>5</num>
+        <content>
+            <p> Die Bundesversammlung legt die Zahl der Richter und Richterinnen in einer Verordnung fest.</p>
+        </content>
+    </paragraph>
+</article>
+<article eId="art_2">
+    <num>
+        <b>Art. 2</b>
+    </num>
+    <heading>Unabhängigkeit</heading>
+    <paragraph eId="art_2/para_1">
+        <num>1</num>
+        <content>
+            <p> Das Bundesgericht ist in seiner Recht sprechenden Tätigkeit unabhängig und nur dem Recht verpflichtet.</p>
+        </content>
+    </paragraph>
+    <paragraph eId="art_2/para_2">
+        <num>2</num>
+        <content>
+            <p> Seine Entscheide können nur von ihm selbst nach Massgabe der gesetzlichen Bestimmungen aufgehoben oder geändert werden.</p>
+        </content>
+    </paragraph>
+</article>
+<article eId="art_3">
+    <num>
+        <b>Art. 3</b>
+    </num>
+    <heading>Verhältnis zur Bundesversammlung</heading>
+    <paragraph eId="art_3/para_1">
+        <num>1</num>
+        <content>
+            <p> Die Bundesversammlung übt die Oberaufsicht über das Bundesgericht aus.</p>
+        </content>
+    </paragraph>
+    <paragraph eId="art_3/para_2">
+        <num>2</num>
+        <content>
+            <p> Sie entscheidet jährlich über die Genehmigung des Voranschlags, der Rechnung und des Geschäftsberichts des Bundesgerichts.</p>
+        </content>
+    </paragraph>
+</article>
+<article eId="art_4">
+    <num>
+        <b>Art. 4</b>
+    </num>
+    <heading>Sitz</heading>
+    <paragraph eId="art_4/para_1">
+        <num>1</num>
+        <content>
+            <p> Sitz des Bundesgerichts ist Lausanne.</p>
+        </content>
+    </paragraph>
+    <paragraph eId="art_4/para_2">
+        <num>2</num>
+        <content>
+            <p> Eine oder mehrere Abteilungen haben ihren Standort in Luzern.</p>
+        </content>
+    </paragraph>
+</article>
+</section>
+<section eId="chap_1/sec_2">
+<num>2. Abschnitt: </num>
+<heading>Richter und Richterinnen</heading>
+<article eId="art_5">
+    <num>
+        <b>Art. 5</b>
+    </num>
+    <heading>Wahl</heading>
+    <paragraph eId="art_5/para_1">
+        <num>1</num>
+        <content>
+            <p> Die Bundesversammlung wählt die Richter und Richterinnen.</p>
+        </content>
+    </paragraph>
+    <paragraph eId="art_5/para_2">
+        <num>2</num>
+        <content>
+            <p> Wählbar ist, wer in eidgenössischen Angelegenheiten stimmberechtigt ist.</p>
+        </content>
+    </paragraph>
+</article>
+<article eId="art_6">
+    <num>
+        <b>Art. 6</b>
+    </num>
+    <heading>Unvereinbarkeit</heading>
+    <paragraph eId="art_6/para_1">
+        <num>1</num>
+        <content>
+            <p> Die Richter und Richterinnen dürfen weder der Bundesversammlung noch dem Bundesrat angehören und in keinem anderen Arbeitsverhältnis mit dem Bund stehen.</p>
+        </content>
+    </paragraph>
+    <paragraph eId="art_6/para_2">
+        <num>2</num>
+        <content>
+            <p> Sie dürfen weder eine Tätigkeit ausüben, welche die Erfüllung der Amtspflichten, die Unabhängigkeit oder das Ansehen des Gerichts beeinträchtigt, noch berufsmässig Dritte vor dem Bundesgericht vertreten.</p>
+        </content>
+    </paragraph>
+    <paragraph eId="art_6/para_3">
+        <num>3</num>
+        <content>
+            <p> Sie dürfen keine amtliche Funktion für einen ausländischen Staat ausüben und keine Titel oder Orden ausländischer Behörden annehmen.</p>
+        </content>
+    </paragraph>
+    <paragraph eId="art_6/para_4">
+        <num>4</num>
+        <content>
+            <p> Die ordentlichen Richter und Richterinnen dürfen kein Amt eines Kantons bekleiden und keine andere Erwerbstätigkeit ausüben. Sie dürfen auch nicht als Mitglied der Geschäftsleitung, der Verwaltung, der Aufsichtsstelle oder der Revisionsstelle eines wirtschaftlichen Unternehmens tätig sein.</p>
+        </content>
+    </paragraph>
+</article>
+<article eId="art_7">
+    <num>
+        <b>Art. 7</b>
+    </num>
+    <heading>Nebenbeschäftigung</heading>
+    <paragraph eId="art_7/para_1">
+        <num>1</num>
+        <content>
+            <p> Das Bundesgericht kann den ordentlichen Richtern und Richterinnen gestatten, eine Nebenbeschäftigung ohne Erwerbszweck auszuüben, wenn die uneingeschränkte Erfüllung der Amtspflichten, die Unabhängigkeit und das Ansehen des Gerichts dadurch nicht beeinträchtigt werden.</p>
+        </content>
+    </paragraph>
+    <paragraph eId="art_7/para_2">
+        <num>2</num>
+        <content>
+            <p> Es bestimmt die Voraussetzungen für diese Bewilligung in einem Reglement.</p>
+        </content>
+    </paragraph>
+</article>
+<article eId="art_8">
+    <num>
+        <b>Art. 8</b>
+    </num>
+    <heading>Unvereinbarkeit in der Person</heading>
+    <paragraph eId="art_8/para_1">
+        <num>1</num>
+        <content>
+            <blockList>
+                <listIntroduction eId="art_8/para_1/listintro"> Dem Bundesgericht dürfen nicht gleichzeitig als Richter oder Richterinnen angehören:</listIntroduction>
+                <item eId="art_8/para_1/lbl_a">
+                    <num>a. </num>
+                    <p>Ehegatten, eingetragene Partnerinnen oder Partner und Personen, die in dauernder Lebensgemeinschaft leben;</p>
+                </item>
+                <item eId="art_8/para_1/lbl_b">
+                    <num>b. </num>
+                    <p>Ehegatten oder eingetragene Partnerinnen oder Partner von Geschwistern und Personen, die mit Geschwistern in dauernder Lebensgemeinschaft leben;</p>
+                </item>
+                <item eId="art_8/para_1/lbl_c">
+                    <num>c. </num>
+                    <p>Verwandte in gerader Linie sowie bis und mit dem dritten Grad in der Seitenlinie;</p>
+                </item>
+                <item eId="art_8/para_1/lbl_d">
+                    <num>d. </num>
+                    <p>Verschwägerte in gerader Linie sowie bis und mit dem dritten Grad in der Seitenlinie.</p>
+                </item>
+            </blockList>
+        </content>
+    </paragraph>
+    <paragraph eId="art_8/para_2">
+        <num>2</num>
+        <content>
+            <p> Die Regelung von Absatz 1 Buchstabe d gilt bei dauernden Lebensgemeinschaften sinngemäss.</p>
+        </content>
+    </paragraph>
+</article>
+<article eId="art_9">
+    <num>
+        <b>Art. 9</b>
+    </num>
+    <heading>Amtsdauer</heading>
+    <paragraph eId="art_9/para_1">
+        <num>1</num>
+        <content>
+            <p> Die Amtsdauer der Richter und Richterinnen beträgt sechs Jahre.</p>
+        </content>
+    </paragraph>
+    <paragraph eId="art_9/para_2">
+        <num>2</num>
+        <content>
+            <p> Richter und Richterinnen scheiden am Ende des Jahres aus ihrem Amt aus, in dem sie das 68. Altersjahr vollenden.</p>
+        </content>
+    </paragraph>
+    <paragraph eId="art_9/para_3">
+        <num>3</num>
+        <content>
+            <p> Frei gewordene Stellen werden für den Rest der Amtsdauer wieder besetzt.</p>
+        </content>
+    </paragraph>
+</article>
+<article eId="art_10">
+    <num>
+        <b>Art. 10</b>
+    </num>
+    <heading>Amtseid</heading>
+    <paragraph eId="art_10/para_1">
+        <num>1</num>
+        <content>
+            <p> Die Richter und Richterinnen werden vor ihrem Amtsantritt auf gewissenhafte Pflichterfüllung vereidigt.</p>
+        </content>
+    </paragraph>
+    <paragraph eId="art_10/para_2">
+        <num>2</num>
+        <content>
+            <p> Die Vereidigung erfolgt durch die Abteilung unter dem Vorsitz des Präsidenten oder der Präsidentin des Bundesgerichts.</p>
+        </content>
+    </paragraph>
+    <paragraph eId="art_10/para_3">
+        <num>3</num>
+        <content>
+            <p> Statt des Eids kann ein Gelübde abgelegt werden.</p>
+        </content>
+    </paragraph>
+</article>
+<article eId="art_11">
+    <num>
+        <b>Art. 11</b>
+        <authorialNote>
+            <p> Aufgehoben durch Anhang Ziff. 3 des BG vom 17. Juni 2011 (Gesuche um Aufhebung der Immunität), mit Wirkung seit 5. Dez. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2011/663">AS <b>2011</b> 4627</ref>;            <ref href="https://fedlex.data.admin.ch/eli/fga/2010/1294">BBl <b>2010</b> 7345 </ref>
+            <ref href="https://fedlex.data.admin.ch/eli/fga/2010/1297">7385</ref>).
+        </p>
+    </authorialNote>
+</num>
+</article>
+<article eId="art_12">
+<num>
+    <b>Art. 12</b>
+</num>
+<heading>Wohnort</heading>
+<paragraph eId="art_12/para">
+    <content>
+        <p>Die Richter und Richterinnen können ihren Wohnort in der Schweiz frei wählen; ordentliche Richter und Richterinnen müssen jedoch das Gericht in kurzer Zeit erreichen können.</p>
+    </content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_1/sec_3">
+<num>3. Abschnitt: </num>
+<heading>Organisation und Verwaltung</heading>
+<article eId="art_13">
+<num>
+    <b>Art. 13</b>
+</num>
+<heading>Grundsatz</heading>
+<paragraph eId="art_13/para">
+    <content>
+        <p>Das Bundesgericht regelt seine Organisation und Verwaltung.</p>
+    </content>
+</paragraph>
+</article>
+<article eId="art_14">
+<num>
+    <b>Art. 14</b>
+</num>
+<heading>Präsidium</heading>
+<paragraph eId="art_14/para_1">
+    <num>1</num>
+    <content>
+        <blockList>
+            <listIntroduction eId="art_14/para_1/listintro"> Die Bundesversammlung wählt aus den ordentlichen Richtern und Richterinnen:</listIntroduction>
+            <item eId="art_14/para_1/lbl_a">
+                <num>a. </num>
+                <p>den Präsidenten oder die Präsidentin des Bundesgerichts;</p>
+            </item>
+            <item eId="art_14/para_1/lbl_b">
+                <num>b. </num>
+                <p>den Vizepräsidenten oder die Vizepräsidentin.</p>
+            </item>
+        </blockList>
+    </content>
+</paragraph>
+<paragraph eId="art_14/para_2">
+    <num>2</num>
+    <content>
+        <p> Die Wahl erfolgt für zwei Jahre; einmalige Wiederwahl ist zulässig.</p>
+    </content>
+</paragraph>
+<paragraph eId="art_14/para_3">
+    <num>3</num>
+    <content>
+        <p> Der Präsident oder die Präsidentin führt den Vorsitz im Gesamtgericht und in der Verwaltungskommission (Art. 17). Er oder sie vertritt das Gericht nach aussen.</p>
+    </content>
+</paragraph>
+<paragraph eId="art_14/para_4">
+    <num>4</num>
+    <content>
+        <p> Er oder sie wird durch den Vizepräsidenten oder die Vizepräsidentin oder, falls dieser oder diese verhindert ist, durch den Richter oder die Richterin mit dem höchsten Dienstalter vertreten; bei gleichem Dienstalter ist das höhere Lebensalter massgebend.</p>
+    </content>
+</paragraph>
+</article>
+<article eId="art_15">
+<num>
+    <b>Art. 15</b>
+</num>
+<heading>Gesamtgericht</heading>
+<paragraph eId="art_15/para_1">
+    <num>1</num>
+    <content>
+        <blockList>
+            <listIntroduction eId="art_15/para_1/listintro"> Das Gesamtgericht besteht aus den ordentlichen Richtern und Richterinnen. Es ist zuständig für:</listIntroduction>
+            <item eId="art_15/para_1/lbl_a">
+                <num>a. </num>
+                <p>den Erlass von Reglementen über die Organisation und Verwaltung des Gerichts, die Geschäftsverteilung, die Durchführung der Aufsicht über das Bundesstrafgericht und das Bundesverwaltungsgericht, die Schlichtung von Streitigkeiten zwischen Richtern und Richterinnen, die Information, die Gerichtsgebühren sowie die Entschädigungen an Parteien, amtliche Vertreter und Vertreterinnen, Sachverständige sowie Zeugen und Zeuginnen;</p>
+            </item>
+            <item eId="art_15/para_1/lbl_b">
+                <num>b. </num>
+                <p>Wahlen, soweit diese nicht durch Reglement einem anderen Organ des Gerichts zugewiesen werden;</p>
+            </item>
+            <item eId="art_15/para_1/lbl_c">
+                <num>c. </num>
+                <p>die Verabschiedung des Geschäftsberichts;</p>
+            </item>
+            <item eId="art_15/para_1/lbl_d">
+                <num>d. </num>
+                <p>die Bestellung der Abteilungen und die Wahl ihrer Präsidenten und Präsidentinnen auf Antrag der Verwaltungskommission;</p>
+            </item>
+            <item eId="art_15/para_1/lbl_e">
+                <num>e. </num>
+                <p>den Vorschlag an die Bundesversammlung für die Wahl des Präsidenten oder der Präsidentin und des Vizepräsidenten oder der Vizepräsidentin;</p>
+            </item>
+            <item eId="art_15/para_1/lbl_f">
+                <num>f. </num>
+                <p>die Anstellung des Generalsekretärs oder der Generalsekretärin und des Stellvertreters oder der Stellvertreterin auf Antrag der Verwaltungskommission;</p>
+            </item>
+            <item eId="art_15/para_1/lbl_g">
+                <num>g. </num>
+                <p>Beschlüsse betreffend den Beitritt zu internationalen Vereinigungen;</p>
+            </item>
+            <item eId="art_15/para_1/lbl_h">
+                <num>h. </num>
+                <p>andere Aufgaben, die ihm durch Gesetz zugewiesen werden.</p>
+            </item>
+        </blockList>
+    </content>
+</paragraph>
+<paragraph eId="art_15/para_2">
+    <num>2</num>
+    <content>
+        <p> Beschlüsse des Gesamtgerichts sind gültig, wenn an der Sitzung oder am Zirkulationsverfahren mindestens zwei Drittel aller Richter und Richterinnen teilnehmen.</p>
+    </content>
+</paragraph>
+</article>
+<article eId="art_16">
+<num>
+    <b>Art. 16</b>
+</num>
+<heading>Präsidentenkonferenz</heading>
+<paragraph eId="art_16/para_1">
+    <num>1</num>
+    <content>
+        <p> Die Präsidentenkonferenz besteht aus den Präsidenten und Präsidentinnen der Abteilungen. Sie konstituiert sich selbst.</p>
+    </content>
+</paragraph>
+<paragraph eId="art_16/para_2">
+    <num>2</num>
+    <content>
+        <blockList>
+            <listIntroduction eId="art_16/para_2/listintro"> Die Präsidentenkonferenz ist zuständig für:</listIntroduction>
+            <item eId="art_16/para_2/lbl_a">
+                <num>a. </num>
+                <p>den Erlass von Weisungen und einheitlichen Regeln für die Gestaltung der Urteile;</p>
+            </item>
+            <item eId="art_16/para_2/lbl_b">
+                <num>b. </num>
+                <p>die Koordination der Rechtsprechung unter den Abteilungen; vorbehalten bleibt Artikel 23;</p>
+            </item>
+            <item eId="art_16/para_2/lbl_c">
+                <num>c. </num>
+                <p>die Vernehmlassung zu Erlassentwürfen.</p>
+            </item>
+        </blockList>
+    </content>
+</paragraph>
+</article>
+<article eId="art_17">
+<num>
+    <b>Art. 17</b>
+</num>
+<heading>Verwaltungskommission</heading>
+<paragraph eId="art_17/para_1">
+    <num>1</num>
+    <content>
+        <blockList>
+            <listIntroduction eId="art_17/para_1/listintro"> Die Verwaltungskommission setzt sich zusammen aus:</listIntroduction>
+            <item eId="art_17/para_1/lbl_a">
+                <num>a. </num>
+                <p>dem Präsidenten oder der Präsidentin des Bundesgerichts;</p>
+            </item>
+            <item eId="art_17/para_1/lbl_b">
+                <num>b. </num>
+                <p>dem Vizepräsidenten oder der Vizepräsidentin;</p>
+            </item>
+            <item eId="art_17/para_1/lbl_c">
+                <num>c. </num>
+                <p>höchstens drei weiteren Richtern und Richterinnen.</p>
+            </item>
+        </blockList>
+    </content>
+</paragraph>
+<paragraph eId="art_17/para_2">
+    <num>2</num>
+    <content>
+        <p> Der Generalsekretär oder die Generalsekretärin nimmt mit beratender Stimme an den Sitzungen der Verwaltungskommission teil.</p>
+    </content>
+</paragraph>
+<paragraph eId="art_17/para_3">
+    <num>3</num>
+    <content>
+        <p> Die Richter und Richterinnen nach Absatz 1 Buchstabe c werden vom Gesamtgericht für zwei Jahre gewählt; einmalige Wiederwahl ist zulässig.</p>
+    </content>
+</paragraph>
+<paragraph eId="art_17/para_4">
+    <num>4</num>
+    <content>
+        <blockList>
+            <listIntroduction eId="art_17/para_4/listintro"> Die Verwaltungskommission trägt die Verantwortung für die Gerichtsverwaltung. Sie ist zuständig für:</listIntroduction>
+            <item eId="art_17/para_4/lbl_a">
+                <num>a. </num>
+                <p>die Zuteilung der nebenamtlichen Bundesrichter und Bundesrichterinnen an die Abteilungen auf Antrag der Präsidentenkonferenz;</p>
+            </item>
+            <item eId="art_17/para_4/lbl_b">
+                <num>b. </num>
+                <p>die Verabschiedung des Voranschlags und der Rechnung zuhanden der Bundesversammlung;</p>
+            </item>
+            <item eId="art_17/para_4/lbl_c">
+                <num>c. </num>
+                <p>die Anstellung der Gerichtsschreiber und Gerichtsschreiberinnen und deren Zuteilung an die Abteilungen auf Antrag der Abteilungen;</p>
+            </item>
+            <item eId="art_17/para_4/lbl_d">
+                <num>d. </num>
+                <p>die Bereitstellung genügender wissenschaftlicher und administrativer Dienstleistungen;</p>
+            </item>
+            <item eId="art_17/para_4/lbl_e">
+                <num>e.<authorialNote>
+                    <p> Fassung gemäss Anhang Ziff. 5 des BG vom 20. Juni 2014 über die Weiterbildung,  in Kraft seit 1. Jan. 2017 (<ref href="https://fedlex.data.admin.ch/eli/oc/2016/132">AS <b>2016</b> 689</ref>;                    <ref href="https://fedlex.data.admin.ch/eli/fga/2013/823">BBl <b>2013</b> 3729</ref>).
+                </p>
+            </authorialNote>
+        </num>
+        <p>eine angemessene Weiterbildung des Personals;</p>
+    </item>
+    <item eId="art_17/para_4/lbl_f">
+        <num>f. </num>
+        <p>die Bewilligung von Nebenbeschäftigungen der ordentlichen Richter und Richterinnen nach Anhörung der Präsidentenkonferenz;</p>
+    </item>
+    <item eId="art_17/para_4/lbl_g">
+        <num>g. </num>
+        <p>die Wahrnehmung der Aufsicht über das Bundesstrafgericht und das Bundesverwaltungsgericht;</p>
+    </item>
+    <item eId="art_17/para_4/lbl_h">
+        <num>h. </num>
+        <p>sämtliche weiteren Verwaltungsgeschäfte, die nicht in die Zuständigkeit des Gesamtgerichts oder der Präsidentenkonferenz fallen.</p>
+    </item>
+</blockList>
+</content>
+</paragraph>
+</article>
+<article eId="art_18">
+<num>
+<b>Art. 18</b>
+</num>
+<heading>Abteilungen</heading>
+<paragraph eId="art_18/para_1">
+<num>1</num>
+<content>
+<p> Die Abteilungen werden jeweils für zwei Jahre bestellt. Ihre Zusammensetzung wird öffentlich bekannt gemacht.</p>
+</content>
+</paragraph>
+<paragraph eId="art_18/para_2">
+<num>2</num>
+<content>
+<p> Bei der Bestellung sind die fachlichen Kenntnisse der Richter und Richterinnen sowie die Amtssprachen angemessen zu berücksichtigen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_18/para_3">
+<num>3</num>
+<content>
+<p> Die Richter und Richterinnen sind zur Aushilfe in anderen Abteilungen verpflichtet.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_19">
+<num>
+<b>Art. 19</b>
+</num>
+<heading>Abteilungsvorsitz</heading>
+<paragraph eId="art_19/para_1">
+<num>1</num>
+<content>
+<p> Die Präsidenten oder Präsidentinnen der Abteilungen werden jeweils für zwei Jahre gewählt.</p>
+</content>
+</paragraph>
+<paragraph eId="art_19/para_2">
+<num>2</num>
+<content>
+<p> Im Verhinderungsfall werden sie durch den Richter oder die Richterin mit dem höchsten Dienstalter vertreten; bei gleichem Dienstalter ist das höhere Lebensalter massgebend.</p>
+</content>
+</paragraph>
+<paragraph eId="art_19/para_3">
+<num>3</num>
+<content>
+<p> Der Abteilungsvorsitz darf nicht länger als sechs Jahre ausgeübt werden.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_20">
+<num>
+<b>Art. 20</b>
+</num>
+<heading>Besetzung</heading>
+<paragraph eId="art_20/para_1">
+<num>1</num>
+<content>
+<p> Die Abteilungen entscheiden in der Regel in der Besetzung mit drei Richtern oder Richterinnen (Spruchkörper).</p>
+</content>
+</paragraph>
+<paragraph eId="art_20/para_2">
+<num>2</num>
+<content>
+<p> Über Rechtsfragen von grundsätzlicher Bedeutung oder auf Antrag eines Richters oder einer Richterin entscheiden sie in Fünferbesetzung. Ausgenommen sind Beschwerden gegen Entscheide der kantonalen Aufsichtsbehörden in Schuldbetreibungs- und Konkurssachen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_20/para_3">
+<num>3</num>
+<content>
+<p> In Fünferbesetzung entscheiden sie ferner über Beschwerden gegen referendumspflichtige kantonale Erlasse und gegen kantonale Entscheide über die Zulässigkeit einer Initiative oder das Erfordernis eines Referendums. Ausgenommen sind Beschwerden, die eine Angelegenheit einer Gemeinde oder einer anderen Körperschaft des kantonalen Rechts betreffen.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_21">
+<num>
+<b>Art. 21</b>
+</num>
+<heading>Abstimmung</heading>
+<paragraph eId="art_21/para_1">
+<num>1</num>
+<content>
+<p> Das Gesamtgericht, die Präsidentenkonferenz, die Verwaltungskommission und die Abteilungen treffen die Entscheide, Beschlüsse und Wahlen, wenn das Gesetz nichts anderes bestimmt, mit der absoluten Mehrheit der Stimmen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_21/para_2">
+<num>2</num>
+<content>
+<p> Bei Stimmengleichheit ist die Stimme des Präsidenten beziehungsweise der Präsidentin ausschlaggebend; bei Wahlen entscheidet das Los.</p>
+</content>
+</paragraph>
+<paragraph eId="art_21/para_3">
+<num>3</num>
+<content>
+<p> Bei Entscheiden, die in einem Verfahren nach den Artikeln 72–129 getroffen werden, ist Stimmenthaltung nicht zulässig.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_22">
+<num>
+<b>Art. 22</b>
+</num>
+<heading>Geschäftsverteilung</heading>
+<paragraph eId="art_22/para">
+<content>
+<p>Das Bundesgericht regelt die Verteilung der Geschäfte auf die Abteilungen nach Rechtsgebieten, die Bildung der Spruchkörper sowie den Einsatz der nebenamtlichen Richter und Richterinnen durch Reglement.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_23">
+<num>
+<b>Art. 23</b>
+</num>
+<heading>Praxisänderung und Präjudiz</heading>
+<paragraph eId="art_23/para_1">
+<num>1</num>
+<content>
+<p> Eine Abteilung kann eine Rechtsfrage nur dann abweichend von einem früheren Entscheid einer oder mehrerer anderer Abteilungen entscheiden, wenn die Vereinigung der betroffenen Abteilungen zustimmt.</p>
+</content>
+</paragraph>
+<paragraph eId="art_23/para_2">
+<num>2</num>
+<content>
+<p> Hat eine Abteilung eine Rechtsfrage zu entscheiden, die mehrere Abteilungen betrifft, so holt sie die Zustimmung der Vereinigung aller betroffenen Abteilungen ein, sofern sie dies für die Rechtsfortbildung oder die Einheit der Rechtsprechung für angezeigt hält.</p>
+</content>
+</paragraph>
+<paragraph eId="art_23/para_3">
+<num>3</num>
+<content>
+<p> Beschlüsse der Vereinigung der betroffenen Abteilungen sind gültig, wenn an der Sitzung oder am Zirkulationsverfahren mindestens zwei Drittel der ordentlichen Richter und Richterinnen jeder betroffenen Abteilung teilnehmen. Der Beschluss wird ohne Parteiverhandlung und öffentliche Beratung gefasst; er ist für die Antrag stellende Abteilung bei der Beurteilung des Streitfalles verbindlich.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_24">
+<num>
+<b>Art. 24</b>
+</num>
+<heading>Gerichtsschreiber und Gerichtsschreiberinnen</heading>
+<paragraph eId="art_24/para_1">
+<num>1</num>
+<content>
+<p> Die Gerichtsschreiber und Gerichtsschreiberinnen wirken bei der Instruktion der Fälle und bei der Entscheidfindung mit. Sie haben beratende Stimme.</p>
+</content>
+</paragraph>
+<paragraph eId="art_24/para_2">
+<num>2</num>
+<content>
+<p> Sie erarbeiten unter der Verantwortung eines Richters oder einer Richterin Referate und redigieren die Entscheide des Bundesgerichts.</p>
+</content>
+</paragraph>
+<paragraph eId="art_24/para_3">
+<num>3</num>
+<content>
+<p> Sie erfüllen weitere Aufgaben, die ihnen das Reglement überträgt.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_25">
+<num>
+<b>Art. 25</b>
+</num>
+<heading>Verwaltung</heading>
+<paragraph eId="art_25/para_1">
+<num>1</num>
+<content>
+<p> Das Bundesgericht verwaltet sich selbst.</p>
+</content>
+</paragraph>
+<paragraph eId="art_25/para_2">
+<num>2</num>
+<content>
+<p> Es richtet seine Dienste ein und stellt das nötige Personal an.</p>
+</content>
+</paragraph>
+<paragraph eId="art_25/para_3">
+<num>3</num>
+<content>
+<p> Es führt eine eigene Rechnung.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_25_a">
+<num>
+<b>Art. 25</b>
+<i>a</i>
+<authorialNote>
+<p> Eingefügt durch Ziff. I 1 des BG vom 23. Juni 2006 über die Bereinigung und Aktualisierung der Totalrevision der Bundesrechtspflege, in Kraft seit 1. Jan. 2007  (<ref href="https://fedlex.data.admin.ch/eli/oc/2006/634">AS <b>2006</b> 4213</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/334">BBl <b>2006</b> 3067</ref>).
+</p>
+</authorialNote>
+</num>
+<heading>Infrastruktur</heading>
+<paragraph eId="art_25_a/para_1">
+<num>1</num>
+<content>
+<p> Für die Bereitstellung, die Bewirtschaftung und den Unterhalt der vom Bundesgericht benutzten Gebäude ist das Eidgenössische Finanzdepartement zuständig. Dieses hat die Bedürfnisse des Bundesgerichts angemessen zu berücksichtigen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_25_a/para_2">
+<num>2</num>
+<content>
+<p> Das Bundesgericht deckt seinen Bedarf an Gütern und Dienstleistungen im Bereich der Logistik selbständig.</p>
+</content>
+</paragraph>
+<paragraph eId="art_25_a/para_3">
+<num>3</num>
+<content>
+<p> Das Bundesgericht und der Bundesrat regeln die Einzelheiten der Zusammenarbeit zwischen dem Bundesgericht und dem Eidgenössischen Finanzdepartement in einer Vereinbarung. Darin kann die Zuweisung der Zuständigkeiten gemäss den vorherigen Absätzen in einzelnen Punkten anders geregelt werden.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_25_b">
+<num>
+<b>Art. 25</b>
+<i>b</i>
+<authorialNote>
+<p> Eingefügt durch Ziff. II 1 des BG vom 1. Okt. 2010 (Datenschutz bei der Benutzung der elektronischen Infrastruktur), in Kraft seit 1. April 2012 (<ref href="https://fedlex.data.admin.ch/eli/oc/2012/159">AS <b>2012</b> 941</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2009/1469">BBl <b>2009</b> 8513</ref>).
+</p>
+</authorialNote>
+</num>
+<heading>Datenschutz bei der Benutzung der elektronischen Infrastruktur</heading>
+<paragraph eId="art_25_b/para_1">
+<num>1</num>
+<content>
+<p> Für die Benutzung der elektronischen Infrastruktur des Bundesgerichts finden im Rahmen seiner Verwaltungstätigkeit die Artikel 57<i>i</i>–57<i>q</i> des Regierungs- und Verwaltungsorganisationsgesetzes vom 21. März 1997<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/1997/2022_2022_2022">SR <b>172.010</b>
+</ref>
+</p>
+</authorialNote> sinngemäss Anwendung.</p>
+</content>
+</paragraph>
+<paragraph eId="art_25_b/para_2">
+<num>2</num>
+<content>
+<p> Das Bundesgericht erlässt die Ausführungsbestimmungen.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_26">
+<num>
+<b>Art. 26</b>
+</num>
+<heading>Generalsekretariat</heading>
+<paragraph eId="art_26/para_1">
+<num>1</num>
+<content>
+<p> Der Generalsekretär oder die Generalsekretärin steht der Gerichtsverwaltung einschliesslich der wissenschaftlichen Dienste vor. Er oder sie führt das Sekretariat des Gesamtgerichts, der Präsidentenkonferenz und der Verwaltungskommission.</p>
+</content>
+</paragraph>
+<paragraph eId="art_26/para_2">
+<num>2</num>
+<content>
+<p> Er oder sie und der Stellvertreter oder die Stellvertreterin werden auf Amtsdauer gewählt. Die Amtsdauer entspricht derjenigen der Richter und Richterinnen.<authorialNote>
+<p> Eingefügt durch Anhang Ziff. 1 des BG vom 14. Dez. 2012, in Kraft seit 1. Juli 2013  (<ref href="https://fedlex.data.admin.ch/eli/oc/2013/352">AS <b>2013</b> 1493</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2011/1076">BBl <b>2011</b> 6703</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_27">
+<num>
+<b>Art. 27</b>
+</num>
+<heading>Information</heading>
+<paragraph eId="art_27/para_1">
+<num>1</num>
+<content>
+<p> Das Bundesgericht informiert die Öffentlichkeit über seine Rechtsprechung.</p>
+</content>
+</paragraph>
+<paragraph eId="art_27/para_2">
+<num>2</num>
+<content>
+<p> Die Veröffentlichung der Entscheide hat grundsätzlich in anonymisierter Form zu erfolgen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_27/para_3">
+<num>3</num>
+<content>
+<p> Das Bundesgericht regelt die Grundsätze der Information in einem Reglement.</p>
+</content>
+</paragraph>
+<paragraph eId="art_27/para_4">
+<num>4</num>
+<content>
+<p> Für die Gerichtsberichterstattung kann das Bundesgericht eine Akkreditierung vorsehen.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_28">
+<num>
+<b>Art. 28</b>
+</num>
+<heading>Öffentlichkeitsprinzip</heading>
+<paragraph eId="art_28/para_1">
+<num>1</num>
+<content>
+<p> Das Öffentlichkeitsgesetz vom 17. Dezember 2004<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2006/355">SR <b>152.3</b>
+</ref>
+</p>
+</authorialNote> gilt sinngemäss für das Bundesgericht, soweit dieses administrative Aufgaben oder Aufgaben im Zusammenhang mit der Aufsicht über das Bundesverwaltungsgericht und das Bundesstrafgericht erfüllt.</p>
+</content>
+</paragraph>
+<paragraph eId="art_28/para_2">
+<num>2</num>
+<content>
+<p> Das Bundesgericht bezeichnet ein Beschwerdeorgan, das über Beschwerden gegen seine Verfügungen betreffend den Zugang zu amtlichen Dokumenten entscheidet. Es kann vorsehen, dass kein Schlichtungsverfahren durchgeführt wird; in diesem Fall erlässt es die Stellungnahme zu einem Gesuch um Zugang zu amtlichen Dokumenten in Form einer beschwerdefähigen Verfügung.</p>
+</content>
+</paragraph>
+</article>
+</section>
+</chapter>
+<chapter eId="chap_2">
+<num>2. Kapitel: </num>
+<heading>Allgemeine Verfahrensbestimmungen</heading>
+<section eId="chap_2/sec_1">
+<num>1. Abschnitt: </num>
+<heading>Zuständigkeit</heading>
+<article eId="art_29">
+<num>
+<b>Art. 29</b>
+</num>
+<heading>Prüfung</heading>
+<paragraph eId="art_29/para_1">
+<num>1</num>
+<content>
+<p> Das Bundesgericht prüft seine Zuständigkeit von Amtes wegen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_29/para_2">
+<num>2</num>
+<content>
+<p> Bestehen Zweifel, ob das Bundesgericht oder eine andere Behörde zuständig ist, so führt das Gericht mit dieser Behörde einen Meinungsaustausch.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_30">
+<num>
+<b>Art. 30</b>
+</num>
+<heading>Unzuständigkeit</heading>
+<paragraph eId="art_30/para_1">
+<num>1</num>
+<content>
+<p> Erachtet sich das Bundesgericht als nicht zuständig, so tritt es auf die Sache nicht ein.</p>
+</content>
+</paragraph>
+<paragraph eId="art_30/para_2">
+<num>2</num>
+<content>
+<p> Hat sich in einem Meinungsaustausch die Zuständigkeit einer anderen Behörde ergeben oder erscheint die Zuständigkeit einer anderen Bundesbehörde als wahrscheinlich, so überweist das Bundesgericht die Sache der betreffenden Behörde.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_31">
+<num>
+<b>Art. 31</b>
+</num>
+<heading>Vorfragen</heading>
+<paragraph eId="art_31/para">
+<content>
+<p>Ist das Bundesgericht in der Hauptsache zuständig, so befindet es auch über die Vorfragen.</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_2/sec_2">
+<num>2. Abschnitt: </num>
+<heading>Prozessleitung</heading>
+<article eId="art_32">
+<num>
+<b>Art. 32</b>
+</num>
+<heading>Instruktionsrichter oder Instruktionsrichterin</heading>
+<paragraph eId="art_32/para_1">
+<num>1</num>
+<content>
+<p> Der Präsident oder die Präsidentin der Abteilung leitet als Instruktionsrichter beziehungsweise Instruktionsrichterin das Verfahren bis zum Entscheid; er oder sie kann einen anderen Richter oder eine andere Richterin mit dieser Aufgabe betrauen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_32/para_2">
+<num>2</num>
+<content>
+<p> Der Instruktionsrichter oder die Instruktionsrichterin entscheidet als Einzelrichter beziehungsweise Einzelrichterin über die Abschreibung von Verfahren zufolge Gegenstandslosigkeit, Rückzugs oder Vergleichs.</p>
+</content>
+</paragraph>
+<paragraph eId="art_32/para_3">
+<num>3</num>
+<content>
+<p> Die Verfügungen des Instruktionsrichters oder der Instruktionsrichterin sind nicht anfechtbar.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_33">
+<num>
+<b>Art. 33</b>
+</num>
+<heading>Disziplin</heading>
+<paragraph eId="art_33/para_1">
+<num>1</num>
+<content>
+<p> Wer im Verfahren vor dem Bundesgericht den Anstand verletzt oder den Geschäftsgang stört, wird mit einem Verweis oder einer Ordnungsbusse bis zu 1000 Franken bestraft.</p>
+</content>
+</paragraph>
+<paragraph eId="art_33/para_2">
+<num>2</num>
+<content>
+<p> Im Falle böswilliger oder mutwilliger Prozessführung können die Partei und ihr Vertreter oder ihre Vertreterin mit einer Ordnungsbusse bis zu 2000 Franken und bei Wiederholung bis zu 5000 Franken bestraft werden.</p>
+</content>
+</paragraph>
+<paragraph eId="art_33/para_3">
+<num>3</num>
+<content>
+<p> Der oder die Vorsitzende einer Verhandlung kann Personen, die seine oder ihre Anweisungen nicht befolgen, aus dem Sitzungssaal wegweisen und mit einer Ordnungsbusse bis zu 1000 Franken bestrafen.</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_2/sec_3">
+<num>3. Abschnitt: </num>
+<heading>Ausstand von Gerichtspersonen</heading>
+<article eId="art_34">
+<num>
+<b>Art. 34</b>
+</num>
+<heading>Ausstandsgründe</heading>
+<paragraph eId="art_34/para_1">
+<num>1</num>
+<content>
+<blockList>
+<listIntroduction eId="art_34/para_1/listintro"> Richter, Richterinnen, Gerichtsschreiber und Gerichtsschreiberinnen (Gerichtspersonen) treten in Ausstand, wenn sie:</listIntroduction>
+<item eId="art_34/para_1/lbl_a">
+<num>a. </num>
+<p>in der Sache ein persönliches Interesse haben;</p>
+</item>
+<item eId="art_34/para_1/lbl_b">
+<num>b. </num>
+<p>in einer anderen Stellung, insbesondere als Mitglied einer Behörde, als Rechtsberater oder Rechtsberaterin einer Partei, als sachverständige Person oder als Zeuge beziehungsweise Zeugin, in der gleichen Sache tätig waren;</p>
+</item>
+<item eId="art_34/para_1/lbl_c">
+<num>c. </num>
+<p>mit einer Partei, ihrem Vertreter beziehungsweise ihrer Vertreterin oder einer Person, die in der gleichen Sache als Mitglied der Vorinstanz tätig war, verheiratet sind oder in eingetragener Partnerschaft oder dauernder Lebensgemeinschaft leben;</p>
+</item>
+<item eId="art_34/para_1/lbl_d">
+<num>d. </num>
+<p>mit einer Partei, ihrem Vertreter beziehungsweise ihrer Vertreterin oder einer Person, die in der gleichen Sache als Mitglied der Vorinstanz tätig war, in gerader Linie oder in der Seitenlinie bis und mit dem dritten Grad verwandt oder verschwägert sind;</p>
+</item>
+<item eId="art_34/para_1/lbl_e">
+<num>e. </num>
+<p>aus anderen Gründen, insbesondere wegen besonderer Freundschaft oder persönlicher Feindschaft mit einer Partei oder ihrem Vertreter beziehungsweise ihrer Vertreterin, befangen sein könnten.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_34/para_2">
+<num>2</num>
+<content>
+<p> Die Mitwirkung in einem früheren Verfahren des Bundesgerichts bildet für sich allein keinen Ausstandsgrund.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_35">
+<num>
+<b>Art. 35</b>
+</num>
+<heading>Mitteilungspflicht</heading>
+<paragraph eId="art_35/para">
+<content>
+<p>Trifft bei einer Gerichtsperson ein Ausstandsgrund zu, so hat sie dies rechtzeitig dem Abteilungspräsidenten oder der Abteilungspräsidentin mitzuteilen.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_36">
+<num>
+<b>Art. 36</b>
+</num>
+<heading>Ausstandsbegehren</heading>
+<paragraph eId="art_36/para_1">
+<num>1</num>
+<content>
+<p> Will eine Partei den Ausstand einer Gerichtsperson verlangen, so hat sie dem Gericht ein schriftliches Begehren einzureichen, sobald sie vom Ausstandsgrund Kenntnis erhalten hat. Die den Ausstand begründenden Tatsachen sind glaubhaft zu machen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_36/para_2">
+<num>2</num>
+<content>
+<p> Die betroffene Gerichtsperson hat sich über die vorgebrachten Ausstandsgründe zu äussern.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_37">
+<num>
+<b>Art. 37</b>
+</num>
+<heading>Entscheid</heading>
+<paragraph eId="art_37/para_1">
+<num>1</num>
+<content>
+<p> Bestreitet die Gerichtsperson, deren Ausstand verlangt wird, oder ein Richter beziehungsweise eine Richterin der Abteilung den Ausstandsgrund, so entscheidet die Abteilung unter Ausschluss der betroffenen Gerichtsperson über den Ausstand.</p>
+</content>
+</paragraph>
+<paragraph eId="art_37/para_2">
+<num>2</num>
+<content>
+<p> Über die Ausstandsfrage kann ohne Anhörung der Gegenpartei entschieden werden.</p>
+</content>
+</paragraph>
+<paragraph eId="art_37/para_3">
+<num>3</num>
+<content>
+<p> Sollte der Ausstand von so vielen Richtern und Richterinnen verlangt werden, dass keine gültige Verhandlung stattfinden kann, so bezeichnet der Präsident beziehungsweise die Präsidentin des Bundesgerichts durch das Los aus der Zahl der Obergerichtspräsidenten und -präsidentinnen der in der Sache nicht beteiligten Kantone so viele ausserordentliche nebenamtliche Richter und Richterinnen, als erforderlich sind, um die Ausstandsfrage und nötigenfalls die Hauptsache selbst beurteilen zu können.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_38">
+<num>
+<b>Art. 38</b>
+</num>
+<heading>Verletzung der Ausstandsvorschriften</heading>
+<paragraph eId="art_38/para_1">
+<num>1</num>
+<content>
+<p> Amtshandlungen, an denen eine zum Ausstand verpflichtete Person mitgewirkt hat, sind aufzuheben, sofern dies eine Partei innert fünf Tagen verlangt, nachdem sie vom Ausstandsgrund Kenntnis erhalten hat.</p>
+</content>
+</paragraph>
+<paragraph eId="art_38/para_2">
+<num>2</num>
+<content>
+<p> Nicht wiederholbare Beweismassnahmen dürfen von der entscheidenden Instanz berücksichtigt werden.</p>
+</content>
+</paragraph>
+<paragraph eId="art_38/para_3">
+<num>3</num>
+<content>
+<p> Wird der Ausstandsgrund erst nach Abschluss des Verfahrens entdeckt, so gelten die Bestimmungen über die Revision.</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_2/sec_4">
+<num>4. Abschnitt: </num>
+<heading>Parteien, Parteivertreter und -vertreterinnen, Rechtsschriften</heading>
+<article eId="art_39">
+<num>
+<b>Art. 39</b>
+</num>
+<heading>Zustellungsdomizil</heading>
+<paragraph eId="art_39/para_1">
+<num>1</num>
+<content>
+<p> Die Parteien haben dem Bundesgericht ihren Wohnsitz oder Sitz anzugeben.</p>
+</content>
+</paragraph>
+<paragraph eId="art_39/para_2">
+<num>2</num>
+<content>
+<p> Sie können überdies eine elektronische Zustelladresse angeben und ihr Einverständnis mit der elektronischen Eröffnung erklären.<authorialNote>
+<p> Fassung gemäss Anhang Ziff. II 2 des BG vom 18. März 2016 über die elektronische Signatur, in Kraft seit 1. Jan. 2017 (<ref href="https://fedlex.data.admin.ch/eli/oc/2016/752">AS <b>2016</b> 4651</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2014/171">BBl <b>2014</b> 1001</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+<paragraph eId="art_39/para_3">
+<num>3</num>
+<content>
+<p> Parteien, die im Ausland wohnen, haben in der Schweiz ein Zustellungsdomizil zu bezeichnen. Mitteilungen an Parteien, die dieser Auflage nicht Folge leisten, können unterbleiben oder in einem amtlichen Blatt eröffnet werden.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_40">
+<num>
+<b>Art. 40</b>
+</num>
+<heading>Parteivertreter und -vertreterinnen</heading>
+<paragraph eId="art_40/para_1">
+<num>1</num>
+<content>
+<p> In Zivil- und Strafsachen können Parteien vor Bundesgericht nur von Anwälten und Anwältinnen vertreten werden, die nach dem Anwaltsgesetz vom 23. Juni 2000<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2002/153">SR <b>935.61</b>
+</ref>
+</p>
+</authorialNote> oder nach einem Staatsvertrag berechtigt sind, Parteien vor schweizerischen Gerichtsbehörden zu vertreten.</p>
+</content>
+</paragraph>
+<paragraph eId="art_40/para_2">
+<num>2</num>
+<content>
+<p> Die Parteivertreter und -vertreterinnen haben sich durch eine Vollmacht auszuweisen.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_41">
+<num>
+<b>Art. 41</b>
+</num>
+<heading>Unfähigkeit zur Prozessführung</heading>
+<paragraph eId="art_41/para_1">
+<num>1</num>
+<content>
+<p> Ist eine Partei offensichtlich nicht imstande, ihre Sache selber zu führen, so kann das Bundesgericht sie auffordern, einen Vertreter oder eine Vertreterin beizuziehen. Leistet sie innert der angesetzten Frist keine Folge, so bestellt ihr das Gericht einen Anwalt oder eine Anwältin.</p>
+</content>
+</paragraph>
+<paragraph eId="art_41/para_2">
+<num>2</num>
+<content>
+<p> Die vom Bundesgericht bezeichnete Vertretung hat Anspruch auf eine angemessene Entschädigung aus der Gerichtskasse, soweit sie ihren Aufwand nicht aus einer zugesprochenen Parteientschädigung decken kann und die Partei selbst zahlungsunfähig ist. Die Partei hat der Gerichtskasse Ersatz zu leisten, wenn sie später dazu in der Lage ist.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_42">
+<num>
+<b>Art. 42</b>
+</num>
+<heading>Rechtsschriften</heading>
+<paragraph eId="art_42/para_1">
+<num>1</num>
+<content>
+<p> Rechtsschriften sind in einer Amtssprache abzufassen und haben die Begehren, deren Begründung mit Angabe der Beweismittel und die Unterschrift zu enthalten.</p>
+</content>
+</paragraph>
+<paragraph eId="art_42/para_2">
+<num>2</num>
+<content>
+<p> In der Begründung ist in gedrängter Form darzulegen, inwiefern der angefochtene Akt Recht verletzt. Ist eine Beschwerde nur unter der Voraussetzung zulässig, dass sich eine Rechtsfrage von grundsätzlicher Bedeutung stellt oder aus anderen Gründen ein besonders bedeutender Fall vorliegt, so ist auszuführen, warum die jeweilige Voraussetzung erfüllt ist. <authorialNote>
+<p> Fassung des zweiten Satzes gemäss Ziff. I 1 des Steuererlassgesetzes vom 20. Juni 2014, in Kraft seit 1. Jan. 2016 (<ref href="https://fedlex.data.admin.ch/eli/oc/2015/3">AS <b>2015</b> 9</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2013/1658">BBl <b>2013</b> 8435</ref>).
+</p>
+</authorialNote>
+<authorialNote>
+<p> Fassung gemäss Anhang Ziff. 1 des Steueramtshilfegesetzes vom 28. Sept. 2012, in Kraft seit 1. Febr. 2013 (<ref href="https://fedlex.data.admin.ch/eli/oc/2013/31">AS <b>2013</b> 231</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2011/914">BBl <b>2011</b> 6193</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+<paragraph eId="art_42/para_3">
+<num>3</num>
+<content>
+<p> Die Urkunden, auf die sich die Partei als Beweismittel beruft, sind beizulegen, soweit die Partei sie in Händen hat; richtet sich die Rechtsschrift gegen einen Entscheid, so ist auch dieser beizulegen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_42/para_4">
+<num>4</num>
+<content>
+<blockList>
+<listIntroduction eId="art_42/para_4/listintro"> Bei elektronischer Einreichung muss die Rechtsschrift von der Partei oder ihrem Vertreter beziehungsweise ihrer Vertreterin mit einer qualifizierten elektronischen Signatur gemäss Bundesgesetz vom 18. März 2016<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2016/752">SR <b>943.03</b>
+</ref>
+</p>
+</authorialNote> über die elektronische Signatur versehen werden. Das Bundesgericht bestimmt in einem Reglement:</listIntroduction>
+<item eId="art_42/para_4/lbl_a">
+<num>a. </num>
+<p>das Format der Rechtsschrift und ihrer Beilagen;</p>
+</item>
+<item eId="art_42/para_4/lbl_b">
+<num>b. </num>
+<p>die Art und Weise der Übermittlung;</p>
+</item>
+<item eId="art_42/para_4/lbl_c">
+<num>c. </num>
+<p>die Voraussetzungen, unter denen bei technischen Problemen die Nachreichung von Dokumenten auf Papier verlangt werden kann.<authorialNote>
+<p> Fassung gemäss Anhang Ziff. II 2 des BG vom 18. März 2016 über die elektronische Signatur, in Kraft seit 1. Jan. 2017 (<ref href="https://fedlex.data.admin.ch/eli/oc/2016/752">AS <b>2016</b> 4651</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2014/171">BBl <b>2014</b> 1001</ref>).
+</p>
+</authorialNote>
+</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_42/para_5">
+<num>5</num>
+<content>
+<p> Fehlen die Unterschrift der Partei oder ihrer Vertretung, deren Vollmacht oder die vorgeschriebenen Beilagen oder ist die Vertretung nicht zugelassen, so wird eine angemessene Frist zur Behebung des Mangels angesetzt mit der Androhung, dass die Rechtsschrift sonst unbeachtet bleibt.</p>
+</content>
+</paragraph>
+<paragraph eId="art_42/para_6">
+<num>6</num>
+<content>
+<p> Unleserliche, ungebührliche, unverständliche, übermässig weitschweifige oder nicht in einer Amtssprache verfasste Rechtsschriften können in gleicher Weise zur Änderung zurückgewiesen werden.</p>
+</content>
+</paragraph>
+<paragraph eId="art_42/para_7">
+<num>7</num>
+<content>
+<p> Rechtsschriften, die auf querulatorischer oder rechtsmissbräuchlicher Prozessführung beruhen, sind unzulässig.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_43">
+<num>
+<b>Art. 43</b>
+</num>
+<heading>Ergänzende Beschwerdeschrift</heading>
+<paragraph eId="art_43/para">
+<content>
+<blockList>
+<listIntroduction eId="art_43/para/listintro">Das Bundesgericht räumt den beschwerdeführenden Parteien auf Antrag eine angemessene Frist zur Ergänzung der Beschwerdebegründung ein, wenn:</listIntroduction>
+<item eId="art_43/para/lbl_a">
+<num>a. </num>
+<p>es eine Beschwerde auf dem Gebiet der internationalen Rechtshilfe in Strafsachen als zulässig erachtet; und</p>
+</item>
+<item eId="art_43/para/lbl_b">
+<num>b. </num>
+<p>der aussergewöhnliche Umfang oder die besondere Schwierigkeit der Beschwerdesache eine Ergänzung erfordert.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_2/sec_5">
+<num>5. Abschnitt: </num>
+<heading>Fristen</heading>
+<article eId="art_44">
+<num>
+<b>Art. 44</b>
+</num>
+<heading>Beginn</heading>
+<paragraph eId="art_44/para_1">
+<num>1</num>
+<content>
+<p> Fristen, die durch eine Mitteilung oder den Eintritt eines Ereignisses ausgelöst werden, beginnen am folgenden Tag zu laufen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_44/para_2">
+<num>2</num>
+<content>
+<p> Eine Mitteilung, die nur gegen Unterschrift des Adressaten oder der Adressatin oder einer anderen berechtigten Person überbracht wird, gilt spätestens am siebenten Tag nach dem ersten erfolglosen Zustellungsversuch als erfolgt.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_45">
+<num>
+<b>Art. 45</b>
+</num>
+<heading>Ende</heading>
+<paragraph eId="art_45/para_1">
+<num>1</num>
+<content>
+<p> Ist der letzte Tag der Frist ein Samstag, ein Sonntag oder ein vom Bundesrecht oder vom kantonalen Recht anerkannter Feiertag, so endet sie am nächstfolgenden Werktag.</p>
+</content>
+</paragraph>
+<paragraph eId="art_45/para_2">
+<num>2</num>
+<content>
+<p> Massgebend ist das Recht des Kantons, in dem die Partei oder ihr Vertreter beziehungsweise ihre Vertreterin den Wohnsitz oder den Sitz hat.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_46">
+<num>
+<b>Art. 46</b>
+</num>
+<heading>Stillstand</heading>
+<paragraph eId="art_46/para_1">
+<num>1</num>
+<content>
+<blockList>
+<listIntroduction eId="art_46/para_1/listintro"> Gesetzlich oder richterlich nach Tagen bestimmte Fristen stehen still:</listIntroduction>
+<item eId="art_46/para_1/lbl_a">
+<num>a. </num>
+<p>vom siebenten Tag vor Ostern bis und mit dem siebenten Tag nach Ostern;</p>
+</item>
+<item eId="art_46/para_1/lbl_b">
+<num>b. </num>
+<p>vom 15. Juli bis und mit dem 15. August;</p>
+</item>
+<item eId="art_46/para_1/lbl_c">
+<num>c. </num>
+<p>vom 18. Dezember bis und mit dem 2. Januar.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_46/para_2">
+<num>2</num>
+<content>
+<blockList>
+<listIntroduction eId="art_46/para_2/listintro"> Absatz 1 gilt nicht in Verfahren betreffend:</listIntroduction>
+<item eId="art_46/para_2/lbl_a">
+<num>a. </num>
+<p>die aufschiebende Wirkung und andere vorsorgliche Massnahmen; </p>
+</item>
+<item eId="art_46/para_2/lbl_b">
+<num>b. </num>
+<p>die Wechselbetreibung; </p>
+</item>
+<item eId="art_46/para_2/lbl_c">
+<num>c. </num>
+<p>Stimmrechtssachen (Art. 82 Bst. c); </p>
+</item>
+<item eId="art_46/para_2/lbl_d">
+<num>d. </num>
+<p>die internationale Rechtshilfe in Strafsachen und die internationale Amtshilfe in Steuersachen;</p>
+</item>
+<item eId="art_46/para_2/lbl_e">
+<num>e. </num>
+<p>die öffentlichen Beschaffungen.<authorialNote>
+<p> Fassung gemäss Anhang 7 Ziff. II 2 des BG vom 21. Juni 2019 über das öffentliche Beschaffungswesen, in Kraft seit 1. Jan. 2021 (<ref href="https://fedlex.data.admin.ch/eli/oc/2020/126">AS <b>2020</b> 641</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2017/417">BBl <b>2017</b> 1851</ref>).
+</p>
+</authorialNote>
+</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+</article>
+<article eId="art_47">
+<num>
+<b>Art. 47</b>
+</num>
+<heading>Erstreckung</heading>
+<paragraph eId="art_47/para_1">
+<num>1</num>
+<content>
+<p> Gesetzlich bestimmte Fristen können nicht erstreckt werden.</p>
+</content>
+</paragraph>
+<paragraph eId="art_47/para_2">
+<num>2</num>
+<content>
+<p> Richterlich bestimmte Fristen können aus zureichenden Gründen erstreckt werden, wenn das Gesuch vor Ablauf der Frist gestellt worden ist.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_48">
+<num>
+<b>Art. 48</b>
+</num>
+<heading>Einhaltung</heading>
+<paragraph eId="art_48/para_1">
+<num>1</num>
+<content>
+<p> Eingaben müssen spätestens am letzten Tag der Frist beim Bundesgericht eingereicht oder zu dessen Handen der Schweizerischen Post oder einer schweizerischen diplomatischen oder konsularischen Vertretung übergeben werden.</p>
+</content>
+</paragraph>
+<paragraph eId="art_48/para_2">
+<num>2</num>
+<content>
+<p> Im Falle der elektronischen Einreichung ist für die Wahrung einer Frist der Zeitpunkt massgebend, in dem die Quittung ausgestellt wird, die bestätigt, dass alle Schritte abgeschlossen sind, die auf der Seite der Partei für die Übermittlung notwendig sind.<authorialNote>
+<p> Fassung gemäss Anhang Ziff. II 2 des BG vom 18. März 2016 über die elektronische Signatur, in Kraft seit 1. Jan. 2017 (<ref href="https://fedlex.data.admin.ch/eli/oc/2016/752">AS <b>2016</b> 4651</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2014/171">BBl <b>2014</b> 1001</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+<paragraph eId="art_48/para_3">
+<num>3</num>
+<content>
+<p> Die Frist gilt auch als gewahrt, wenn die Eingabe rechtzeitig bei der Vorinstanz oder bei einer unzuständigen eidgenössischen oder kantonalen Behörde eingereicht worden ist. Die Eingabe ist unverzüglich dem Bundesgericht zu übermitteln.</p>
+</content>
+</paragraph>
+<paragraph eId="art_48/para_4">
+<num>4</num>
+<content>
+<p> Die Frist für die Zahlung eines Vorschusses oder für eine Sicherstellung ist gewahrt, wenn der Betrag rechtzeitig zu Gunsten des Bundesgerichts der Schweizerischen Post übergeben oder einem Post- oder Bankkonto in der Schweiz belastet worden ist.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_49">
+<num>
+<b>Art. 49</b>
+</num>
+<heading>Mangelhafte Eröffnung</heading>
+<paragraph eId="art_49/para">
+<content>
+<p>Aus mangelhafter Eröffnung, insbesondere wegen unrichtiger oder unvollständiger Rechtsmittelbelehrung oder wegen Fehlens einer vorgeschriebenen Rechtsmittelbelehrung, dürfen den Parteien keine Nachteile erwachsen.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_50">
+<num>
+<b>Art. 50</b>
+</num>
+<heading>Wiederherstellung</heading>
+<paragraph eId="art_50/para_1">
+<num>1</num>
+<content>
+<p> Ist eine Partei oder ihr Vertreter beziehungsweise ihre Vertreterin durch einen anderen Grund als die mangelhafte Eröffnung unverschuldeterweise abgehalten worden, fristgerecht zu handeln, so wird die Frist wiederhergestellt, sofern die Partei unter Angabe des Grundes innert 30 Tagen nach Wegfall des Hindernisses darum ersucht und die versäumte Rechtshandlung nachholt.</p>
+</content>
+</paragraph>
+<paragraph eId="art_50/para_2">
+<num>2</num>
+<content>
+<p> Wiederherstellung kann auch nach Eröffnung des Urteils bewilligt werden; wird sie bewilligt, so wird das Urteil aufgehoben.</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_2/sec_6">
+<num>6. Abschnitt: </num>
+<heading>Streitwert</heading>
+<article eId="art_51">
+<num>
+<b>Art. 51</b>
+</num>
+<heading>Berechnung</heading>
+<paragraph eId="art_51/para_1">
+<num>1</num>
+<content>
+<blockList>
+<listIntroduction eId="art_51/para_1/listintro"> Der Streitwert bestimmt sich:</listIntroduction>
+<item eId="art_51/para_1/lbl_a">
+<num>a. </num>
+<p>bei Beschwerden gegen Endentscheide nach den Begehren, die vor der Vorinstanz streitig geblieben waren;</p>
+</item>
+<item eId="art_51/para_1/lbl_b">
+<num>b. </num>
+<p>bei Beschwerden gegen Teilentscheide nach den gesamten Begehren, die vor der Instanz streitig waren, welche den Teilentscheid getroffen hat;</p>
+</item>
+<item eId="art_51/para_1/lbl_c">
+<num>c. </num>
+<p>bei Beschwerden gegen Vor- und Zwischenentscheide nach den Begehren, die vor der Instanz streitig sind, wo die Hauptsache hängig ist;</p>
+</item>
+<item eId="art_51/para_1/lbl_d">
+<num>d. </num>
+<p>bei Klagen nach den Begehren des Klägers oder der Klägerin.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_51/para_2">
+<num>2</num>
+<content>
+<p> Lautet ein Begehren nicht auf Bezahlung einer bestimmten Geldsumme, so setzt das Bundesgericht den Streitwert nach Ermessen fest.</p>
+</content>
+</paragraph>
+<paragraph eId="art_51/para_3">
+<num>3</num>
+<content>
+<p> Zinsen, Früchte, Gerichtskosten und Parteientschädigungen, die als Nebenrechte geltend gemacht werden, sowie Vorbehalte und die Kosten der Urteilsveröffentlichung fallen bei der Bestimmung des Streitwerts nicht in Betracht.</p>
+</content>
+</paragraph>
+<paragraph eId="art_51/para_4">
+<num>4</num>
+<content>
+<p> Als Wert wiederkehrender Nutzungen oder Leistungen gilt der Kapitalwert. Bei ungewisser oder unbeschränkter Dauer gilt als Kapitalwert der zwanzigfache Betrag der einjährigen Nutzung oder Leistung, bei Leibrenten jedoch der Barwert.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_52">
+<num>
+<b>Art. 52</b>
+</num>
+<heading>Zusammenrechnung</heading>
+<paragraph eId="art_52/para">
+<content>
+<p>Mehrere in einer vermögensrechtlichen Sache von der gleichen Partei oder von Streitgenossen und Streitgenossinnen geltend gemachte Begehren werden zusammengerechnet, sofern sie sich nicht gegenseitig ausschliessen.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_53">
+<num>
+<b>Art. 53</b>
+</num>
+<heading>Widerklage</heading>
+<paragraph eId="art_53/para_1">
+<num>1</num>
+<content>
+<p> Der Betrag einer Widerklage wird nicht mit demjenigen der Hauptklage zusammengerechnet.</p>
+</content>
+</paragraph>
+<paragraph eId="art_53/para_2">
+<num>2</num>
+<content>
+<p> Schliessen die in Hauptklage und Widerklage geltend gemachten Ansprüche einander aus und erreicht eine der beiden Klagen die Streitwertgrenze nicht, so gilt die Streitwertgrenze auch für diese Klage als erreicht, wenn sich die Beschwerde auf beide Klagen bezieht.</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_2/sec_7">
+<num>7. Abschnitt: </num>
+<heading>Verfahrenssprache</heading>
+<article eId="art_54">
+<num>
+<b>Art. 54</b>
+</num>
+<paragraph eId="art_54/para_1">
+<num>1</num>
+<content>
+<p> Das Verfahren wird in einer der Amtssprachen (Deutsch, Französisch, Italienisch, Rumantsch Grischun) geführt, in der Regel in der Sprache des angefochtenen Entscheids. Verwenden die Parteien eine andere Amtssprache, so kann das Verfahren in dieser Sprache geführt werden.</p>
+</content>
+</paragraph>
+<paragraph eId="art_54/para_2">
+<num>2</num>
+<content>
+<p> Bei Klageverfahren wird auf die Sprache der Parteien Rücksicht genommen, sofern es sich um eine Amtssprache handelt.</p>
+</content>
+</paragraph>
+<paragraph eId="art_54/para_3">
+<num>3</num>
+<content>
+<p> Reicht eine Partei Urkunden ein, die nicht in einer Amtssprache verfasst sind, so kann das Bundesgericht mit dem Einverständnis der anderen Parteien darauf verzichten, eine Übersetzung zu verlangen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_54/para_4">
+<num>4</num>
+<content>
+<p> Im Übrigen ordnet das Bundesgericht eine Übersetzung an, wo dies nötig ist.</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_2/sec_8">
+<num>8. Abschnitt: </num>
+<heading>Beweisverfahren</heading>
+<article eId="art_55">
+<num>
+<b>Art. 55</b>
+</num>
+<heading>Grundsatz</heading>
+<paragraph eId="art_55/para_1">
+<num>1</num>
+<content>
+<p> Das Beweisverfahren richtet sich nach den Artikeln 36, 37 und 39–65 des Bundesgesetzes vom 4. Dezember 1947<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/1948/485_473_421">SR <b>273</b>
+</ref>
+</p>
+</authorialNote> über den Bundeszivilprozess (BZP).</p>
+</content>
+</paragraph>
+<paragraph eId="art_55/para_2">
+<num>2</num>
+<content>
+<p> Der Instruktionsrichter oder die Instruktionsrichterin kann die notwendigen Beweismassnahmen selbst vornehmen oder der zuständigen eidgenössischen oder kantonalen Behörde übertragen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_55/para_3">
+<num>3</num>
+<content>
+<p> Zu Zeugeneinvernahmen, Augenschein und Parteiverhör zieht er oder sie einen zweiten Richter oder eine zweite Richterin bei.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_56">
+<num>
+<b>Art. 56</b>
+</num>
+<heading>Anwesenheit der Parteien und Urkundeneinsicht</heading>
+<paragraph eId="art_56/para_1">
+<num>1</num>
+<content>
+<p> Die Parteien sind berechtigt, der Beweiserhebung beizuwohnen und in die vorgelegten Urkunden Einsicht zu nehmen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_56/para_2">
+<num>2</num>
+<content>
+<p> Wo es zur Wahrung überwiegender öffentlicher oder privater Interessen notwendig ist, nimmt das Gericht von einem Beweismittel unter Ausschluss der Parteien oder der Gegenparteien Kenntnis.</p>
+</content>
+</paragraph>
+<paragraph eId="art_56/para_3">
+<num>3</num>
+<content>
+<p> Will das Gericht in diesem Fall auf das Beweismittel zum Nachteil einer Partei abstellen, so muss es ihr den für die Sache wesentlichen Inhalt desselben mitteilen und ihr ausserdem Gelegenheit geben, sich zu äussern und Gegenbeweismittel zu bezeichnen.</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_2/sec_9">
+<num>9. Abschnitt: </num>
+<heading>Urteilsverfahren</heading>
+<article eId="art_57">
+<num>
+<b>Art. 57</b>
+</num>
+<heading>Parteiverhandlung</heading>
+<paragraph eId="art_57/para">
+<content>
+<p>Der Abteilungspräsident oder die Abteilungspräsidentin kann eine mündliche Parteiverhandlung anordnen.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_58">
+<num>
+<b>Art. 58</b>
+</num>
+<heading>Beratung</heading>
+<paragraph eId="art_58/para_1">
+<num>1</num>
+<content>
+<blockList>
+<listIntroduction eId="art_58/para_1/listintro"> Das Bundesgericht berät den Entscheid mündlich:</listIntroduction>
+<item eId="art_58/para_1/lbl_a">
+<num>a. </num>
+<p>wenn der Abteilungspräsident beziehungsweise die Abteilungspräsidentin dies anordnet oder ein Richter beziehungsweise eine Richterin es verlangt;</p>
+</item>
+<item eId="art_58/para_1/lbl_b">
+<num>b. </num>
+<p>wenn sich keine Einstimmigkeit ergibt.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_58/para_2">
+<num>2</num>
+<content>
+<p> In den übrigen Fällen entscheidet das Bundesgericht auf dem Weg der Aktenzirkulation.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_59">
+<num>
+<b>Art. 59</b>
+</num>
+<heading>Öffentlichkeit</heading>
+<paragraph eId="art_59/para_1">
+<num>1</num>
+<content>
+<p> Parteiverhandlungen wie auch die mündlichen Beratungen und die darauf folgenden Abstimmungen sind öffentlich.</p>
+</content>
+</paragraph>
+<paragraph eId="art_59/para_2">
+<num>2</num>
+<content>
+<p> Wenn eine Gefährdung der Sicherheit, der öffentlichen Ordnung oder der Sittlichkeit zu befürchten ist oder das Interesse einer beteiligten Person es rechtfertigt, kann das Bundesgericht die Öffentlichkeit ganz oder teilweise ausschliessen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_59/para_3">
+<num>3</num>
+<content>
+<p> Das Bundesgericht legt das Dispositiv von Entscheiden, die nicht öffentlich beraten worden sind, nach dessen Eröffnung während 30 Tagen öffentlich auf.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_60">
+<num>
+<b>Art. 60</b>
+</num>
+<heading>Eröffnung des Entscheids</heading>
+<paragraph eId="art_60/para_1">
+<num>1</num>
+<content>
+<p> Die vollständige Ausfertigung des Entscheids wird, unter Angabe der mitwirkenden Gerichtspersonen, den Parteien, der Vorinstanz und allfälligen anderen Beteiligten eröffnet.</p>
+</content>
+</paragraph>
+<paragraph eId="art_60/para_2">
+<num>2</num>
+<content>
+<p> Hat das Bundesgericht den Entscheid in einer mündlichen Beratung getroffen, so teilt es den Beteiligten ohne Verzug das Dispositiv mit.</p>
+</content>
+</paragraph>
+<paragraph eId="art_60/para_3">
+<num>3</num>
+<content>
+<blockList>
+<listIntroduction eId="art_60/para_3/listintro"> Mit dem Einverständnis der Partei können Entscheide elektronisch eröffnet werden. Sie sind mit einer elektronischen Signatur gemäss Bundesgesetz vom 18. März 2016<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2016/752">SR <b>943.03</b>
+</ref>
+</p>
+</authorialNote> über die elektronische Signatur zu versehen. Das Bundesgericht regelt in einem Reglement:</listIntroduction>
+<item eId="art_60/para_3/lbl_a">
+<num>a. </num>
+<p>die zu verwendende Signatur;</p>
+</item>
+<item eId="art_60/para_3/lbl_b">
+<num>b. </num>
+<p>das Format des Entscheids und seiner Beilagen;</p>
+</item>
+<item eId="art_60/para_3/lbl_c">
+<num>c. </num>
+<p>die Art und Weise der Übermittlung;</p>
+</item>
+<item eId="art_60/para_3/lbl_d">
+<num>d. </num>
+<p>den Zeitpunkt, zu dem der Entscheid als eröffnet gilt.<authorialNote>
+<p> Fassung gemäss Anhang Ziff. II 2 des BG vom 18. März 2016 über die elektronische Signatur, in Kraft seit 1. Jan. 2017 (<ref href="https://fedlex.data.admin.ch/eli/oc/2016/752">AS <b>2016</b> 4651</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2014/171">BBl <b>2014</b> 1001</ref>).
+</p>
+</authorialNote>
+</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+</article>
+<article eId="art_61">
+<num>
+<b>Art. 61</b>
+</num>
+<heading>Rechtskraft</heading>
+<paragraph eId="art_61/para">
+<content>
+<p>Entscheide des Bundesgerichts erwachsen am Tag ihrer Ausfällung in Rechtskraft.</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_2/sec_10">
+<num>10. Abschnitt: </num>
+<heading>Kosten</heading>
+<article eId="art_62">
+<num>
+<b>Art. 62</b>
+</num>
+<heading>Sicherstellung der Gerichtskosten und der Parteientschädigung</heading>
+<paragraph eId="art_62/para_1">
+<num>1</num>
+<content>
+<p> Die Partei, die das Bundesgericht anruft, hat einen Kostenvorschuss in der Höhe der mutmasslichen Gerichtskosten zu leisten. Wenn besondere Gründe vorliegen, kann auf die Erhebung des Kostenvorschusses ganz oder teilweise verzichtet werden.</p>
+</content>
+</paragraph>
+<paragraph eId="art_62/para_2">
+<num>2</num>
+<content>
+<p> Wenn die Partei in der Schweiz keinen festen Wohnsitz hat oder nachweislich zahlungsunfähig ist, kann sie auf Begehren der Gegenpartei zur Sicherstellung einer allfälligen Parteientschädigung verpflichtet werden.</p>
+</content>
+</paragraph>
+<paragraph eId="art_62/para_3">
+<num>3</num>
+<content>
+<p> Der Instruktionsrichter oder die Instruktionsrichterin setzt zur Leistung des Kostenvorschusses oder der Sicherstellung eine angemessene Frist. Läuft diese unbenutzt ab, so setzt der Instruktionsrichter oder die Instruktionsrichterin der Partei eine Nachfrist. Wird der Kostenvorschuss oder die Sicherheit auch innert der Nachfrist nicht geleistet, so tritt das Bundesgericht auf die Eingabe nicht ein.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_63">
+<num>
+<b>Art. 63</b>
+</num>
+<heading>Vorschuss für Barauslagen</heading>
+<paragraph eId="art_63/para_1">
+<num>1</num>
+<content>
+<p> Jede Partei hat die Barauslagen vorzuschiessen, die im Laufe des Verfahrens infolge ihrer Anträge entstehen, und anteilsmässig die Barauslagen, die durch gemeinschaftliche Anträge der Parteien oder durch das Bundesgericht von Amtes wegen veranlasst werden.</p>
+</content>
+</paragraph>
+<paragraph eId="art_63/para_2">
+<num>2</num>
+<content>
+<p> Der Instruktionsrichter oder die Instruktionsrichterin setzt zur Leistung des Vorschusses eine angemessene Frist. Läuft diese unbenutzt ab, so setzt der Instruktionsrichter oder die Instruktionsrichterin der Partei eine Nachfrist. Wird der Vorschuss auch innert der Nachfrist nicht geleistet, so unterbleibt die Handlung, deren Kosten zu decken sind.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_64">
+<num>
+<b>Art. 64</b>
+</num>
+<heading>Unentgeltliche Rechtspflege</heading>
+<paragraph eId="art_64/para_1">
+<num>1</num>
+<content>
+<p> Das Bundesgericht befreit eine Partei, die nicht über die erforderlichen Mittel verfügt, auf Antrag von der Bezahlung der Gerichtskosten und von der Sicherstellung der Parteientschädigung, sofern ihr Rechtsbegehren nicht aussichtslos erscheint.</p>
+</content>
+</paragraph>
+<paragraph eId="art_64/para_2">
+<num>2</num>
+<content>
+<p> Wenn es zur Wahrung ihrer Rechte notwendig ist, bestellt das Bundesgericht der Partei einen Anwalt oder eine Anwältin. Der Anwalt oder die Anwältin hat Anspruch auf eine angemessene Entschädigung aus der Gerichtskasse, soweit der Aufwand für die Vertretung nicht aus einer zugesprochenen Parteientschädigung gedeckt werden kann.</p>
+</content>
+</paragraph>
+<paragraph eId="art_64/para_3">
+<num>3</num>
+<content>
+<p> Über das Gesuch um unentgeltliche Rechtspflege entscheidet die Abteilung in der Besetzung mit drei Richtern oder Richterinnen. Vorbehalten bleiben Fälle, die im vereinfachten Verfahren nach Artikel 108 behandelt werden. Der Instruktionsrichter oder die Instruktionsrichterin kann die unentgeltliche Rechtspflege selbst gewähren, wenn keine Zweifel bestehen, dass die Voraussetzungen erfüllt sind.</p>
+</content>
+</paragraph>
+<paragraph eId="art_64/para_4">
+<num>4</num>
+<content>
+<p> Die Partei hat der Gerichtskasse Ersatz zu leisten, wenn sie später dazu in der Lage ist.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_65">
+<num>
+<b>Art. 65</b>
+</num>
+<heading>Gerichtskosten</heading>
+<paragraph eId="art_65/para_1">
+<num>1</num>
+<content>
+<p> Die Gerichtskosten bestehen in der Gerichtsgebühr, der Gebühr für das Kopieren von Rechtsschriften, den Auslagen für Übersetzungen, ausgenommen solche zwischen Amtssprachen, und den Entschädigungen für Sachverständige sowie für Zeugen und Zeuginnen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_65/para_2">
+<num>2</num>
+<content>
+<p> Die Gerichtsgebühr richtet sich nach Streitwert, Umfang und Schwierigkeit der Sache, Art der Prozessführung und finanzieller Lage der Parteien.</p>
+</content>
+</paragraph>
+<paragraph eId="art_65/para_3">
+<num>3</num>
+<content>
+<blockList>
+<listIntroduction eId="art_65/para_3/listintro"> Sie beträgt in der Regel:</listIntroduction>
+<item eId="art_65/para_3/lbl_a">
+<num>a. </num>
+<p>in Streitigkeiten ohne Vermögensinteresse 200–5000 Franken;</p>
+</item>
+<item eId="art_65/para_3/lbl_b">
+<num>b. </num>
+<p>in den übrigen Streitigkeiten 200–100 000 Franken.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_65/para_4">
+<num>4</num>
+<content>
+<blockList>
+<listIntroduction eId="art_65/para_4/listintro"> Sie beträgt 200–1000 Franken und wird nicht nach dem Streitwert bemessen in Streitigkeiten:</listIntroduction>
+<item eId="art_65/para_4/lbl_a">
+<num>a. </num>
+<p>über Sozialversicherungsleistungen;</p>
+</item>
+<item eId="art_65/para_4/lbl_b">
+<num>b. </num>
+<p>über Diskriminierungen auf Grund des Geschlechts;</p>
+</item>
+<item eId="art_65/para_4/lbl_c">
+<num>c. </num>
+<p>aus einem Arbeitsverhältnis mit einem Streitwert bis zu 30 000 Franken;</p>
+</item>
+<item eId="art_65/para_4/lbl_d">
+<num>d. </num>
+<p>nach den Artikeln 7 und 8 des Behindertengleichstellungsgesetzes vom 13. Dezember 2002<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2003/667">SR <b>151.3</b>
+</ref>
+</p>
+</authorialNote>.
+</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_65/para_5">
+<num>5</num>
+<content>
+<p> Wenn besondere Gründe es rechtfertigen, kann das Bundesgericht bei der Bestimmung der Gerichtsgebühr über die Höchstbeträge hinausgehen, jedoch höchstens bis zum doppelten Betrag in den Fällen von Absatz 3 und bis zu 10 000 Franken in den Fällen von Absatz 4.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_66">
+<num>
+<b>Art. 66</b>
+</num>
+<heading>Erhebung und Verteilung der Gerichtskosten</heading>
+<paragraph eId="art_66/para_1">
+<num>1</num>
+<content>
+<p> Die Gerichtskosten werden in der Regel der unterliegenden Partei auferlegt. Wenn die Umstände es rechtfertigen, kann das Bundesgericht die Kosten anders verteilen oder darauf verzichten, Kosten zu erheben.</p>
+</content>
+</paragraph>
+<paragraph eId="art_66/para_2">
+<num>2</num>
+<content>
+<p> Wird ein Fall durch Abstandserklärung oder Vergleich erledigt, so kann auf die Erhebung von Gerichtskosten ganz oder teilweise verzichtet werden.</p>
+</content>
+</paragraph>
+<paragraph eId="art_66/para_3">
+<num>3</num>
+<content>
+<p> Unnötige Kosten hat zu bezahlen, wer sie verursacht.</p>
+</content>
+</paragraph>
+<paragraph eId="art_66/para_4">
+<num>4</num>
+<content>
+<p> Dem Bund, den Kantonen und den Gemeinden sowie mit öffentlich-rechtlichen Aufgaben betrauten Organisationen dürfen in der Regel keine Gerichtskosten auferlegt werden, wenn sie in ihrem amtlichen Wirkungskreis, ohne dass es sich um ihr Vermögensinteresse handelt, das Bundesgericht in Anspruch nehmen oder wenn gegen ihre Entscheide in solchen Angelegenheiten Beschwerde geführt worden ist.</p>
+</content>
+</paragraph>
+<paragraph eId="art_66/para_5">
+<num>5</num>
+<content>
+<p> Mehrere Personen haben die ihnen gemeinsam auferlegten Gerichtskosten, wenn nichts anderes bestimmt ist, zu gleichen Teilen und unter solidarischer Haftung zu tragen.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_67">
+<num>
+<b>Art. 67</b>
+</num>
+<heading>Kosten der Vorinstanz</heading>
+<paragraph eId="art_67/para">
+<content>
+<p>Wird der angefochtene Entscheid geändert, so kann das Bundesgericht die Kosten des vorangegangenen Verfahrens anders verteilen.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_68">
+<num>
+<b>Art. 68</b>
+</num>
+<heading>Parteientschädigung</heading>
+<paragraph eId="art_68/para_1">
+<num>1</num>
+<content>
+<p> Das Bundesgericht bestimmt im Urteil, ob und in welchem Mass die Kosten der obsiegenden Partei von der unterliegenden zu ersetzen sind.</p>
+</content>
+</paragraph>
+<paragraph eId="art_68/para_2">
+<num>2</num>
+<content>
+<p> Die unterliegende Partei wird in der Regel verpflichtet, der obsiegenden Partei nach Massgabe des Tarifs des Bundesgerichts alle durch den Rechtsstreit verursachten notwendigen Kosten zu ersetzen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_68/para_3">
+<num>3</num>
+<content>
+<p> Bund, Kantonen und Gemeinden sowie mit öffentlich-rechtlichen Aufgaben betrauten Organisationen wird in der Regel keine Parteientschädigung zugesprochen, wenn sie in ihrem amtlichen Wirkungskreis obsiegen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_68/para_4">
+<num>4</num>
+<content>
+<p> Artikel 66 Absätze 3 und 5 ist sinngemäss anwendbar.</p>
+</content>
+</paragraph>
+<paragraph eId="art_68/para_5">
+<num>5</num>
+<content>
+<p> Der Entscheid der Vorinstanz über die Parteientschädigung wird vom Bundesgericht je nach Ausgang des Verfahrens bestätigt, aufgehoben oder geändert. Dabei kann das Gericht die Entschädigung nach Massgabe des anwendbaren eidgenössischen oder kantonalen Tarifs selbst festsetzen oder die Festsetzung der Vorinstanz übertragen.</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_2/sec_11">
+<num>11. Abschnitt: </num>
+<heading>Vollstreckung</heading>
+<article eId="art_69">
+<num>
+<b>Art. 69</b>
+</num>
+<heading>Entscheide auf Geldleistung</heading>
+<paragraph eId="art_69/para">
+<content>
+<p>Entscheide, die zur Zahlung einer Geldsumme oder zur Sicherheitsleistung in Geld verpflichten, werden nach dem Bundesgesetz vom 11. April 1889<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/11/529_488_529">SR <b>281.1</b>
+</ref>
+</p>
+</authorialNote> über Schuldbetreibung und Konkurs vollstreckt.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_70">
+<num>
+<b>Art. 70</b>
+</num>
+<heading>Andere Entscheide</heading>
+<paragraph eId="art_70/para_1">
+<num>1</num>
+<content>
+<p> Entscheide des Bundesgerichts, die nicht zur Zahlung einer Geldsumme oder zur Sicherheitsleistung in Geld verpflichten, sind von den Kantonen in gleicher Weise zu vollstrecken wie die rechtskräftigen Urteile ihrer Gerichte.</p>
+</content>
+</paragraph>
+<paragraph eId="art_70/para_2">
+<num>2</num>
+<content>
+<blockList>
+<listIntroduction eId="art_70/para_2/listintro"> Sie sind hingegen nach folgenden Bestimmungen zu vollstrecken:</listIntroduction>
+<item eId="art_70/para_2/lbl_a">
+<num>a. </num>
+<p>nach den Artikeln 41–43 des Bundesgesetzes vom 20. Dezember 1968<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/1969/737_757_755">SR <b>172.021</b>
+</ref>
+</p>
+</authorialNote> über das Verwaltungsverfahren: wenn das Bundesgericht in einer Sache entschieden hat, die erstinstanzlich in die Zuständigkeit einer Bundesverwaltungsbehörde fällt;</p>
+</item>
+<item eId="art_70/para_2/lbl_b">
+<num>b. </num>
+<p>nach den Artikeln 74–78 BZP<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/1948/485_473_421">SR <b>273</b>
+</ref>
+</p>
+</authorialNote>: wenn das Bundesgericht auf Klage hin entschieden hat;</p>
+</item>
+<item eId="art_70/para_2/lbl_c">
+<num>c. </num>
+<p>nach den Artikeln 74 und 75 des Strafbehördenorganisationsgesetzes vom 19. März 2010<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2010/444">SR <b>173.71</b>
+</ref>
+</p>
+</authorialNote>: wenn das Bundesgericht in Strafsachen entschieden hat, die der Bundesgerichtsbarkeit unterstehen.<authorialNote>
+<p> Fassung gemäss Anhang Ziff. II 5 des Strafbehördenorganisationsgesetzes vom  19. März 2010, in Kraft seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/444">AS <b>2010</b> 3267</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2008/1395">BBl <b>2008</b> 8125</ref>).
+</p>
+</authorialNote>
+</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_70/para_3">
+<num>3</num>
+<content>
+<p> …<authorialNote>
+<p> Aufgehoben durch Anhang Ziff. II 5 des Strafbehördenorganisationsgesetzes vom  19. März 2010, mit Wirkung seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/444">AS <b>2010</b> 3267</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2008/1395">BBl <b>2008</b> 8125</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+<paragraph eId="art_70/para_4">
+<num>4</num>
+<content>
+<p> Im Falle mangelhafter Vollstreckung kann beim Bundesrat Beschwerde geführt werden. Dieser trifft die erforderlichen Massnahmen.</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_2/sec_12">
+<num>12. Abschnitt: </num>
+<heading>Ergänzendes Recht</heading>
+<article eId="art_71">
+<num>
+<b>Art. 71</b>
+</num>
+<paragraph eId="art_71/para">
+<content>
+<p>Wo dieses Gesetz keine besonderen Bestimmungen über das Verfahren enthält, sind die Vorschriften des BZP<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/1948/485_473_421">SR <b>273</b>
+</ref>
+</p>
+</authorialNote> sinngemäss anwendbar.</p>
+</content>
+</paragraph>
+</article>
+</section>
+</chapter>
+<chapter eId="chap_3">
+<num>3. Kapitel: </num>
+<heading>Das Bundesgericht als ordentliche Beschwerdeinstanz</heading>
+<section eId="chap_3/sec_1">
+<num>1. Abschnitt: </num>
+<heading>Beschwerde in Zivilsachen</heading>
+<article eId="art_72">
+<num>
+<b>Art. 72</b>
+</num>
+<heading>Grundsatz</heading>
+<paragraph eId="art_72/para_1">
+<num>1</num>
+<content>
+<p> Das Bundesgericht beurteilt Beschwerden gegen Entscheide in Zivilsachen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_72/para_2">
+<num>2</num>
+<content>
+<blockList>
+<listIntroduction eId="art_72/para_2/listintro"> Der Beschwerde in Zivilsachen unterliegen auch:</listIntroduction>
+<item eId="art_72/para_2/lbl_a">
+<num>a. </num>
+<p>Entscheide in Schuldbetreibungs- und Konkurssachen;</p>
+</item>
+<item eId="art_72/para_2/lbl_b">
+<num>b. </num>
+<blockList>
+<listIntroduction eId="art_72/para_2/lbl_b/listintro">öffentlich-rechtliche Entscheide, die in unmittelbarem Zusammenhang mit Zivilrecht stehen, insbesondere Entscheide:</listIntroduction>
+<item eId="art_72/para_2/lbl_b/lbl_1">
+<num>1. </num>
+<p>über die Anerkennung und Vollstreckung von Entscheiden und über die Rechtshilfe in Zivilsachen,</p>
+</item>
+<item eId="art_72/para_2/lbl_b/lbl_2">
+<num>2. </num>
+<p>über die Führung des Grundbuchs, des Zivilstands- und des Handelsregisters sowie der Register für Marken, Muster und Modelle, Erfindungspatente, Pflanzensorten und Topografien,</p>
+</item>
+<item eId="art_72/para_2/lbl_b/lbl_3">
+<num>3. </num>
+<p>über die Bewilligung zur Namensänderung,</p>
+</item>
+<item eId="art_72/para_2/lbl_b/lbl_4">
+<num>4. </num>
+<p>auf dem Gebiet der Aufsicht über die Stiftungen mit Ausnahme der Vorsorge- und Freizügigkeitseinrichtungen,</p>
+</item>
+<item eId="art_72/para_2/lbl_b/lbl_5">
+<num>5.<authorialNote>
+<p> Fassung gemäss Anhang Ziff. 5 des BG vom 19. Dez. 2008 (Erwachsenenschutz, Personenrecht und Kindesrecht), in Kraft seit 1. Jan. 2013 (<ref href="https://fedlex.data.admin.ch/eli/oc/2011/114">AS <b>2011</b> 725</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/899">BBl <b>2006</b> 7001</ref>).
+</p>
+</authorialNote>
+</num>
+<p>auf dem Gebiet der Aufsicht über die Willensvollstrecker und ‑vollstreckerinnen und andere erbrechtliche Vertreter und Vertreterinnen,</p>
+</item>
+<item eId="art_72/para_2/lbl_b/lbl_6">
+<num>6.<authorialNote>
+<p> Fassung gemäss Anhang Ziff. 5 des BG vom 19. Dez. 2008 (Erwachsenenschutz, Personenrecht und Kindesrecht), in Kraft seit 1. Jan. 2013 (<ref href="https://fedlex.data.admin.ch/eli/oc/2011/114">AS <b>2011</b> 725</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/899">BBl <b>2006</b> 7001</ref>).
+</p>
+</authorialNote>
+</num>
+<p>auf dem Gebiet des Kindes- und Erwachsenenschutzes,</p>
+</item>
+<item eId="art_72/para_2/lbl_b/lbl_7">
+<num>7.<authorialNote>
+<p> Aufgehoben durch Anhang Ziff. 5 des BG vom 19. Dez. 2008 (Erwachsenenschutz, Personenrecht und Kindesrecht), mit Wirkung seit 1. Jan. 2013 (<ref href="https://fedlex.data.admin.ch/eli/oc/2011/114">AS <b>2011</b> 725</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/899">BBl <b>2006</b> 7001</ref>).
+</p>
+</authorialNote>
+</num>
+<p>…</p>
+</item>
+</blockList>
+</item>
+</blockList>
+</content>
+</paragraph>
+</article>
+<article eId="art_73">
+<num>
+<b>Art. 73</b>
+</num>
+<heading>Ausnahme</heading>
+<paragraph eId="art_73/para">
+<content>
+<p>Die Beschwerde ist unzulässig gegen Entscheide, die im Rahmen des Widerspruchsverfahrens gegen eine Marke getroffen worden sind.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_74">
+<num>
+<b>Art. 74</b>
+</num>
+<heading>Streitwertgrenze</heading>
+<paragraph eId="art_74/para_1">
+<num>1</num>
+<content>
+<blockList>
+<listIntroduction eId="art_74/para_1/listintro"> In vermögensrechtlichen Angelegenheiten ist die Beschwerde nur zulässig, wenn der Streitwert mindestens beträgt:</listIntroduction>
+<item eId="art_74/para_1/lbl_a">
+<num>a. </num>
+<p>15 000 Franken in arbeits- und mietrechtlichen Fällen;</p>
+</item>
+<item eId="art_74/para_1/lbl_b">
+<num>b. </num>
+<p>30 000 Franken in allen übrigen Fällen.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_74/para_2">
+<num>2</num>
+<content>
+<blockList>
+<listIntroduction eId="art_74/para_2/listintro"> Erreicht der Streitwert den massgebenden Betrag nach Absatz 1 nicht, so ist die Beschwerde dennoch zulässig:</listIntroduction>
+<item eId="art_74/para_2/lbl_a">
+<num>a. </num>
+<p>wenn sich eine Rechtsfrage von grundsätzlicher Bedeutung stellt;</p>
+</item>
+<item eId="art_74/para_2/lbl_b">
+<num>b.<authorialNote>
+<p> Fassung gemäss Anhang 1 Ziff. II 2 der Zivilprozessordnung vom 19. Dez. 2008, in Kraft seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/262">AS <b>2010</b> 1739</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/914">BBl <b>2006</b> 7221</ref>).
+</p>
+</authorialNote>
+</num>
+<p>wenn ein Bundesgesetz eine einzige kantonale Instanz vorsieht;</p>
+</item>
+<item eId="art_74/para_2/lbl_c">
+<num>c. </num>
+<p>gegen Entscheide der kantonalen Aufsichtsbehörden in Schuldbetreibungs- und Konkurssachen;</p>
+</item>
+<item eId="art_74/para_2/lbl_d">
+<num>d. </num>
+<p>gegen Entscheide des Konkurs- und Nachlassrichters oder der Konkurs- und Nachlassrichterin;</p>
+</item>
+<item eId="art_74/para_2/lbl_e">
+<num>e.<authorialNote>
+<p> Eingefügt durch Anhang Ziff. 2 des BG vom 20. März 2009 über das Bundespatentgericht, in Kraft seit 1. Jan. 2012 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/72">AS <b>2010</b> 513</ref>,<ref href="https://fedlex.data.admin.ch/eli/oc/2011/306">
+<b>2011</b> 2241</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2008/145">BBl <b>2008</b> 455</ref>).
+</p>
+</authorialNote>
+</num>
+<p>gegen Entscheide des Bundespatentgerichts.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+</article>
+<article eId="art_75">
+<num>
+<b>Art. 75</b>
+</num>
+<heading>Vorinstanzen</heading>
+<paragraph eId="art_75/para_1">
+<num>1</num>
+<content>
+<p> Die Beschwerde ist zulässig gegen Entscheide letzter kantonaler Instanzen, des Bundesverwaltungsgerichts und des Bundespatentgerichts.<authorialNote>
+<p> Fassung gemäss Anhang Ziff. 2 des BG vom 20. März 2009 über das Bundespatentgericht, in Kraft seit 1. Jan. 2012 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/72">AS <b>2010</b> 513</ref>,<ref href="https://fedlex.data.admin.ch/eli/oc/2011/306">
+<b>2011</b> 2241</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2008/145">BBl <b>2008</b> 455</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+<paragraph eId="art_75/para_2">
+<num>2</num>
+<content>
+<blockList>
+<listIntroduction eId="art_75/para_2/listintro"> Die Kantone setzen als letzte kantonale Instanzen obere Gerichte ein. Diese entscheiden als Rechtsmittelinstanzen; ausgenommen sind die Fälle, in denen:</listIntroduction>
+<item eId="art_75/para_2/lbl_a">
+<num>a.<authorialNote>
+<p> Fassung gemäss Anhang 1 Ziff. II 2 der Zivilprozessordnung vom 19. Dez. 2008, in Kraft seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/262">AS <b>2010</b> 1739</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/914">BBl <b>2006</b> 7221</ref>).
+</p>
+</authorialNote>
+</num>
+<p>ein Bundesgesetz eine einzige kantonale Instanz vorsieht;</p>
+</item>
+<item eId="art_75/para_2/lbl_b">
+<num>b. </num>
+<p>ein Fachgericht für handelsrechtliche Streitigkeiten als einzige kantonale Instanz entscheidet;</p>
+</item>
+<item eId="art_75/para_2/lbl_c">
+<num>c.<authorialNote>
+<p> Fassung gemäss Anhang 1 Ziff. II 2 der Zivilprozessordnung vom 19. Dez. 2008, in Kraft seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/262">AS <b>2010</b> 1739</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/914">BBl <b>2006</b> 7221</ref>).
+</p>
+</authorialNote>
+</num>
+<p>eine Klage mit einem Streitwert von mindestens 100 000 Franken mit Zustimmung aller Parteien direkt beim oberen Gericht eingereicht wurde.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+</article>
+<article eId="art_76">
+<num>
+<b>Art. 76</b>
+</num>
+<heading>Beschwerderecht</heading>
+<paragraph eId="art_76/para_1">
+<num>1</num>
+<content>
+<blockList>
+<listIntroduction eId="art_76/para_1/listintro"> Zur Beschwerde in Zivilsachen ist berechtigt, wer:</listIntroduction>
+<item eId="art_76/para_1/lbl_a">
+<num>a. </num>
+<p>vor der Vorinstanz am Verfahren teilgenommen hat oder keine Möglichkeit zur Teilnahme erhalten hat; und</p>
+</item>
+<item eId="art_76/para_1/lbl_b">
+<num>b.<authorialNote>
+<p> Fassung gemäss Anhang 1 Ziff. II 2 der Zivilprozessordnung vom 19. Dez. 2008, in Kraft seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/262">AS <b>2010</b> 1739</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/914">BBl <b>2006</b> 7221</ref>).
+</p>
+</authorialNote>
+</num>
+<p>durch den angefochtenen Entscheid besonders berührt ist und ein schutzwürdiges Interesse an dessen Aufhebung oder Änderung hat.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_76/para_2">
+<num>2</num>
+<content>
+<p> Gegen Entscheide nach Artikel 72 Absatz 2 steht das Beschwerderecht auch der Bundeskanzlei, den Departementen des Bundes oder, soweit das Bundesrecht es vorsieht, den ihnen unterstellten Dienststellen zu, wenn der angefochtene Entscheid die Bundesgesetzgebung in ihrem Aufgabenbereich verletzen kann.<authorialNote>
+<p> Fassung gemäss Anhang 1 Ziff. II 2 der Zivilprozessordnung vom 19. Dez. 2008, in Kraft seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/262">AS <b>2010</b> 1739</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/914">BBl <b>2006</b> 7221</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_77">
+<num>
+<b>Art. 77</b>
+</num>
+<heading>Schiedsgerichtsbarkeit<authorialNote>
+<p> Fassung gemäss Anhang 1 Ziff. II 2 der Zivilprozessordnung vom 19. Dez. 2008, in Kraft seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/262">AS <b>2010</b> 1739</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/914">BBl <b>2006</b> 7221</ref>).
+</p>
+</authorialNote>
+</heading>
+<paragraph eId="art_77/para_1">
+<num>1</num>
+<content>
+<blockList>
+<listIntroduction eId="art_77/para_1/listintro"> Die Beschwerde in Zivilsachen ist ungeachtet des Streitwerts zulässig gegen Entscheide von Schiedsgerichten:<authorialNote>
+<p> Fassung gemäss Anhang Ziff. 1 des BG vom 19. Juni 2020, in Kraft seit 1. Jan. 2021 (<ref href="https://fedlex.data.admin.ch/eli/oc/2020/767">AS <b>2020</b> 4179</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2018/2548">BBl <b>2018</b> 7163</ref>).
+</p>
+</authorialNote>
+</listIntroduction>
+<item eId="art_77/para_1/lbl_a">
+<num>a. </num>
+<p>in der internationalen Schiedsgerichtsbarkeit unter den Voraussetzungen der Artikel 190–192 des Bundesgesetzes vom 18. Dezember 1987<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/1988/1776_1776_1776">SR <b>291</b>
+</ref>
+</p>
+</authorialNote> über das Internationale Privatrecht;</p>
+</item>
+<item eId="art_77/para_1/lbl_b">
+<num>b. </num>
+<p>in der nationalen Schiedsgerichtsbarkeit unter den Voraussetzungen der Artikel 389–395 der Zivilprozessordnung vom 19. Dezember 2008<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2010/262">SR <b>272</b>
+</ref>
+</p>
+</authorialNote>.<authorialNote>
+<p> Fassung gemäss Anhang 1 Ziff. II 2 der Zivilprozessordnung vom 19. Dez. 2008, in Kraft seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/262">AS <b>2010</b> 1739</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/914">BBl <b>2006</b> 7221</ref>).
+</p>
+</authorialNote>
+</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_77/para_2">
+<num>2</num>
+<content>
+<p> Die Artikel 48 Absatz 3, 90–98, 103 Absatz 2, 105 Absatz 2, 106 Absatz 1 sowie 107 Absatz 2, soweit dieser dem Bundesgericht erlaubt, in der Sache selbst zu entscheiden, sind in diesen Fällen nicht anwendbar.<authorialNote>
+<p> Fassung gemäss Anhang 1 Ziff. II 2 der Zivilprozessordnung vom 19. Dez. 2008, in Kraft seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/262">AS <b>2010</b> 1739</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/914">BBl <b>2006</b> 7221</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+<paragraph eId="art_77/para_2_bis">
+<num>2bis</num>
+<content>
+<p> Rechtsschriften können in englischer Sprache abgefasst werden.<authorialNote>
+<p> Eingefügt durch Anhang Ziff. 1 des BG vom 19. Juni 2020, in Kraft seit 1. Jan. 2021 (<ref href="https://fedlex.data.admin.ch/eli/oc/2020/767">AS <b>2020</b> 4179</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2018/2548">BBl <b>2018</b> 7163</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+<paragraph eId="art_77/para_3">
+<num>3</num>
+<content>
+<p> Das Bundesgericht prüft nur Rügen, die in der Beschwerde vorgebracht und begründet worden sind.</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_3/sec_2">
+<num>2. Abschnitt: </num>
+<heading>Beschwerde in Strafsachen</heading>
+<article eId="art_78">
+<num>
+<b>Art. 78</b>
+</num>
+<heading>Grundsatz</heading>
+<paragraph eId="art_78/para_1">
+<num>1</num>
+<content>
+<p> Das Bundesgericht beurteilt Beschwerden gegen Entscheide in Strafsachen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_78/para_2">
+<num>2</num>
+<content>
+<blockList>
+<listIntroduction eId="art_78/para_2/listintro"> Der Beschwerde in Strafsachen unterliegen auch Entscheide über:</listIntroduction>
+<item eId="art_78/para_2/lbl_a">
+<num>a. </num>
+<p>Zivilansprüche, wenn diese zusammen mit der Strafsache zu behandeln sind;</p>
+</item>
+<item eId="art_78/para_2/lbl_b">
+<num>b. </num>
+<p>den Vollzug von Strafen und Massnahmen.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+</article>
+<article eId="art_79">
+<num>
+<b>Art. 79</b>
+</num>
+<heading>Ausnahme</heading>
+<paragraph eId="art_79/para">
+<content>
+<p>Die Beschwerde ist unzulässig gegen Entscheide der Beschwerdekammer des Bundesstrafgerichts, soweit es sich nicht um Entscheide über Zwangsmassnahmen handelt.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_80">
+<num>
+<b>Art. 80</b>
+</num>
+<heading>Vorinstanzen</heading>
+<paragraph eId="art_80/para_1">
+<num>1</num>
+<content>
+<p> Die Beschwerde ist zulässig gegen Entscheide letzter kantonaler Instanzen und gegen Entscheide der Beschwerdekammer und der Berufungskammer des Bundesstrafgerichts.<authorialNote>
+<p> Fassung gemäss Ziff. II 1 des BG vom 17. März 2017 (Schaffung einer Berufungskammer am Bundesstrafgericht), in Kraft seit 1. Jan. 2019 (<ref href="https://fedlex.data.admin.ch/eli/oc/2017/624">AS <b>2017</b> 5769</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2013/1333">BBl <b>2013</b> 7109</ref>,<ref href="https://fedlex.data.admin.ch/eli/fga/2016/1190">
+<b>2016</b> 6199</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+<paragraph eId="art_80/para_2">
+<num>2</num>
+<content>
+<p> Die Kantone setzen als letzte kantonale Instanzen obere Gerichte ein. Diese entscheiden als Rechtsmittelinstanzen. Ausgenommen sind die Fälle, in denen nach der Strafprozessordnung vom 5. Oktober 2007<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2010/267">SR <b>312.0</b>
+</ref>
+</p>
+</authorialNote> (StPO) ein Zwangsmassnahmegericht oder ein anderes Gericht als einzige kantonale Instanz entscheidet.<authorialNote>
+<p> Dritter Satz eingefügt durch Anhang Ziff. II 5 des Strafbehördenorganisationsgesetzes vom 19. März 2010, in Kraft seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/444">AS <b>2010</b> 3267</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2008/1395">BBl <b>2008</b> 8125</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_81">
+<num>
+<b>Art. 81</b>
+</num>
+<heading>Beschwerderecht</heading>
+<paragraph eId="art_81/para_1">
+<num>1</num>
+<content>
+<blockList>
+<listIntroduction eId="art_81/para_1/listintro"> Zur Beschwerde in Strafsachen ist berechtigt, wer:</listIntroduction>
+<item eId="art_81/para_1/lbl_a">
+<num>a. </num>
+<p>vor der Vorinstanz am Verfahren teilgenommen hat oder keine Möglichkeit zur Teilnahme erhalten hat; und</p>
+</item>
+<item eId="art_81/para_1/lbl_b">
+<num>b. </num>
+<blockList>
+<listIntroduction eId="art_81/para_1/lbl_b/listintro">ein rechtlich geschütztes Interesse an der Aufhebung oder Änderung des angefochtenen Entscheids hat, insbesondere:</listIntroduction>
+<item eId="art_81/para_1/lbl_b/lbl_1">
+<num>1. </num>
+<p>die beschuldigte Person,</p>
+</item>
+<item eId="art_81/para_1/lbl_b/lbl_2">
+<num>2. </num>
+<p>ihr gesetzlicher Vertreter oder ihre gesetzliche Vertreterin,</p>
+</item>
+<item eId="art_81/para_1/lbl_b/lbl_3">
+<num>3.<authorialNote>
+<p> Fassung gemäss Anhang 1 Ziff. 2 des BG vom 17. Juni 2022, in Kraft seit 1. Jan. 2024  (<ref href="https://fedlex.data.admin.ch/eli/oc/2023/468">AS <b>2023</b> 468</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2019/2368">BBl <b>2019</b> 6697</ref>).
+</p>
+</authorialNote>
+</num>
+<p>die Staatsanwaltschaft, ausser bei Entscheiden über die Anordnung, die Verlängerung und die Aufhebung der Untersuchungs- und Sicherheitshaft,</p>
+</item>
+<item eId="art_81/para_1/lbl_b/lbl_4">
+<num>4.<authorialNote>
+<p> Aufgehoben durch Anhang 1 Ziff. II 3 der Strafprozessordnung vom 5. Okt. 2007, mit Wirkung seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/267">AS <b>2010</b> 1881</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/124">BBl <b>2006</b> 1085</ref>).
+</p>
+</authorialNote>
+</num>
+<p>…</p>
+</item>
+<item eId="art_81/para_1/lbl_b/lbl_5">
+<num>5.<authorialNote>
+<p> Fassung gemäss Anhang Ziff. II 5 des Strafbehördenorganisationsgesetzes vom  19. März 2010, in Kraft seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/444">AS <b>2010</b> 3267</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2008/1395">BBl <b>2008</b> 8125</ref>).
+</p>
+</authorialNote>
+</num>
+<p>die Privatklägerschaft, wenn der angefochtene Entscheid sich auf die Beurteilung ihrer Zivilansprüche auswirken kann,</p>
+</item>
+<item eId="art_81/para_1/lbl_b/lbl_6">
+<num>6. </num>
+<p>die Person, die den Strafantrag stellt, soweit es um das Strafantragsrecht als solches geht,</p>
+</item>
+<item eId="art_81/para_1/lbl_b/lbl_7">
+<num>7.<authorialNote>
+<p> Eingefügt durch Ziff. II 8 des BG vom 20. März 2008 zur formellen Bereinigung des Bundesrechts (<ref href="https://fedlex.data.admin.ch/eli/oc/2008/447">AS <b>2008</b> 3437</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2007/885">BBl <b>2007</b> 6121</ref>). Fassung gemäss Anhang 1 Ziff. II 3 der Strafprozessordnung vom 5. Okt. 2007, in Kraft seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/267">AS <b>2010</b> 1881</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/124">BBl <b>2006</b> 1085</ref>).
+</p>
+</authorialNote>
+</num>
+<p>die Staatsanwaltschaft des Bundes und die beteiligte Verwaltung in Verwaltungsstrafsachen nach dem Bundesgesetz vom 22. März 1974<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/1974/1857_1857_1857">SR <b>313.0</b>
+</ref>
+</p>
+</authorialNote> über das Verwaltungsstrafrecht.</p>
+</item>
+</blockList>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_81/para_2">
+<num>2</num>
+<content>
+<p> Eine Bundesbehörde ist zur Beschwerde berechtigt, wenn das Bundesrecht vorsieht, dass ihr der Entscheid mitzuteilen ist.<authorialNote>
+<p> Fassung gemäss Anhang 1 Ziff. 2 des BG vom 17. Juni 2022, in Kraft seit 1. Jan. 2024  (<ref href="https://fedlex.data.admin.ch/eli/oc/2023/468">AS <b>2023</b> 468</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2019/2368">BBl <b>2019</b> 6697</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+<paragraph eId="art_81/para_3">
+<num>3</num>
+<content>
+<p> Gegen Entscheide nach Artikel 78 Absatz 2 Buchstabe b steht das Beschwerderecht auch der Bundeskanzlei, den Departementen des Bundes oder, soweit das Bundesrecht es vorsieht, den ihnen unterstellten Dienststellen zu, wenn der angefochtene Entscheid die Bundesgesetzgebung in ihrem Aufgabenbereich verletzen kann.</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_3/sec_3">
+<num>3. Abschnitt: </num>
+<heading>Beschwerde in öffentlich-rechtlichen Angelegenheiten</heading>
+<article eId="art_82">
+<num>
+<b>Art. 82</b>
+</num>
+<heading>Grundsatz</heading>
+<paragraph eId="art_82/para">
+<content>
+<blockList>
+<listIntroduction eId="art_82/para/listintro">Das Bundesgericht beurteilt Beschwerden:</listIntroduction>
+<item eId="art_82/para/lbl_a">
+<num>a. </num>
+<p>gegen Entscheide in Angelegenheiten des öffentlichen Rechts;</p>
+</item>
+<item eId="art_82/para/lbl_b">
+<num>b. </num>
+<p>gegen kantonale Erlasse;</p>
+</item>
+<item eId="art_82/para/lbl_c">
+<num>c. </num>
+<p>betreffend die politische Stimmberechtigung der Bürger und Bürgerinnen sowie betreffend Volkswahlen und -abstimmungen.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+</article>
+<article eId="art_83">
+<num>
+<b>Art. 83</b>
+</num>
+<heading>Ausnahmen</heading>
+<paragraph eId="art_83/para">
+<content>
+<blockList>
+<listIntroduction eId="art_83/para/listintro">Die Beschwerde ist unzulässig gegen:</listIntroduction>
+<item eId="art_83/para/lbl_a">
+<num>a. </num>
+<p>Entscheide auf dem Gebiet der inneren oder äusseren Sicherheit des Landes, der Neutralität, des diplomatischen Schutzes und der übrigen auswärtigen Angelegenheiten, soweit das Völkerrecht nicht einen Anspruch auf gerichtliche Beurteilung einräumt;</p>
+</item>
+<item eId="art_83/para/lbl_b">
+<num>b. </num>
+<p>Entscheide über die ordentliche Einbürgerung;</p>
+</item>
+<item eId="art_83/para/lbl_c">
+<num>c. </num>
+<blockList>
+<listIntroduction eId="art_83/para/lbl_c/listintro">Entscheide auf dem Gebiet des Ausländerrechts betreffend:</listIntroduction>
+<item eId="art_83/para/lbl_c/lbl_1">
+<num>1. </num>
+<p>die Einreise,</p>
+</item>
+<item eId="art_83/para/lbl_c/lbl_2">
+<num>2. </num>
+<p>Bewilligungen, auf die weder das Bundesrecht noch das Völkerrecht einen Anspruch einräumt,</p>
+</item>
+<item eId="art_83/para/lbl_c/lbl_3">
+<num>3. </num>
+<p>die vorläufige Aufnahme,</p>
+</item>
+<item eId="art_83/para/lbl_c/lbl_4">
+<num>4. </num>
+<p>die Ausweisung gestützt auf Artikel 121 Absatz 2 der Bundesverfassung und die Wegweisung,</p>
+</item>
+<item eId="art_83/para/lbl_c/lbl_5">
+<num>5.<authorialNote>
+<p> Fassung gemäss Ziff. I 1 der V der BVers vom 20. Dez. 2006 über die Anpassung von Erlassen an die Bestimmungen des Bundesgerichtsgesetzes und des Verwaltungsgerichtsgesetzes, in Kraft seit 1. Jan. 2008 (<ref href="https://fedlex.data.admin.ch/eli/oc/2006/826">AS <b>2006</b> 5599</ref>).
+</p>
+</authorialNote>
+</num>
+<p>Abweichungen von den Zulassungsvoraussetzungen,</p>
+</item>
+<item eId="art_83/para/lbl_c/lbl_6">
+<num>6.<authorialNote>
+<p> Eingefügt durch Ziff. I 1 der V der BVers vom 20. Dez. 2006 über die Anpassung von Erlassen an die Bestimmungen des Bundesgerichtsgesetzes und des Verwaltungsgerichtsgesetzes, in Kraft seit 1. Jan. 2008 (<ref href="https://fedlex.data.admin.ch/eli/oc/2006/826">AS <b>2006</b> 5599</ref>).
+</p>
+</authorialNote>
+</num>
+<p>die Verlängerung der Grenzgängerbewilligung, den Kantonswechsel, den Stellenwechsel von Personen mit Grenzgängerbewilligung sowie die Erteilung von Reisepapieren an schriftenlose Ausländerinnen und Ausländer;</p>
+</item>
+</blockList>
+</item>
+<item eId="art_83/para/lbl_d">
+<num>d. </num>
+<blockList>
+<listIntroduction eId="art_83/para/lbl_d/listintro">Entscheide auf dem Gebiet des Asyls, die:</listIntroduction>
+<item eId="art_83/para/lbl_d/lbl_1">
+<num>1.<authorialNote>
+<p> Fassung gemäss Ziff. I 2 des BG vom 1. Okt 2010 über die Koordination des Asyl- und des Auslieferungsverfahrens, in Kraft seit 1. April 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2011/137">AS <b>2011</b> 925</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2010/264">BBl <b>2010</b> 1467</ref>).
+</p>
+</authorialNote>
+</num>
+<p>vom Bundesverwaltungsgericht getroffen worden sind, ausser sie betreffen Personen, gegen die ein Auslieferungsersuchen des Staates vorliegt, vor welchem sie Schutz suchen,</p>
+</item>
+<item eId="art_83/para/lbl_d/lbl_2">
+<num>2. </num>
+<p>von einer kantonalen Vorinstanz getroffen worden sind und eine Bewilligung betreffen, auf die weder das Bundesrecht noch das Völkerrecht einen Anspruch einräumt;</p>
+</item>
+</blockList>
+</item>
+<item eId="art_83/para/lbl_e">
+<num>e. </num>
+<p>Entscheide über die Verweigerung der Ermächtigung zur Strafverfolgung von Behördenmitgliedern oder von Bundespersonal;</p>
+</item>
+<item eId="art_83/para/lbl_f">
+<num>f.<authorialNote>
+<p> Fassung gemäss Anhang 7 Ziff. II 2 des BG vom 21. Juni 2019 über das öffentliche Beschaffungswesen, in Kraft seit 1. Jan. 2021 (<ref href="https://fedlex.data.admin.ch/eli/oc/2020/126">AS <b>2020</b> 641</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2017/417">BBl <b>2017</b> 1851</ref>).
+</p>
+</authorialNote>
+</num>
+<blockList>
+<listIntroduction eId="art_83/para/lbl_f/listintro">Entscheide auf dem Gebiet der öffentlichen Beschaffungen, wenn:</listIntroduction>
+<item eId="art_83/para/lbl_f/lbl_1">
+<num>1. </num>
+<p>sich keine Rechtsfrage von grundsätzlicher Bedeutung stellt; vorbehalten bleiben Beschwerden gegen Beschaffungen des Bundesverwaltungsgerichts, des Bundesstrafgerichts, des Bundespatentgerichts, der Bundesanwaltschaft sowie der oberen kantonalen Gerichtsinstanzen, oder</p>
+</item>
+<item eId="art_83/para/lbl_f/lbl_2">
+<num>2. </num>
+<p>der geschätzte Wert des zu vergebenden Auftrags den massgebenden Schwellenwert nach Artikel 52 Absatz 1 in Verbindung mit Anhang 4 Ziffer 2 des Bundesgesetzes vom 21. Juni 2019<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2020/126">SR <b>172.056.1</b>
+</ref>
+</p>
+</authorialNote> über das öffentliche Beschaffungswesen nicht erreicht;</p>
+</item>
+</blockList>
+</item>
+<item eId="art_83/para/lbl_fbis">
+<num>f<sup>bis</sup>.<authorialNote>
+<p> Eingefügt durch Ziff. I 2 des BG vom 16. März 2012 über den zweiten Schritt der Bahnreform 2, in Kraft seit 1. Juli 2013 (<ref href="https://fedlex.data.admin.ch/eli/oc/2012/656">AS <b>2012</b> 5619</ref>,<ref href="https://fedlex.data.admin.ch/eli/oc/2013/375">
+<b>2013</b> 1603</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2011/131">BBl <b>2011</b> 911</ref>).
+</p>
+</authorialNote>
+</num>
+<p>Entscheide des Bundesverwaltungsgerichts über Verfügungen nach Artikel 32<i>i</i> des Personenbeförderungsgesetzes vom 20. März 2009<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2009/680">SR <b>745.1</b>
+</ref>
+</p>
+</authorialNote>;
+</p>
+</item>
+<item eId="art_83/para/lbl_g">
+<num>g. </num>
+<p>Entscheide auf dem Gebiet der öffentlich-rechtlichen Arbeitsverhältnisse, wenn sie eine nicht vermögensrechtliche Angelegenheit, nicht aber die Gleichstellung der Geschlechter betreffen;</p>
+</item>
+<item eId="art_83/para/lbl_h">
+<num>h.<authorialNote>
+<p> Fassung gemäss Anhang Ziff. 1 des Steueramtshilfegesetzes vom 28. Sept. 2012, in Kraft seit 1. Febr. 2013 (<ref href="https://fedlex.data.admin.ch/eli/oc/2013/31">AS <b>2013</b> 231</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2011/914">BBl <b>2011</b> 6193</ref>).
+</p>
+</authorialNote>
+</num>
+<p>Entscheide auf dem Gebiet der internationalen Amtshilfe, mit Ausnahme der Amtshilfe in Steuersachen;</p>
+</item>
+<item eId="art_83/para/lbl_i">
+<num>i. </num>
+<p>Entscheide auf dem Gebiet des Militär-, Zivil- und Zivilschutzdienstes;</p>
+</item>
+<item eId="art_83/para/lbl_j">
+<num>j.<authorialNote>
+<p> Fassung gemäss Anhang 2 Ziff. II 1 des Landesversorgungsgesetzes vom 17. Juni 2016, in Kraft seit 1. Juni 2017 (<ref href="https://fedlex.data.admin.ch/eli/oc/2017/308">AS <b>2017</b> 3097</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2014/1571">BBl <b>2014</b> 7119</ref>).
+</p>
+</authorialNote>
+</num>
+<p>Entscheide auf dem Gebiet der wirtschaftlichen Landesversorgung, die bei schweren Mangellagen getroffen worden sind;</p>
+</item>
+<item eId="art_83/para/lbl_k">
+<num>k. </num>
+<p>Entscheide betreffend Subventionen, auf die kein Anspruch besteht;</p>
+</item>
+<item eId="art_83/para/lbl_l">
+<num>l. </num>
+<p>Entscheide über die Zollveranlagung, wenn diese auf Grund der Tarifierung oder des Gewichts der Ware erfolgt;</p>
+</item>
+<item eId="art_83/para/lbl_m">
+<num>m.<authorialNote>
+<p> Fassung gemäss Ziff. I 1 des BG vom 20. Juni 2014, in Kraft seit 1. Jan. 2016  (<ref href="https://fedlex.data.admin.ch/eli/oc/2015/3">AS <b>2015</b> 9</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2013/1658">BBl <b>2013</b> 8435</ref>).
+</p>
+</authorialNote>
+</num>
+<p>Entscheide über die Stundung oder den Erlass von Abgaben; in Abweichung davon ist die Beschwerde zulässig gegen Entscheide über den Erlass der direkten Bundessteuer oder der kantonalen oder kommunalen Einkommens- und Gewinnsteuer, wenn sich eine Rechtsfrage von grundsätzlicher Bedeutung stellt oder es sich aus anderen Gründen um einen besonders bedeutenden Fall handelt;</p>
+</item>
+<item eId="art_83/para/lbl_n">
+<num>n. </num>
+<blockList>
+<listIntroduction eId="art_83/para/lbl_n/listintro">Entscheide auf dem Gebiet der Kernenergie betreffend:</listIntroduction>
+<item eId="art_83/para/lbl_n/lbl_1">
+<num>1. </num>
+<p>das Erfordernis einer Freigabe oder der Änderung einer Bewilligung oder Verfügung,</p>
+</item>
+<item eId="art_83/para/lbl_n/lbl_2">
+<num>2. </num>
+<p>die Genehmigung eines Plans für Rückstellungen für die vor Ausserbetriebnahme einer Kernanlage anfallenden Entsorgungskosten,</p>
+</item>
+<item eId="art_83/para/lbl_n/lbl_3">
+<num>3. </num>
+<p>Freigaben;</p>
+</item>
+</blockList>
+</item>
+<item eId="art_83/para/lbl_o">
+<num>o. </num>
+<p>Entscheide über die Typengenehmigung von Fahrzeugen auf dem Gebiet des Strassenverkehrs;</p>
+</item>
+<item eId="art_83/para/lbl_p">
+<num>p.<authorialNote>
+<p> Fassung gemäss Art. 106 Ziff. 3 des BG vom 24. März 2006 über Radio und Fernsehen, in Kraft seit 1. April 2007 (<ref href="https://fedlex.data.admin.ch/eli/oc/2007/150">AS <b>2007</b> 737</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2003/223">BBl <b>2003</b> 1569</ref>).
+</p>
+</authorialNote>
+</num>
+<blockList>
+<listIntroduction eId="art_83/para/lbl_p/listintro">Entscheide des Bundesverwaltungsgerichts auf dem Gebiet des Fernmeldeverkehrs, des Radios und des Fernsehens sowie der Post betreffend:<authorialNote>
+<p> Fassung gemäss Anhang Ziff. II 1 des Postgesetzes vom 17. Dez. 2010, in Kraft seit  1. Okt. 2012 (<ref href="https://fedlex.data.admin.ch/eli/oc/2012/585">AS <b>2012</b> 4993</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2009/917">BBl <b>2009</b> 5181</ref>).
+</p>
+</authorialNote>
+</listIntroduction>
+<item eId="art_83/para/lbl_p/lbl_1">
+<num>1. </num>
+<p>Konzessionen, die Gegenstand einer öffentlichen Ausschreibung waren,</p>
+</item>
+<item eId="art_83/para/lbl_p/lbl_2">
+<num>2. </num>
+<p>Streitigkeiten nach Artikel 11<i>a</i> des Fernmeldegesetzes vom 30. April 1997<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/1997/2187_2187_2187">SR <b>784.10</b>
+</ref>
+</p>
+</authorialNote>,
+</p>
+</item>
+<item eId="art_83/para/lbl_p/lbl_3">
+<num>3.<authorialNote>
+<p> Eingefügt durch Anhang Ziff. II 1 des Postgesetzes vom 17. Dez. 2010, in Kraft seit  1. Okt. 2012 (<ref href="https://fedlex.data.admin.ch/eli/oc/2012/585">AS <b>2012</b> 4993</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2009/917">BBl <b>2009</b> 5181</ref>).
+</p>
+</authorialNote>
+</num>
+<p>Streitigkeiten nach Artikel 8 des Postgesetzes vom 17. Dezember 2010<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2012/585">SR <b>783.0</b>
+</ref>
+</p>
+</authorialNote>;
+</p>
+</item>
+</blockList>
+</item>
+<item eId="art_83/para/lbl_q">
+<num>q. </num>
+<blockList>
+<listIntroduction eId="art_83/para/lbl_q/listintro">Entscheide auf dem Gebiet der Transplantationsmedizin betreffend:</listIntroduction>
+<item eId="art_83/para/lbl_q/lbl_1">
+<num>1. </num>
+<p>die Aufnahme in die Warteliste,</p>
+</item>
+<item eId="art_83/para/lbl_q/lbl_2">
+<num>2. </num>
+<p>die Zuteilung von Organen;</p>
+</item>
+</blockList>
+</item>
+<item eId="art_83/para/lbl_r">
+<num>r. </num>
+<p>Entscheide auf dem Gebiet der Krankenversicherung, die das Bundesverwaltungsgericht gestützt auf Artikel 34<authorialNote>
+<p> Berichtigt von der Redaktionskommission der BVers (Art. 58 Abs. 1 ParlG – <ref href="https://fedlex.data.admin.ch/eli/cc/2003/510">SR <b>171.10</b>
+</ref>).
+</p>
+</authorialNote> des Verwaltungsgerichtsgesetzes vom 17. Juni 2005<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2006/352">SR <b>173.32</b>
+</ref>. Dieser Art. ist aufgehoben. Siehe heute: Art. 33 Bst. i VGG in Verbindung mit Art. 53 Abs. 1 des BG vom 18. März 1994 über die Krankenversicherung  (<ref href="https://fedlex.data.admin.ch/eli/cc/1995/1328_1328_1328">SR <b>832.10</b>
+</ref>).
+</p>
+</authorialNote> (VGG) getroffen hat;</p>
+</item>
+<item eId="art_83/para/lbl_s">
+<num>s. </num>
+<blockList>
+<listIntroduction eId="art_83/para/lbl_s/listintro">Entscheide auf dem Gebiet der Landwirtschaft betreffend:</listIntroduction>
+<item eId="art_83/para/lbl_s/lbl_1">
+<num>1.<authorialNote>
+<p> Aufgehoben durch Anhang Ziff. 1 des BG vom 22. März 2013, mit Wirkung seit  1. Jan. 2014 (<ref href="https://fedlex.data.admin.ch/eli/oc/2013/646">AS <b>2013</b> 3463 </ref>
+<ref href="https://fedlex.data.admin.ch/eli/oc/2013/710">3863</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2012/356">BBl <b>2012</b> 2075</ref>).
+</p>
+</authorialNote>
+</num>
+<p>…</p>
+</item>
+<item eId="art_83/para/lbl_s/lbl_2">
+<num>2. </num>
+<p>die Abgrenzung der Zonen im Rahmen des Produktionskatasters;</p>
+</item>
+</blockList>
+</item>
+<item eId="art_83/para/lbl_t">
+<num>t. </num>
+<p>Entscheide über das Ergebnis von Prüfungen und anderen Fähigkeitsbewertungen, namentlich auf den Gebieten der Schule, der Weiterbildung und der Berufsausübung;</p>
+</item>
+<item eId="art_83/para/lbl_u">
+<num>u.<authorialNote>
+<p> Eingefügt durch Anhang Ziff. 3 des Finanzmarktaufsichtsgesetzes vom 22. Juni 2007  (<ref href="https://fedlex.data.admin.ch/eli/oc/2008/736">AS <b>2008</b> 5207</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/303">BBl <b>2006</b> 2829</ref>). Fassung gemäss Anhang Ziff. 1 des Finanzmarktinfrastrukturgesetzes vom 19. Juni 2015, in Kraft seit 1. Jan. 2016 (<ref href="https://fedlex.data.admin.ch/eli/oc/2015/853">AS <b>2015</b> 5339</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2014/1633">BBl <b>2014</b> 7483</ref>).
+</p>
+</authorialNote>
+</num>
+<p>Entscheide auf dem Gebiet der öffentlichen Kaufangebote (Art. 125‒141 des Finanzmarktinfrastrukturgesetzes vom 19. Juni 2015<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2015/853">SR <b>958.1</b>
+</ref>
+</p>
+</authorialNote>);
+</p>
+</item>
+<item eId="art_83/para/lbl_v">
+<num>v.<authorialNote>
+<p> Eingefügt durch Anhang Ziff. 3 des Finanzmarktaufsichtsgesetzes vom 22. Juni 2007,  in Kraft seit 1. Jan. 2009 (<ref href="https://fedlex.data.admin.ch/eli/oc/2008/736">AS <b>2008</b> 5207</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/303">BBl <b>2006</b> 2829</ref>).
+</p>
+</authorialNote>
+</num>
+<p>Entscheide des Bundesverwaltungsgerichts über Meinungsverschiedenheiten zwischen Behörden in der innerstaatlichen Amts- und Rechtshilfe;</p>
+</item>
+<item eId="art_83/para/lbl_w">
+<num>w.<authorialNote>
+<p> Eingefügt durch Anhang Ziff. II 1 des Energiegesetzes vom 30. Sept. 2016, in Kraft seit 1. Jan. 2018 (<ref href="https://fedlex.data.admin.ch/eli/oc/2017/762">AS <b>2017</b> 6839</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2013/1476">BBl <b>2013</b> 7561</ref>).
+</p>
+</authorialNote>
+</num>
+<p>Entscheide auf dem Gebiet des Elektrizitätsrechts betreffend die Plangenehmigung von Starkstromanlagen und Schwachstromanlagen <inline name="man-color-221E1F">und die Entscheide auf diesem Gebiet betreffend Enteignung der für den Bau oder Betrieb solcher Anlagen notwendigen Rechte</inline>, wenn sich keine Rechtsfrage von grundsätzlicher Bedeutung stellt;</p>
+</item>
+<item eId="art_83/para/lbl_x">
+<num>x.<authorialNote>
+<p> Eingefügt durch Art. 21 Abs. 2 des BG vom 30. Sept. 2016 über die Aufarbeitung der fürsorgerischen Zwangsmassnahmen und Fremdplatzierungen vor 1981, in Kraft seit  1. April 2017 (<ref href="https://fedlex.data.admin.ch/eli/oc/2017/145">AS <b>2017</b> 753</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2016/40">BBl <b>2016</b> 101</ref>).
+</p>
+</authorialNote>
+</num>
+<p>Entscheide betreffend die Gewährung von Solidaritätsbeiträgen nach dem Bundesgesetz vom 30. September 2016<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2017/145">SR <b>211.223.13</b>
+</ref>
+</p>
+</authorialNote> über die Aufarbeitung der fürsorgerischen Zwangsmassnahmen und Fremdplatzierungen vor 1981, ausser wenn sich eine Rechtsfrage von grundsätzlicher Bedeutung stellt oder aus anderen Gründen ein besonders bedeutender Fall vorliegt;</p>
+</item>
+<item eId="art_83/para/lbl_y">
+<num>y.<authorialNote>
+<p> Eingefügt durch Art. 36 Abs. 2 des BG vom 18. Juni 2021 über die Durchführung von internationalen Abkommen im Steuerbereich, in Kraft seit 1. Jan. 2022 (<ref href="https://fedlex.data.admin.ch/eli/oc/2021/703">AS <b>2021</b> 703</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2020/2501">BBl <b>2020</b> 9219</ref>).
+</p>
+</authorialNote>
+</num>
+<p>Entscheide des Bundesverwaltungsgerichts in Verständigungsverfahren zur Vermeidung einer den anwendbaren internationalen Abkommen im Steuerbereich nicht entsprechenden Besteuerung;</p>
+</item>
+<item eId="art_83/para/lbl_z">
+<num>z.<authorialNote>
+<p> Eingefügt durch Ziff. I 2 des BG vom 16. Juni 2023 über die Beschleunigung der Bewilligungsverfahren für Windenergieanlagen, in Kraft seit 1. Febr. 2024 (<ref href="https://fedlex.data.admin.ch/eli/oc/2023/804">AS <b>2023</b> 804</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2023/344">BBl <b>2023</b> 344</ref>,<ref href="https://fedlex.data.admin.ch/eli/fga/2023/588">588</ref>).
+</p>
+</authorialNote>
+</num>
+<p>Entscheide betreffend die in Artikel 71<i>c</i> Absatz 1 Buchstabe b des Energiegesetzes vom 30. September 2016<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2017/762">SR <b>730.0</b>
+</ref>
+</p>
+</authorialNote> genannten Baubewilligungen und notwendigerweise damit zusammenhängenden in der Kompetenz der Kantone liegenden Bewilligungen für Windenergieanlagen von nationalem Interesse, wenn sich keine Rechtsfrage von grundsätzlicher Bedeutung stellt.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+</article>
+<article eId="art_84">
+<num>
+<b>Art. 84</b>
+</num>
+<heading>Internationale Rechtshilfe in Strafsachen</heading>
+<paragraph eId="art_84/para_1">
+<num>1</num>
+<content>
+<p> Gegen einen Entscheid auf dem Gebiet der internationalen Rechtshilfe in Strafsachen ist die Beschwerde nur zulässig, wenn er eine Auslieferung, eine Beschlagnahme, eine Herausgabe von Gegenständen oder Vermögenswerten oder eine Übermittlung von Informationen aus dem Geheimbereich betrifft und es sich um einen besonders bedeutenden Fall handelt.</p>
+</content>
+</paragraph>
+<paragraph eId="art_84/para_2">
+<num>2</num>
+<content>
+<p> Ein besonders bedeutender Fall liegt insbesondere vor, wenn Gründe für die Annahme bestehen, dass elementare Verfahrensgrundsätze verletzt worden sind oder das Verfahren im Ausland schwere Mängel aufweist.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_84_a">
+<num>
+<b>Art. 84</b>
+<i>a</i>
+<authorialNote>
+<p> Eingefügt durch Anhang Ziff. 1 des Steueramtshilfegesetzes vom 28. Sept. 2012, in Kraft seit 1. Febr. 2013 (<ref href="https://fedlex.data.admin.ch/eli/oc/2013/31">AS <b>2013</b> 231</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2011/914">BBl <b>2011</b> 6193</ref>).
+</p>
+</authorialNote>
+</num>
+<heading>Internationale Amtshilfe in Steuersachen</heading>
+<paragraph eId="art_84_a/para">
+<content>
+<p>Gegen einen Entscheid auf dem Gebiet der internationalen Amtshilfe in Steuersachen ist die Beschwerde nur zulässig, wenn sich eine Rechtsfrage von grundsätzlicher Bedeutung stellt oder wenn es sich aus anderen Gründen um einen besonders bedeutenden Fall im Sinne von Artikel 84 Absatz 2 handelt.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_85">
+<num>
+<b>Art. 85</b>
+</num>
+<heading>Streitwertgrenzen</heading>
+<paragraph eId="art_85/para_1">
+<num>1</num>
+<content>
+<blockList>
+<listIntroduction eId="art_85/para_1/listintro"> In vermögensrechtlichen Angelegenheiten ist die Beschwerde unzulässig:</listIntroduction>
+<item eId="art_85/para_1/lbl_a">
+<num>a. </num>
+<p>auf dem Gebiet der Staatshaftung, wenn der Streitwert weniger als 30 000 Franken beträgt;</p>
+</item>
+<item eId="art_85/para_1/lbl_b">
+<num>b. </num>
+<p>auf dem Gebiet der öffentlich-rechtlichen Arbeitsverhältnisse, wenn der Streitwert weniger als 15 000 Franken beträgt.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_85/para_2">
+<num>2</num>
+<content>
+<p> Erreicht der Streitwert den massgebenden Betrag nach Absatz 1 nicht, so ist die Beschwerde dennoch zulässig, wenn sich eine Rechtsfrage von grundsätzlicher Bedeutung stellt.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_86">
+<num>
+<b>Art. 86</b>
+</num>
+<heading>Vorinstanzen im Allgemeinen</heading>
+<paragraph eId="art_86/para_1">
+<num>1</num>
+<content>
+<blockList>
+<listIntroduction eId="art_86/para_1/listintro"> Die Beschwerde ist zulässig gegen Entscheide:</listIntroduction>
+<item eId="art_86/para_1/lbl_a">
+<num>a. </num>
+<p>des Bundesverwaltungsgerichts;</p>
+</item>
+<item eId="art_86/para_1/lbl_b">
+<num>b. </num>
+<p>des Bundesstrafgerichts;</p>
+</item>
+<item eId="art_86/para_1/lbl_c">
+<num>c. </num>
+<p>der unabhängigen Beschwerdeinstanz für Radio und Fernsehen;</p>
+</item>
+<item eId="art_86/para_1/lbl_d">
+<num>d. </num>
+<p>letzter kantonaler Instanzen, sofern nicht die Beschwerde an das Bundesverwaltungsgericht zulässig ist.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_86/para_2">
+<num>2</num>
+<content>
+<p> Die Kantone setzen als unmittelbare Vorinstanzen des Bundesgerichts obere Gerichte ein, soweit nicht nach einem anderen Bundesgesetz Entscheide anderer richterlicher Behörden der Beschwerde an das Bundesgericht unterliegen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_86/para_3">
+<num>3</num>
+<content>
+<p> Für Entscheide mit vorwiegend politischem Charakter können die Kantone anstelle eines Gerichts eine andere Behörde als unmittelbare Vorinstanz des Bundesgerichts einsetzen.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_87">
+<num>
+<b>Art. 87</b>
+</num>
+<heading>Vorinstanzen bei Beschwerden gegen Erlasse</heading>
+<paragraph eId="art_87/para_1">
+<num>1</num>
+<content>
+<p> Gegen kantonale Erlasse ist unmittelbar die Beschwerde zulässig, sofern kein kantonales Rechtsmittel ergriffen werden kann.</p>
+</content>
+</paragraph>
+<paragraph eId="art_87/para_2">
+<num>2</num>
+<content>
+<p> Soweit das kantonale Recht ein Rechtsmittel gegen Erlasse vorsieht, findet Artikel 86 Anwendung.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_88">
+<num>
+<b>Art. 88</b>
+</num>
+<heading>Vorinstanzen in Stimmrechtssachen</heading>
+<paragraph eId="art_88/para_1">
+<num>1</num>
+<content>
+<blockList>
+<listIntroduction eId="art_88/para_1/listintro"> Beschwerden betreffend die politische Stimmberechtigung der Bürger und Bürgerinnen sowie betreffend Volkswahlen und ‑abstimmungen sind zulässig:</listIntroduction>
+<item eId="art_88/para_1/lbl_a">
+<num>a. </num>
+<p>in kantonalen Angelegenheiten gegen Akte letzter kantonaler Instanzen;</p>
+</item>
+<item eId="art_88/para_1/lbl_b">
+<num>b. </num>
+<p>in eidgenössischen Angelegenheiten gegen Verfügungen der Bundeskanzlei und Entscheide der Kantonsregierungen.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_88/para_2">
+<num>2</num>
+<content>
+<p> Die Kantone sehen gegen behördliche Akte, welche die politischen Rechte der Stimmberechtigten in kantonalen Angelegenheiten verletzen können, ein Rechtsmittel vor. Diese Pflicht erstreckt sich nicht auf Akte des Parlaments und der Regierung.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_89">
+<num>
+<b>Art. 89</b>
+</num>
+<heading>Beschwerderecht</heading>
+<paragraph eId="art_89/para_1">
+<num>1</num>
+<content>
+<blockList>
+<listIntroduction eId="art_89/para_1/listintro"> Zur Beschwerde in öffentlich-rechtlichen Angelegenheiten ist berechtigt, wer:</listIntroduction>
+<item eId="art_89/para_1/lbl_a">
+<num>a. </num>
+<p>vor der Vorinstanz am Verfahren teilgenommen hat oder keine Möglichkeit zur Teilnahme erhalten hat;</p>
+</item>
+<item eId="art_89/para_1/lbl_b">
+<num>b. </num>
+<p>durch den angefochtenen Entscheid oder Erlass besonders berührt ist; und</p>
+</item>
+<item eId="art_89/para_1/lbl_c">
+<num>c. </num>
+<p>ein schutzwürdiges Interesse an dessen Aufhebung oder Änderung hat.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_89/para_2">
+<num>2</num>
+<content>
+<blockList>
+<listIntroduction eId="art_89/para_2/listintro"> Zur Beschwerde sind ferner berechtigt:</listIntroduction>
+<item eId="art_89/para_2/lbl_a">
+<num>a. </num>
+<p>die Bundeskanzlei, die Departemente des Bundes oder, soweit das Bundesrecht es vorsieht, die ihnen unterstellten Dienststellen, wenn der angefochtene Akt die Bundesgesetzgebung in ihrem Aufgabenbereich verletzen kann;</p>
+</item>
+<item eId="art_89/para_2/lbl_b">
+<num>b. </num>
+<p>das zuständige Organ der Bundesversammlung auf dem Gebiet des Arbeitsverhältnisses des Bundespersonals;</p>
+</item>
+<item eId="art_89/para_2/lbl_c">
+<num>c. </num>
+<p>Gemeinden und andere öffentlich-rechtliche Körperschaften, wenn sie die Verletzung von Garantien rügen, die ihnen die Kantons- oder Bundesverfassung gewährt;</p>
+</item>
+<item eId="art_89/para_2/lbl_d">
+<num>d. </num>
+<p>Personen, Organisationen und Behörden, denen ein anderes Bundesgesetz dieses Recht einräumt.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_89/para_3">
+<num>3</num>
+<content>
+<p> In Stimmrechtssachen (Art. 82 Bst. c) steht das Beschwerderecht ausserdem jeder Person zu, die in der betreffenden Angelegenheit stimmberechtigt ist.</p>
+</content>
+</paragraph>
+</article>
+</section>
+</chapter>
+<chapter eId="chap_4">
+<num>4. Kapitel: </num>
+<heading>Beschwerdeverfahren</heading>
+<section eId="chap_4/sec_1">
+<num>1. Abschnitt: </num>
+<heading>Anfechtbare Entscheide</heading>
+<article eId="art_90">
+<num>
+<b>Art. 90</b>
+</num>
+<heading>Endentscheide</heading>
+<paragraph eId="art_90/para">
+<content>
+<p>Die Beschwerde ist zulässig gegen Entscheide, die das Verfahren abschliessen.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_91">
+<num>
+<b>Art. 91</b>
+</num>
+<heading>Teilentscheide</heading>
+<paragraph eId="art_91/para">
+<content>
+<blockList>
+<listIntroduction eId="art_91/para/listintro">Die Beschwerde ist zulässig gegen einen Entscheid, der:</listIntroduction>
+<item eId="art_91/para/lbl_a">
+<num>a. </num>
+<p>nur einen Teil der gestellten Begehren behandelt, wenn diese Begehren unabhängig von den anderen beurteilt werden können;</p>
+</item>
+<item eId="art_91/para/lbl_b">
+<num>b. </num>
+<p>das Verfahren nur für einen Teil der Streitgenossen und Streitgenossinnen abschliesst.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+</article>
+<article eId="art_92">
+<num>
+<b>Art. 92</b>
+</num>
+<heading>Vor- und Zwischenentscheide über die Zuständigkeit und den <br/>
+Ausstand</heading>
+<paragraph eId="art_92/para_1">
+<num>1</num>
+<content>
+<p> Gegen selbständig eröffnete Vor- und Zwischenentscheide über die Zuständigkeit und über Ausstandsbegehren ist die Beschwerde zulässig.</p>
+</content>
+</paragraph>
+<paragraph eId="art_92/para_2">
+<num>2</num>
+<content>
+<p> Diese Entscheide können später nicht mehr angefochten werden.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_93">
+<num>
+<b>Art. 93</b>
+</num>
+<heading>Andere Vor- und Zwischenentscheide</heading>
+<paragraph eId="art_93/para_1">
+<num>1</num>
+<content>
+<blockList>
+<listIntroduction eId="art_93/para_1/listintro"> Gegen andere selbständig eröffnete Vor- und Zwischenentscheide ist die Beschwerde zulässig:</listIntroduction>
+<item eId="art_93/para_1/lbl_a">
+<num>a. </num>
+<p>wenn sie einen nicht wieder gutzumachenden Nachteil bewirken können; oder</p>
+</item>
+<item eId="art_93/para_1/lbl_b">
+<num>b. </num>
+<p>wenn die Gutheissung der Beschwerde sofort einen Endentscheid herbeiführen und damit einen bedeutenden Aufwand an Zeit oder Kosten für ein weitläufiges Beweisverfahren ersparen würde.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_93/para_2">
+<num>2</num>
+<content>
+<p> Auf dem Gebiet der internationalen Rechtshilfe in Strafsachen und dem Gebiet des Asyls sind Vor- und Zwischenentscheide nicht anfechtbar.<authorialNote>
+<p> Fassung gemäss Ziff. I 2 des BG vom 1. Okt 2010 über die Koordination des Asyl- und des Auslieferungsverfahrens, in Kraft seit 1. April 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2011/137">AS <b>2011</b> 925</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2010/264">BBl <b>2010</b> 1467</ref>).
+</p>
+</authorialNote> Vorbehalten bleiben Beschwerden gegen Entscheide über die Auslieferungshaft sowie über die Beschlagnahme von Vermögenswerten und Wertgegenständen, sofern die Voraussetzungen von Absatz 1 erfüllt sind.</p>
+</content>
+</paragraph>
+<paragraph eId="art_93/para_3">
+<num>3</num>
+<content>
+<p> Ist die Beschwerde nach den Absätzen 1 und 2 nicht zulässig oder wurde von ihr kein Gebrauch gemacht, so sind die betreffenden Vor- und Zwischenentscheide durch Beschwerde gegen den Endentscheid anfechtbar, soweit sie sich auf dessen Inhalt auswirken.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_94">
+<num>
+<b>Art. 94</b>
+</num>
+<heading>Rechtsverweigerung und Rechtsverzögerung</heading>
+<paragraph eId="art_94/para">
+<content>
+<p>Gegen das unrechtmässige Verweigern oder Verzögern eines anfechtbaren Entscheids kann Beschwerde geführt werden.</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_4/sec_2">
+<num>2. Abschnitt: </num>
+<heading>Beschwerdegründe</heading>
+<article eId="art_95">
+<num>
+<b>Art. 95</b>
+</num>
+<heading>Schweizerisches Recht</heading>
+<paragraph eId="art_95/para">
+<content>
+<blockList>
+<listIntroduction eId="art_95/para/listintro">Mit der Beschwerde kann die Verletzung gerügt werden von:</listIntroduction>
+<item eId="art_95/para/lbl_a">
+<num>a. </num>
+<p>Bundesrecht;</p>
+</item>
+<item eId="art_95/para/lbl_b">
+<num>b. </num>
+<p>Völkerrecht;</p>
+</item>
+<item eId="art_95/para/lbl_c">
+<num>c. </num>
+<p>kantonalen verfassungsmässigen Rechten;</p>
+</item>
+<item eId="art_95/para/lbl_d">
+<num>d. </num>
+<p>kantonalen Bestimmungen über die politische Stimmberechtigung der Bürger und Bürgerinnen und über Volkswahlen und ‑abstimmungen;</p>
+</item>
+<item eId="art_95/para/lbl_e">
+<num>e. </num>
+<p>interkantonalem Recht.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+</article>
+<article eId="art_96">
+<num>
+<b>Art. 96</b>
+</num>
+<heading>Ausländisches Recht</heading>
+<paragraph eId="art_96/para">
+<content>
+<blockList>
+<listIntroduction eId="art_96/para/listintro">Mit der Beschwerde kann gerügt werden:</listIntroduction>
+<item eId="art_96/para/lbl_a">
+<num>a. </num>
+<p>ausländisches Recht sei nicht angewendet worden, wie es das schweizerische internationale Privatrecht vorschreibt;</p>
+</item>
+<item eId="art_96/para/lbl_b">
+<num>b. </num>
+<p>das nach dem schweizerischen internationalen Privatrecht massgebende ausländische Recht sei nicht richtig angewendet worden, sofern der Entscheid keine vermögensrechtliche Sache betrifft.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+</article>
+<article eId="art_97">
+<num>
+<b>Art. 97</b>
+</num>
+<heading>Unrichtige Feststellung des Sachverhalts</heading>
+<paragraph eId="art_97/para_1">
+<num>1</num>
+<content>
+<p> Die Feststellung des Sachverhalts kann nur gerügt werden, wenn sie offensichtlich unrichtig ist oder auf einer Rechtsverletzung im Sinne von Artikel 95 beruht und wenn die Behebung des Mangels für den Ausgang des Verfahrens entscheidend sein kann.</p>
+</content>
+</paragraph>
+<paragraph eId="art_97/para_2">
+<num>2</num>
+<content>
+<p> Richtet sich die Beschwerde gegen einen Entscheid über die Zusprechung oder Verweigerung von Geldleistungen der Militär- oder Unfallversicherung, so kann jede unrichtige oder unvollständige Feststellung des rechtserheblichen Sachverhalts gerügt werden.<authorialNote>
+<p> Fassung gemäss Ziff. IV 1 des BG vom 16. Dez. 2005, in Kraft seit 1. Jan. 2007  (<ref href="https://fedlex.data.admin.ch/eli/oc/2006/310">AS <b>2006</b> 2003</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2005/490">BBl <b>2005</b> 3079</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_98">
+<num>
+<b>Art. 98</b>
+</num>
+<heading>Beschränkte Beschwerdegründe</heading>
+<paragraph eId="art_98/para">
+<content>
+<p>Mit der Beschwerde gegen Entscheide über vorsorgliche Massnahmen kann nur die Verletzung verfassungsmässiger Rechte gerügt werden.</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_4/sec_3">
+<num>3. Abschnitt: </num>
+<heading>Neue Vorbringen</heading>
+<article eId="art_99">
+<num>
+<b>Art. 99</b>
+</num>
+<paragraph eId="art_99/para_1">
+<num>1</num>
+<content>
+<p> Neue Tatsachen und Beweismittel dürfen nur so weit vorgebracht werden, als erst der Entscheid der Vorinstanz dazu Anlass gibt.</p>
+</content>
+</paragraph>
+<paragraph eId="art_99/para_2">
+<num>2</num>
+<content>
+<p> Neue Begehren sind unzulässig.</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_4/sec_4">
+<num>4. Abschnitt: </num>
+<heading>Beschwerdefrist</heading>
+<article eId="art_100">
+<num>
+<b>Art. 100</b>
+</num>
+<heading>Beschwerde gegen Entscheide</heading>
+<paragraph eId="art_100/para_1">
+<num>1</num>
+<content>
+<p> Die Beschwerde gegen einen Entscheid ist innert 30 Tagen nach der Eröffnung der vollständigen Ausfertigung beim Bundesgericht einzureichen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_100/para_2">
+<num>2</num>
+<content>
+<blockList>
+<listIntroduction eId="art_100/para_2/listintro"> Die Beschwerdefrist beträgt zehn Tage:</listIntroduction>
+<item eId="art_100/para_2/lbl_a">
+<num>a. </num>
+<p>bei Entscheiden der kantonalen Aufsichtsbehörden in Schuldbetreibungs- und Konkurssachen;</p>
+</item>
+<item eId="art_100/para_2/lbl_b">
+<num>b.<authorialNote>
+<p> Fassung gemäss Anhang Ziff. 1 des Steueramtshilfegesetzes vom 28. Sept. 2012, in Kraft seit 1. Febr. 2013 (<ref href="https://fedlex.data.admin.ch/eli/oc/2013/31">AS <b>2013</b> 231</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2011/914">BBl <b>2011</b> 6193</ref>).
+</p>
+</authorialNote>
+</num>
+<p>bei Entscheiden auf den Gebieten der internationalen Rechtshilfe in Strafsachen und der internationalen Amtshilfe in Steuersachen;</p>
+</item>
+<item eId="art_100/para_2/lbl_c">
+<num>c.<authorialNote>
+<p> Fassung gemäss Anhang Ziff. 1 des BG vom 21. Juni 2013 (Elterliche Sorge), in Kraft seit 1. Juli 2014 (<ref href="https://fedlex.data.admin.ch/eli/oc/2014/53">AS <b>2014</b> 357</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2011/1580">BBl <b>2011</b> 9077</ref>).
+</p>
+</authorialNote>
+</num>
+<p>bei Entscheiden über die Rückgabe eines Kindes nach dem Europäischen Übereinkommen vom 20. Mai 1980<sup>
+<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/1983/1681_1681_1681">SR <b>0.211.230.01</b>
+</ref>
+</p>
+</authorialNote>
+</sup> über die Anerkennung und Vollstreckung von Entscheidungen über das Sorgerecht für Kinder und die Wiederherstellung des Sorgerechts oder nach dem Übereinkommen vom 25. Oktober 1980<sup>
+<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/1983/1694_1694_1694">SR <b>0.211.230.02</b>
+</ref>
+</p>
+</authorialNote>
+</sup> über die zivilrechtlichen Aspekte internationaler Kindesentführung;</p>
+</item>
+<item eId="art_100/para_2/lbl_d">
+<num>d.<authorialNote>
+<p> Eingefügt durch Anhang Ziff. 2 des BG vom 20. März 2009 über das Bundespatentgericht, in Kraft seit 1. Jan. 2012 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/72">AS <b>2010</b> 513</ref>,<ref href="https://fedlex.data.admin.ch/eli/oc/2011/306">
+<b>2011</b> 2241</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2008/145">BBl <b>2008</b> 455</ref>).
+</p>
+</authorialNote>
+</num>
+<p>bei Entscheiden des Bundespatentgerichts über die Erteilung einer Lizenz nach Artikel 40<i>d</i> des Patentgesetzes vom 25. Juni 1954<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/1955/871_893_899">SR <b>232.14</b>
+</ref>
+</p>
+</authorialNote>.
+</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_100/para_3">
+<num>3</num>
+<content>
+<blockList>
+<listIntroduction eId="art_100/para_3/listintro"> Die Beschwerdefrist beträgt fünf Tage:</listIntroduction>
+<item eId="art_100/para_3/lbl_a">
+<num>a. </num>
+<p>bei Entscheiden der kantonalen Aufsichtsbehörden in Schuldbetreibungs- und Konkurssachen im Rahmen der Wechselbetreibung;</p>
+</item>
+<item eId="art_100/para_3/lbl_b">
+<num>b. </num>
+<p>bei Entscheiden der Kantonsregierungen über Beschwerden gegen eidgenössische Abstimmungen.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_100/para_4">
+<num>4</num>
+<content>
+<p> Bei Entscheiden der Kantonsregierungen über Beschwerden gegen die Nationalratswahlen beträgt die Beschwerdefrist drei Tage.</p>
+</content>
+</paragraph>
+<paragraph eId="art_100/para_5">
+<num>5</num>
+<content>
+<p> Bei Beschwerden wegen interkantonaler Kompetenzkonflikte beginnt die Beschwerdefrist spätestens dann zu laufen, wenn in beiden Kantonen Entscheide getroffen worden sind, gegen welche beim Bundesgericht Beschwerde geführt werden kann.</p>
+</content>
+</paragraph>
+<paragraph eId="art_100/para_6">
+<num>6</num>
+<content>
+<p> …<authorialNote>
+<p> Aufgehoben durch Anhang 1 Ziff. II 2 der Zivilprozessordnung vom 19. Dez. 2008, mit Wirkung seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/262">AS <b>2010</b> 1739</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/914">BBl <b>2006</b> 7221</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+<paragraph eId="art_100/para_7">
+<num>7</num>
+<content>
+<p> Gegen das unrechtmässige Verweigern oder Verzögern eines Entscheids kann jederzeit Beschwerde geführt werden.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_101">
+<num>
+<b>Art. 101</b>
+</num>
+<heading>Beschwerde gegen Erlasse</heading>
+<paragraph eId="art_101/para">
+<content>
+<p>Die Beschwerde gegen einen Erlass ist innert 30 Tagen nach der nach dem kantonalen Recht massgebenden Veröffentlichung des Erlasses beim Bundesgericht einzureichen.</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_4/sec_5">
+<num>5. Abschnitt: </num>
+<heading>Weitere Verfahrensbestimmungen</heading>
+<article eId="art_102">
+<num>
+<b>Art. 102</b>
+</num>
+<heading>Schriftenwechsel</heading>
+<paragraph eId="art_102/para_1">
+<num>1</num>
+<content>
+<p> Soweit erforderlich stellt das Bundesgericht die Beschwerde der Vorinstanz sowie den allfälligen anderen Parteien, Beteiligten oder zur Beschwerde berechtigten Behörden zu und setzt ihnen Frist zur Einreichung einer Vernehmlassung an.</p>
+</content>
+</paragraph>
+<paragraph eId="art_102/para_2">
+<num>2</num>
+<content>
+<p> Die Vorinstanz hat innert dieser Frist die Vorakten einzusenden.</p>
+</content>
+</paragraph>
+<paragraph eId="art_102/para_3">
+<num>3</num>
+<content>
+<p> Ein weiterer Schriftenwechsel findet in der Regel nicht statt.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_103">
+<num>
+<b>Art. 103</b>
+</num>
+<heading>Aufschiebende Wirkung</heading>
+<paragraph eId="art_103/para_1">
+<num>1</num>
+<content>
+<p> Die Beschwerde hat in der Regel keine aufschiebende Wirkung.</p>
+</content>
+</paragraph>
+<paragraph eId="art_103/para_2">
+<num>2</num>
+<content>
+<blockList>
+<listIntroduction eId="art_103/para_2/listintro"> Die Beschwerde hat im Umfang der Begehren aufschiebende Wirkung:</listIntroduction>
+<item eId="art_103/para_2/lbl_a">
+<num>a. </num>
+<p>in Zivilsachen, wenn sie sich gegen ein Gestaltungsurteil richtet;</p>
+</item>
+<item eId="art_103/para_2/lbl_b">
+<num>b. </num>
+<p>in Strafsachen, wenn sie sich gegen einen Entscheid richtet, der eine unbedingte Freiheitsstrafe oder eine freiheitsentziehende Massnahme ausspricht; die aufschiebende Wirkung erstreckt sich nicht auf den Entscheid über Zivilansprüche;</p>
+</item>
+<item eId="art_103/para_2/lbl_c">
+<num>c. </num>
+<p>in Verfahren auf dem Gebiet der internationalen Rechtshilfe in Strafsachen, wenn sie sich gegen eine Schlussverfügung oder gegen jede andere Verfügung richtet, welche die Übermittlung von Auskünften aus dem Geheimbereich oder die Herausgabe von Gegenständen oder Vermögenswerten bewilligt;</p>
+</item>
+<item eId="art_103/para_2/lbl_d">
+<num>d.<authorialNote>
+<p> Eingefügt durch Ziff. II des BG vom 21. März 2014, in Kraft seit 1. Aug. 2014  (<ref href="https://fedlex.data.admin.ch/eli/oc/2014/390">AS <b>2014</b> 2309</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2013/1632">BBl <b>2013</b> 8369</ref>).
+</p>
+</authorialNote>
+</num>
+<p>in Verfahren auf dem Gebiet der internationalen Amtshilfe in Steuersachen.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_103/para_3">
+<num>3</num>
+<content>
+<p> Der Instruktionsrichter oder die Instruktionsrichterin kann über die aufschiebende Wirkung von Amtes wegen oder auf Antrag einer Partei eine andere Anordnung treffen.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_104">
+<num>
+<b>Art. 104</b>
+</num>
+<heading>Andere vorsorgliche Massnahmen</heading>
+<paragraph eId="art_104/para">
+<content>
+<p>Der Instruktionsrichter oder die Instruktionsrichterin kann von Amtes wegen oder auf Antrag einer Partei vorsorgliche Massnahmen treffen, um den bestehenden Zustand zu erhalten oder bedrohte Interessen einstweilen sicherzustellen.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_105">
+<num>
+<b>Art. 105</b>
+</num>
+<heading>Massgebender Sachverhalt</heading>
+<paragraph eId="art_105/para_1">
+<num>1</num>
+<content>
+<p> Das Bundesgericht legt seinem Urteil den Sachverhalt zugrunde, den die Vorinstanz festgestellt hat.</p>
+</content>
+</paragraph>
+<paragraph eId="art_105/para_2">
+<num>2</num>
+<content>
+<p> Es kann die Sachverhaltsfeststellung der Vorinstanz von Amtes wegen berichtigen oder ergänzen, wenn sie offensichtlich unrichtig ist oder auf einer Rechtsverletzung im Sinne von Artikel 95 beruht.</p>
+</content>
+</paragraph>
+<paragraph eId="art_105/para_3">
+<num>3</num>
+<content>
+<p> Richtet sich die Beschwerde gegen einen Entscheid über die Zusprechung oder Verweigerung von Geldleistungen der Militär- oder Unfallversicherung, so ist das Bundesgericht nicht an die Sachverhaltsfeststellung der Vorinstanz gebunden.<authorialNote>
+<p> Fassung gemäss Ziff. IV 1 des BG vom 16. Dez. 2005, in Kraft seit 1. Jan. 2007  (<ref href="https://fedlex.data.admin.ch/eli/oc/2006/310">AS <b>2006</b> 2003</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2005/490">BBl <b>2005</b> 3079</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_106">
+<num>
+<b>Art. 106</b>
+</num>
+<heading>Rechtsanwendung</heading>
+<paragraph eId="art_106/para_1">
+<num>1</num>
+<content>
+<p> Das Bundesgericht wendet das Recht von Amtes wegen an.</p>
+</content>
+</paragraph>
+<paragraph eId="art_106/para_2">
+<num>2</num>
+<content>
+<p> Es prüft die Verletzung von Grundrechten und von kantonalem und interkantonalem Recht nur insofern, als eine solche Rüge in der Beschwerde vorgebracht und begründet worden ist.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_107">
+<num>
+<b>Art. 107</b>
+</num>
+<heading>Entscheid</heading>
+<paragraph eId="art_107/para_1">
+<num>1</num>
+<content>
+<p> Das Bundesgericht darf nicht über die Begehren der Parteien hinausgehen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_107/para_2">
+<num>2</num>
+<content>
+<p> Heisst das Bundesgericht die Beschwerde gut, so entscheidet es in der Sache selbst oder weist diese zu neuer Beurteilung an die Vorinstanz zurück. Es kann die Sache auch an die Behörde zurückweisen, die als erste Instanz entschieden hat.</p>
+</content>
+</paragraph>
+<paragraph eId="art_107/para_3">
+<num>3</num>
+<content>
+<p> Erachtet das Bundesgericht eine Beschwerde auf dem Gebiet der internationalen Rechtshilfe in Strafsachen oder der internationalen Amtshilfe in Steuersachen als unzulässig, so fällt es den Nichteintretensentscheid innert 15 Tagen seit Abschluss eines allfälligen Schriftenwechsels. Auf dem Gebiet der internationalen Rechtshilfe in Strafsachen ist es nicht an diese Frist gebunden, wenn das Auslieferungsverfahren eine Person betrifft, gegen deren Asylgesuch noch kein rechtskräftiger Endentscheid vorliegt.<authorialNote>
+<p> Fassung gemäss Anhang Ziff. 1 des Steueramtshilfegesetzes vom 28. Sept. 2012, in Kraft seit 1. Febr. 2013 (<ref href="https://fedlex.data.admin.ch/eli/oc/2013/31">AS <b>2013</b> 231</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2011/914">BBl <b>2011</b> 6193</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+<paragraph eId="art_107/para_4">
+<num>4</num>
+<content>
+<p> Über Beschwerden gegen Entscheide des Bundespatentgerichts über die Erteilung einer Lizenz nach Artikel 40<i>d</i> des Patentgesetzes vom 25. Juni 1954<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/1955/871_893_899">SR <b>232.14</b>
+</ref>
+</p>
+</authorialNote> entscheidet das Bundesgericht innerhalb eines Monats nach Anhebung der Beschwerde.<authorialNote>
+<p> Eingefügt durch Anhang Ziff. 2 des BG vom 20. März 2009 über das Bundespatentgericht, in Kraft seit 1. Jan. 2012 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/72">AS <b>2010</b> 513</ref>,<ref href="https://fedlex.data.admin.ch/eli/oc/2011/306">
+<b>2011</b> 2241</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2008/145">BBl <b>2008</b> 455</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_4/sec_6">
+<num>6. Abschnitt: </num>
+<heading>Vereinfachtes Verfahren</heading>
+<article eId="art_108">
+<num>
+<b>Art. 108</b>
+</num>
+<heading>Einzelrichter oder Einzelrichterin</heading>
+<paragraph eId="art_108/para_1">
+<num>1</num>
+<content>
+<blockList>
+<listIntroduction eId="art_108/para_1/listintro"> Der Präsident oder die Präsidentin der Abteilung entscheidet im vereinfachten Verfahren über:</listIntroduction>
+<item eId="art_108/para_1/lbl_a">
+<num>a. </num>
+<p>Nichteintreten auf offensichtlich unzulässige Beschwerden;</p>
+</item>
+<item eId="art_108/para_1/lbl_b">
+<num>b. </num>
+<p>Nichteintreten auf Beschwerden, die offensichtlich keine hinreichende Begründung (Art. 42 Abs. 2) enthalten;</p>
+</item>
+<item eId="art_108/para_1/lbl_c">
+<num>c. </num>
+<p>Nichteintreten auf querulatorische oder rechtmissbräuchliche Beschwerden.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_108/para_2">
+<num>2</num>
+<content>
+<p> Er oder sie kann einen anderen Richter oder eine andere Richterin damit betrauen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_108/para_3">
+<num>3</num>
+<content>
+<p> Die Begründung des Entscheids beschränkt sich auf eine kurze Angabe des Unzulässigkeitsgrundes.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_109">
+<num>
+<b>Art. 109</b>
+</num>
+<heading>Dreierbesetzung</heading>
+<paragraph eId="art_109/para_1">
+<num>1</num>
+<content>
+<p> Die Abteilungen entscheiden in Dreierbesetzung über Nichteintreten auf Beschwerden, bei denen sich keine Rechtsfrage von grundsätzlicher Bedeutung stellt oder kein besonders bedeutender Fall vorliegt, wenn die Beschwerde nur unter einer dieser Bedingungen zulässig ist (Art. 74 und 83–85). Artikel 58 Absatz 1 Buchstabe b findet keine Anwendung.</p>
+</content>
+</paragraph>
+<paragraph eId="art_109/para_2">
+<num>2</num>
+<content>
+<blockList>
+<listIntroduction eId="art_109/para_2/listintro"> Sie entscheiden ebenfalls in Dreierbesetzung bei Einstimmigkeit über:</listIntroduction>
+<item eId="art_109/para_2/lbl_a">
+<num>a. </num>
+<p>Abweisung offensichtlich unbegründeter Beschwerden;</p>
+</item>
+<item eId="art_109/para_2/lbl_b">
+<num>b. </num>
+<p>Gutheissung offensichtlich begründeter Beschwerden, insbesondere wenn der angefochtene Akt von der Rechtsprechung des Bundesgerichts abweicht und kein Anlass besteht, diese zu überprüfen.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_109/para_3">
+<num>3</num>
+<content>
+<p> Der Entscheid wird summarisch begründet. Es kann ganz oder teilweise auf den angefochtenen Entscheid verwiesen werden.</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_4/sec_7">
+<num>7. Abschnitt: </num>
+<heading>Kantonales Verfahren</heading>
+<article eId="art_110">
+<num>
+<b>Art. 110</b>
+</num>
+<heading>Beurteilung durch richterliche Behörde</heading>
+<paragraph eId="art_110/para">
+<content>
+<p>Soweit die Kantone nach diesem Gesetz als letzte kantonale Instanz ein Gericht einzusetzen haben, gewährleisten sie, dass dieses selbst oder eine vorgängig zuständige andere richterliche Behörde den Sachverhalt frei prüft und das massgebende Recht von Amtes wegen anwendet.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_111">
+<num>
+<b>Art. 111</b>
+</num>
+<heading>Einheit des Verfahrens</heading>
+<paragraph eId="art_111/para_1">
+<num>1</num>
+<content>
+<p> Wer zur Beschwerde an das Bundesgericht berechtigt ist, muss sich am Verfahren vor allen kantonalen Vorinstanzen als Partei beteiligen können.</p>
+</content>
+</paragraph>
+<paragraph eId="art_111/para_2">
+<num>2</num>
+<content>
+<p> Bundesbehörden, die zur Beschwerde an das Bundesgericht berechtigt sind, können die Rechtsmittel des kantonalen Rechts ergreifen und sich vor jeder kantonalen Instanz am Verfahren beteiligen, wenn sie dies beantragen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_111/para_3">
+<num>3</num>
+<content>
+<p> Die unmittelbare Vorinstanz des Bundesgerichts muss mindestens die Rügen nach den Artikeln 95–98 prüfen können. …<authorialNote>
+<p> Zweiter Satz aufgehoben durch Anhang 1 Ziff. II 2 der Zivilprozessordnung vom  19. Dez. 2008, mit Wirkung seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/262">AS <b>2010</b> 1739</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/914">BBl <b>2006</b> 7221</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_112">
+<num>
+<b>Art. 112</b>
+</num>
+<heading>Eröffnung der Entscheide</heading>
+<paragraph eId="art_112/para_1">
+<num>1</num>
+<content>
+<blockList>
+<listIntroduction eId="art_112/para_1/listintro"> Entscheide, die der Beschwerde an das Bundesgericht unterliegen, sind den Parteien schriftlich zu eröffnen. Sie müssen enthalten:</listIntroduction>
+<item eId="art_112/para_1/lbl_a">
+<num>a. </num>
+<p>die Begehren, die Begründung, die Beweisvorbringen und Prozesserklärungen der Parteien, soweit sie nicht aus den Akten hervorgehen;</p>
+</item>
+<item eId="art_112/para_1/lbl_b">
+<num>b. </num>
+<p>die massgebenden Gründe tatsächlicher und rechtlicher Art, insbesondere die Angabe der angewendeten Gesetzesbestimmungen;</p>
+</item>
+<item eId="art_112/para_1/lbl_c">
+<num>c. </num>
+<p>das Dispositiv;</p>
+</item>
+<item eId="art_112/para_1/lbl_d">
+<num>d. </num>
+<p>eine Rechtsmittelbelehrung einschliesslich Angabe des Streitwerts, soweit dieses Gesetz eine Streitwertgrenze vorsieht.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_112/para_2">
+<num>2</num>
+<content>
+<p> Wenn es das kantonale Recht vorsieht, kann die Behörde ihren Entscheid ohne Begründung eröffnen. Die Parteien können in diesem Fall innert 30 Tagen eine vollständige Ausfertigung verlangen. Der Entscheid ist nicht vollstreckbar, solange nicht entweder diese Frist unbenützt abgelaufen oder die vollständige Ausfertigung eröffnet worden ist.</p>
+</content>
+</paragraph>
+<paragraph eId="art_112/para_3">
+<num>3</num>
+<content>
+<p> Das Bundesgericht kann einen Entscheid, der den Anforderungen von Absatz 1 nicht genügt, an die kantonale Behörde zur Verbesserung zurückweisen oder aufheben.</p>
+</content>
+</paragraph>
+<paragraph eId="art_112/para_4">
+<num>4</num>
+<content>
+<p> Für die Gebiete, in denen Bundesbehörden zur Beschwerde berechtigt sind, bestimmt der Bundesrat, welche Entscheide ihnen die kantonalen Behörden zu eröffnen haben.</p>
+</content>
+</paragraph>
+</article>
+</section>
+</chapter>
+<chapter eId="chap_5">
+<num>5. Kapitel: </num>
+<heading>Subsidiäre Verfassungsbeschwerde</heading>
+<article eId="art_113">
+<num>
+<b>Art. 113</b>
+</num>
+<heading>Grundsatz</heading>
+<paragraph eId="art_113/para">
+<content>
+<p>Das Bundesgericht beurteilt Verfassungsbeschwerden gegen Entscheide letzter kantonaler Instanzen, soweit keine Beschwerde nach den Artikeln 72–89 zulässig ist.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_114">
+<num>
+<b>Art. 114</b>
+</num>
+<heading>Vorinstanzen</heading>
+<paragraph eId="art_114/para">
+<content>
+<p>Die Vorschriften des dritten Kapitels über die kantonalen Vorinstanzen (Art. 75 bzw. 86) gelten sinngemäss.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_115">
+<num>
+<b>Art. 115</b>
+</num>
+<heading>Beschwerderecht</heading>
+<paragraph eId="art_115/para">
+<content>
+<blockList>
+<listIntroduction eId="art_115/para/listintro">Zur Verfassungsbeschwerde ist berechtigt, wer:</listIntroduction>
+<item eId="art_115/para/lbl_a">
+<num>a. </num>
+<p>vor der Vorinstanz am Verfahren teilgenommen hat oder keine Möglichkeit zur Teilnahme erhalten hat; und</p>
+</item>
+<item eId="art_115/para/lbl_b">
+<num>b. </num>
+<p>ein rechtlich geschütztes Interesse an der Aufhebung oder Änderung des angefochtenen Entscheids hat.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+</article>
+<article eId="art_116">
+<num>
+<b>Art. 116</b>
+</num>
+<heading>Beschwerdegründe</heading>
+<paragraph eId="art_116/para">
+<content>
+<p>Mit der Verfassungsbeschwerde kann die Verletzung von verfassungsmässigen Rechten gerügt werden.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_117">
+<num>
+<b>Art. 117</b>
+</num>
+<heading>Beschwerdeverfahren</heading>
+<paragraph eId="art_117/para">
+<content>
+<p>Für das Verfahren der Verfassungsbeschwerde gelten die Artikel 90–94, 99, 100, 102, 103 Absätze 1 und 3, 104, 106 Absatz 2 sowie 107–112 sinngemäss.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_118">
+<num>
+<b>Art. 118</b>
+</num>
+<heading>Massgebender Sachverhalt</heading>
+<paragraph eId="art_118/para_1">
+<num>1</num>
+<content>
+<p> Das Bundesgericht legt seinem Urteil den Sachverhalt zugrunde, den die Vorinstanz festgestellt hat.</p>
+</content>
+</paragraph>
+<paragraph eId="art_118/para_2">
+<num>2</num>
+<content>
+<p> Es kann die Sachverhaltsfeststellung der Vorinstanz von Amtes wegen berichtigen oder ergänzen, wenn sie auf einer Rechtsverletzung im Sinne von Artikel 116 beruht.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_119">
+<num>
+<b>Art. 119</b>
+</num>
+<heading>Gleichzeitige ordentliche Beschwerde</heading>
+<paragraph eId="art_119/para_1">
+<num>1</num>
+<content>
+<p> Führt eine Partei gegen einen Entscheid sowohl ordentliche Beschwerde als auch Verfassungsbeschwerde, so hat sie beide Rechtsmittel in der gleichen Rechtsschrift einzureichen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_119/para_2">
+<num>2</num>
+<content>
+<p> Das Bundesgericht behandelt beide Beschwerden im gleichen Verfahren.</p>
+</content>
+</paragraph>
+<paragraph eId="art_119/para_3">
+<num>3</num>
+<content>
+<p> Es prüft die vorgebrachten Rügen nach den Vorschriften über die entsprechende Beschwerdeart.</p>
+</content>
+</paragraph>
+</article>
+</chapter>
+<chapter eId="chap_5_a">
+<num>5<inline name="man-font-weight-normal">
+<i>a</i>
+</inline>. Kapitel:<inline name="man-font-weight-normal">
+<sup>
+<authorialNote>
+<p> Eingefügt durch Anhang Ziff. II 5 des Strafbehördenorganisationsgesetzes vom 19. März 2010 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/444">AS <b>2010</b> 3267</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2008/1395">BBl <b>2008</b> 8125</ref>). Fassung gemäss Anhang Ziff. 1 des BG vom  19. Juni 2020, in Kraft seit 1. Jan. 2021 (<ref href="https://fedlex.data.admin.ch/eli/oc/2020/767">AS <b>2020</b> 4179</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2018/2548">BBl <b>2018</b> 7163</ref>).
+</p>
+</authorialNote>
+</sup>
+</inline>
+</num>
+<heading>Revision gegen Entscheide von Schiedsgerichten in der internationalen Schiedsgerichtsbarkeit </heading>
+<article eId="art_119_a">
+<num>
+<b>Art. 119</b>
+<i>a</i>
+</num>
+<paragraph eId="art_119_a/para_1">
+<num>1</num>
+<content>
+<p> Das Bundesgericht beurteilt Revisionsgesuche gegen Entscheide von Schiedsgerichten in der internationalen Schiedsgerichtsbarkeit unter den Voraussetzungen von Artikel 190a des Bundesgesetzes vom 18. Dezember 1987<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/1988/1776_1776_1776">SR <b>291</b>
+</ref>
+</p>
+</authorialNote> über das Internationale Privatrecht.</p>
+</content>
+</paragraph>
+<paragraph eId="art_119_a/para_2">
+<num>2</num>
+<content>
+<p> Für das Revisionsverfahren gelten die Artikel 77 Absatz 2bis und 126. Soweit das Bundesgericht das Revisionsgesuch nicht als offensichtlich unzulässig oder unbegründet befindet, stellt es dieses der Gegenpartei und dem Schiedsgericht zur Stellungnahme zu.</p>
+</content>
+</paragraph>
+<paragraph eId="art_119_a/para_3">
+<num>3</num>
+<content>
+<p> Heisst das Bundesgericht das Revisionsgesuch gut, so hebt es den Schiedsentscheid auf und weist die Sache zur Neubeurteilung an das Schiedsgericht zurück oder trifft die notwendigen Feststellungen.</p>
+</content>
+</paragraph>
+<paragraph eId="art_119_a/para_4">
+<num>4</num>
+<content>
+<p> Ist das Schiedsgericht nicht mehr vollständig, so ist Artikel 179 des Bundesgesetzes über das Internationale Privatrecht anwendbar.</p>
+</content>
+</paragraph>
+</article>
+</chapter>
+<chapter eId="chap_6">
+<num>6. Kapitel: </num>
+<heading>Klage</heading>
+<article eId="art_120">
+<num>
+<b>Art. 120</b>
+</num>
+<paragraph eId="art_120/para_1">
+<num>1</num>
+<content>
+<blockList>
+<listIntroduction eId="art_120/para_1/listintro"> Das Bundesgericht beurteilt auf Klage als einzige Instanz:</listIntroduction>
+<item eId="art_120/para_1/lbl_a">
+<num>a. </num>
+<p>Kompetenzkonflikte zwischen Bundesbehörden und kantonalen Behörden;</p>
+</item>
+<item eId="art_120/para_1/lbl_b">
+<num>b. </num>
+<p>zivilrechtliche und öffentlich-rechtliche Streitigkeiten zwischen Bund und Kantonen oder zwischen Kantonen;</p>
+</item>
+<item eId="art_120/para_1/lbl_c">
+<num>c.<authorialNote>
+<p> Fassung gemäss Anhang Ziff. II 5 des Strafbehördenorganisationsgesetzes vom  19. März 2010, in Kraft seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/444">AS <b>2010</b> 3267</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2008/1395">BBl <b>2008</b> 8125</ref>).
+</p>
+</authorialNote>
+</num>
+<p>Ansprüche auf Schadenersatz und Genugtuung aus der Amtstätigkeit von Personen im Sinne von Artikel 1 Absatz 1 Buchstaben a–c<sup>bis</sup> des Verantwortlichkeitsgesetzes vom 14. März 1958<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/1958/1413_1483_1489">SR <b>170.32</b>
+</ref>
+</p>
+</authorialNote>.
+</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_120/para_2">
+<num>2</num>
+<content>
+<p> Die Klage ist unzulässig, wenn ein anderes Bundesgesetz eine Behörde zum Erlass einer Verfügung über solche Streitigkeiten ermächtigt. Gegen die Verfügung ist letztinstanzlich die Beschwerde an das Bundesgericht zulässig.</p>
+</content>
+</paragraph>
+<paragraph eId="art_120/para_3">
+<num>3</num>
+<content>
+<p> Das Klageverfahren richtet sich nach dem BZP<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/1948/485_473_421">SR <b>273</b>
+</ref>
+</p>
+</authorialNote>.
+</p>
+</content>
+</paragraph>
+</article>
+</chapter>
+<chapter eId="chap_7">
+<num>7. Kapitel: </num>
+<heading>Revision, Erläuterung und Berichtigung</heading>
+<section eId="chap_7/sec_1">
+<num>1. Abschnitt: </num>
+<heading>Revision</heading>
+<article eId="art_121">
+<num>
+<b>Art. 121</b>
+</num>
+<heading>Verletzung von Verfahrensvorschriften</heading>
+<paragraph eId="art_121/para">
+<content>
+<blockList>
+<listIntroduction eId="art_121/para/listintro">Die Revision eines Entscheids des Bundesgerichts kann verlangt werden, wenn:</listIntroduction>
+<item eId="art_121/para/lbl_a">
+<num>a. </num>
+<p>die Vorschriften über die Besetzung des Gerichts oder über den Ausstand verletzt worden sind;</p>
+</item>
+<item eId="art_121/para/lbl_b">
+<num>b. </num>
+<p>das Gericht einer Partei mehr oder, ohne dass das Gesetz es erlaubt, anderes zugesprochen hat, als sie selbst verlangt hat, oder weniger als die Gegenpartei anerkannt hat;</p>
+</item>
+<item eId="art_121/para/lbl_c">
+<num>c. </num>
+<p>einzelne Anträge unbeurteilt geblieben sind;</p>
+</item>
+<item eId="art_121/para/lbl_d">
+<num>d. </num>
+<p>das Gericht in den Akten liegende erhebliche Tatsachen aus Versehen nicht berücksichtigt hat.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+</article>
+<article eId="art_122">
+<num>
+<b>Art. 122</b>
+</num>
+<heading>Verletzung der Europäischen Menschenrechtskonvention</heading>
+<paragraph eId="art_122/para">
+<content>
+<blockList>
+<listIntroduction eId="art_122/para/listintro">Die Revision wegen Verletzung der Konvention zum Schutz der Menschenrechte und Grundfreiheiten vom 4. November 1950<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/1974/2151_2151_2151">SR <b>0.101</b>
+</ref>
+</p>
+</authorialNote> (EMRK) kann verlangt werden, wenn:</listIntroduction>
+<item eId="art_122/para/lbl_a">
+<num>a.<authorialNote>
+<p> Fassung gemäss Ziff. I des BG vom 1. Okt. 2021, in Kraft seit 1. Juli 2022  (<ref href="https://fedlex.data.admin.ch/eli/oc/2022/289">AS <b>2022</b> 289</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2021/300">BBl <b>2021 </b>300</ref>,<ref href="https://fedlex.data.admin.ch/eli/fga/2021/889">889</ref>).
+</p>
+</authorialNote>
+</num>
+<p>der Europäische Gerichtshof für Menschenrechte in einem endgültigen Urteil (Art. 44 EMRK) festgestellt hat, dass die EMRK oder die Protokolle dazu verletzt worden sind, oder den Fall durch eine gütliche Einigung (Art. 39 EMRK) abgeschlossen hat;</p>
+</item>
+<item eId="art_122/para/lbl_b">
+<num>b. </num>
+<p>eine Entschädigung nicht geeignet ist, die Folgen der Verletzung auszugleichen; und</p>
+</item>
+<item eId="art_122/para/lbl_c">
+<num>c. </num>
+<p>die Revision notwendig ist, um die Verletzung zu beseitigen.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+</article>
+<article eId="art_123">
+<num>
+<b>Art. 123</b>
+</num>
+<heading>Andere Gründe</heading>
+<paragraph eId="art_123/para_1">
+<num>1</num>
+<content>
+<p> Die Revision kann verlangt werden, wenn ein Strafverfahren ergeben hat, dass durch ein Verbrechen oder Vergehen zum Nachteil der Partei auf den Entscheid eingewirkt wurde; die Verurteilung durch das Strafgericht ist nicht erforderlich. Ist das Strafverfahren nicht durchführbar, so kann der Beweis auf andere Weise erbracht werden.</p>
+</content>
+</paragraph>
+<paragraph eId="art_123/para_2">
+<num>2</num>
+<content>
+<blockList>
+<listIntroduction eId="art_123/para_2/listintro"> Die Revision kann zudem verlangt werden:</listIntroduction>
+<item eId="art_123/para_2/lbl_a">
+<num>a. </num>
+<p>in Zivilsachen und öffentlich-rechtlichen Angelegenheiten, wenn die ersuchende Partei nachträglich erhebliche Tatsachen erfährt oder entscheidende Beweismittel auffindet, die sie im früheren Verfahren nicht beibringen konnte, unter Ausschluss der Tatsachen und Beweismittel, die erst nach dem Entscheid entstanden sind;</p>
+</item>
+<item eId="art_123/para_2/lbl_b">
+<num>b.<authorialNote>
+<p> Fassung gemäss Anhang 1 Ziff. II 3 der Strafprozessordnung vom 5. Okt. 2007, in Kraft seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/267">AS <b>2010</b> 1881</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/124">BBl <b>2006</b> 1085</ref>).
+</p>
+</authorialNote>
+</num>
+<p>in Strafsachen, wenn die Voraussetzungen von Artikel 410 Absätze 1 Buchstaben a und b sowie 2 StPO<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2010/267">SR <b>312.0</b>
+</ref>
+</p>
+</authorialNote> erfüllt sind;</p>
+</item>
+<item eId="art_123/para_2/lbl_c">
+<num>c.<authorialNote>
+<p> Eingefügt durch Anhang Ziff. II 1 des Kernenergiehaftpflichtgesetzes vom 13. Juni 2008, in Kraft seit 1. Jan. 2022, veröffentlicht am 27. Jan. 2022 (<ref href="https://fedlex.data.admin.ch/eli/oc/2022/43">AS <b>2022</b> 43</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2007/761">BBl <b>2007</b> 5397</ref>).
+</p>
+</authorialNote>
+</num>
+<p>in Sachen, die Ansprüche auf Ersatz von nuklearem Schaden betreffen, aus den in Artikel 5 Absatz 5 Kernenergiehaftpflichtgesetz vom 13. Juni 2008<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2022/43">SR <b>732.44</b>
+</ref>
+</p>
+</authorialNote> genannten Gründen.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+</article>
+<article eId="art_124">
+<num>
+<b>Art. 124</b>
+</num>
+<heading>Frist</heading>
+<paragraph eId="art_124/para_1">
+<num>1</num>
+<content>
+<blockList>
+<listIntroduction eId="art_124/para_1/listintro"> Das Revisionsgesuch ist beim Bundesgericht einzureichen:</listIntroduction>
+<item eId="art_124/para_1/lbl_a">
+<num>a. </num>
+<p>wegen Verletzung der Ausstandsvorschriften: innert 30 Tagen nach der Entdeckung des Ausstandsgrundes;</p>
+</item>
+<item eId="art_124/para_1/lbl_b">
+<num>b. </num>
+<p>wegen Verletzung anderer Verfahrensvorschriften: innert 30 Tagen nach der Eröffnung der vollständigen Ausfertigung des Entscheids;</p>
+</item>
+<item eId="art_124/para_1/lbl_c">
+<num>c. </num>
+<p>wegen Verletzung der EMRK<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/1974/2151_2151_2151">SR <b>0.101</b>
+</ref>
+</p>
+</authorialNote>: innert 90 Tagen, nachdem das Urteil des Europäischen Gerichtshofs für Menschenrechte nach Artikel 44 EMRK endgültig geworden ist;</p>
+</item>
+<item eId="art_124/para_1/lbl_d">
+<num>d. </num>
+<p>aus anderen Gründen: innert 90 Tagen nach deren Entdeckung, frühestens jedoch nach der Eröffnung der vollständigen Ausfertigung des Entscheids oder nach dem Abschluss des Strafverfahrens.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_124/para_2">
+<num>2</num>
+<content>
+<blockList>
+<listIntroduction eId="art_124/para_2/listintro"> Nach Ablauf von zehn Jahren nach der Ausfällung des Entscheids kann die Revision nicht mehr verlangt werden, ausser:</listIntroduction>
+<item eId="art_124/para_2/lbl_a">
+<num>a. </num>
+<p>in Strafsachen aus den Gründen nach Artikel 123 Absatz 1 und 2 Buchstabe b;</p>
+</item>
+<item eId="art_124/para_2/lbl_b">
+<num>b. </num>
+<p>in den übrigen Fällen aus dem Grund nach Artikel 123 Absatz 1.</p>
+</item>
+</blockList>
+</content>
+</paragraph>
+<paragraph eId="art_124/para_3">
+<num>3</num>
+<content>
+<p> Die besonderen Fristen nach Artikel 5 Absatz 5 Kernenergiehaftpflichtgesetz vom 13. Juni 2008<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2022/43">SR <b>732.44</b>
+</ref>
+</p>
+</authorialNote> bleiben vorbehalten.<authorialNote>
+<p> Eingefügt durch Anhang Ziff. II 1 des Kernenergiehaftpflichtgesetzes vom 13. Juni 2008, in Kraft seit 1. Jan. 2022, veröffentlicht am 27. Jan. 2022  (<ref href="https://fedlex.data.admin.ch/eli/oc/2022/43">AS <b>2022</b> 43</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2007/761">BBl <b>2007</b> 5397</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_125">
+<num>
+<b>Art. 125</b>
+</num>
+<heading>Verwirkung</heading>
+<paragraph eId="art_125/para">
+<content>
+<p>Die Revision eines Entscheids, der den Entscheid der Vorinstanz bestätigt, kann nicht aus einem Grund verlangt werden, der schon vor der Ausfällung des bundesgerichtlichen Entscheids entdeckt worden ist und mit einem Revisionsgesuch bei der Vorinstanz hätte geltend gemacht werden können.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_126">
+<num>
+<b>Art. 126</b>
+</num>
+<heading>Vorsorgliche Massnahmen</heading>
+<paragraph eId="art_126/para">
+<content>
+<p>Nach Eingang des Revisionsgesuchs kann der Instruktionsrichter oder die Instruktionsrichterin von Amtes wegen oder auf Antrag einer Partei den Vollzug des angefochtenen Entscheids aufschieben oder andere vorsorgliche Massnahmen treffen.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_127">
+<num>
+<b>Art. 127</b>
+</num>
+<heading>Schriftenwechsel</heading>
+<paragraph eId="art_127/para">
+<content>
+<p>Soweit das Bundesgericht das Revisionsgesuch nicht als unzulässig oder unbegründet befindet, stellt es dieses der Vorinstanz sowie den allfälligen anderen Parteien, Beteiligten oder zur Beschwerde berechtigten Behörden zu; gleichzeitig setzt es ihnen eine Frist zur Einreichung einer Vernehmlassung an.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_128">
+<num>
+<b>Art. 128</b>
+</num>
+<heading>Entscheid</heading>
+<paragraph eId="art_128/para_1">
+<num>1</num>
+<content>
+<p> Findet das Bundesgericht, dass der Revisionsgrund zutrifft, so hebt es den früheren Entscheid auf und entscheidet neu.</p>
+</content>
+</paragraph>
+<paragraph eId="art_128/para_2">
+<num>2</num>
+<content>
+<p> Wenn das Gericht einen Rückweisungsentscheid aufhebt, bestimmt es gleichzeitig die Wirkung dieser Aufhebung auf einen neuen Entscheid der Vorinstanz, falls in der Zwischenzeit ein solcher ergangen ist.</p>
+</content>
+</paragraph>
+<paragraph eId="art_128/para_3">
+<num>3</num>
+<content>
+<p> Entscheidet das Bundesgericht in einer Strafsache neu, so ist Artikel 415 StPO<authorialNote>
+<p>
+<ref href="https://fedlex.data.admin.ch/eli/cc/2010/267">SR <b>312.0</b>
+</ref>
+</p>
+</authorialNote> sinngemäss anwendbar.<authorialNote>
+<p> Fassung gemäss Anhang 1 Ziff. II 3 der Strafprozessordnung vom 5. Okt. 2007, in Kraft seit 1. Jan. 2011 (<ref href="https://fedlex.data.admin.ch/eli/oc/2010/267">AS <b>2010</b> 1881</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/124">BBl <b>2006</b> 1085</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+</article>
+</section>
+<section eId="chap_7/sec_2">
+<num>2. Abschnitt: </num>
+<heading>Erläuterung und Berichtigung</heading>
+<article eId="art_129">
+<num>
+<b>Art. 129</b>
+</num>
+<paragraph eId="art_129/para_1">
+<num>1</num>
+<content>
+<p> Ist das Dispositiv eines bundesgerichtlichen Entscheids unklar, unvollständig oder zweideutig, stehen seine Bestimmungen untereinander oder mit der Begründung im Widerspruch oder enthält es Redaktions- oder Rechnungsfehler, so nimmt das Bundesgericht auf schriftliches Gesuch einer Partei oder von Amtes wegen die Erläuterung oder Berichtigung vor.</p>
+</content>
+</paragraph>
+<paragraph eId="art_129/para_2">
+<num>2</num>
+<content>
+<p> Die Erläuterung eines Rückweisungsentscheids ist nur zulässig, solange die Vorinstanz nicht den neuen Entscheid getroffen hat.</p>
+</content>
+</paragraph>
+<paragraph eId="art_129/para_3">
+<num>3</num>
+<content>
+<p> Die Artikel 126 und 127 sind sinngemäss anwendbar.</p>
+</content>
+</paragraph>
+</article>
+</section>
+</chapter>
+<chapter eId="chap_8">
+<num>8. Kapitel: </num>
+<heading>Schlussbestimmungen</heading>
+<article eId="art_130">
+<num>
+<b>Art. 130</b>
+<authorialNote>
+<p> Fassung gemäss Ziff. I 1 des BG vom 23. Juni 2006 über die Bereinigung und Aktualisierung der Totalrevision der Bundesrechtspflege, in Kraft seit 1. Jan. 2007 (<ref href="https://fedlex.data.admin.ch/eli/oc/2006/634">AS <b>2006</b> 4213</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/334">BBl <b>2006</b> 3067</ref>).
+</p>
+</authorialNote>
+</num>
+<heading>Kantonale Ausführungsbestimmungen</heading>
+<paragraph eId="art_130/para_1">
+<num>1</num>
+<content>
+<p> Die Kantone erlassen auf den Zeitpunkt des Inkrafttretens einer schweizerischen Strafprozessordnung Ausführungsbestimmungen über die Zuständigkeit, die Organisation und das Verfahren der Vorinstanzen in Strafsachen im Sinne der Artikel 80 Absatz 2 und 111 Absatz 3, einschliesslich der Bestimmungen, die zur Gewährleistung der Rechtsweggarantie nach Artikel 29<i>a</i> der Bundesverfassung erforderlich sind. Ist sechs Jahre nach Inkrafttreten dieses Gesetzes noch keine schweizerische Strafprozessordnung in Kraft, so legt der Bundesrat die Frist zum Erlass der Ausführungsbestimmungen nach Anhörung der Kantone fest.</p>
+</content>
+</paragraph>
+<paragraph eId="art_130/para_2">
+<num>2</num>
+<content>
+<p> Die Kantone erlassen auf den Zeitpunkt des Inkrafttretens einer schweizerischen Zivilprozessordnung Ausführungsbestimmungen über die Zuständigkeit, die Organisation und das Verfahren der Vorinstanzen in Zivilsachen im Sinne der Artikel 75 Absatz 2 und 111 Absatz 3, einschliesslich der Bestimmungen, die zur Gewährleistung der Rechtsweggarantie nach Artikel 29<i>a</i> der Bundesverfassung erforderlich sind. Ist sechs Jahre nach Inkrafttreten dieses Gesetzes noch keine schweizerische Zivilprozessordnung in Kraft, so legt der Bundesrat die Frist zum Erlass der Ausführungsbestimmungen nach Anhörung der Kantone fest.</p>
+</content>
+</paragraph>
+<paragraph eId="art_130/para_3">
+<num>3</num>
+<content>
+<p> Innert zwei Jahren nach Inkrafttreten dieses Gesetzes erlassen die Kantone Ausführungsbestimmungen über die Zuständigkeit, die Organisation und das Verfahren der Vorinstanzen im Sinne der Artikel 86 Absätze 2 und 3 und 88 Absatz 2, einschliesslich der Bestimmungen, die zur Gewährleistung der Rechtsweggarantie nach Artikel 29<i>a</i> der Bundesverfassung erforderlich sind.</p>
+</content>
+</paragraph>
+<paragraph eId="art_130/para_4">
+<num>4</num>
+<content>
+<p> Bis zum Erlass der Ausführungsgesetzgebung können die Kantone die Ausführungsbestimmungen in die Form nicht referendumspflichtiger Erlasse kleiden, soweit dies zur Einhaltung der Fristen nach den Absätzen 1–3 notwendig ist.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_131">
+<num>
+<b>Art. 131</b>
+</num>
+<heading>Aufhebung und Änderung bisherigen Rechts</heading>
+<paragraph eId="art_131/para_1">
+<num>1</num>
+<content>
+<p> Das Bundesgesetz vom 16. Dezember 1943<authorialNote>
+<p> [BS <b>3</b> 531; <ref href="https://fedlex.data.admin.ch/eli/oc/1948/485_473_421">AS <b>1948</b> 485 </ref>Art. 86; <ref href="https://fedlex.data.admin.ch/eli/oc/1955/871_893_899">
+<b>1955</b> 871 </ref>Art. 118; <ref href="https://fedlex.data.admin.ch/eli/oc/1959/902_931_921">
+<b>1959</b> 902</ref>;<ref href="https://fedlex.data.admin.ch/eli/oc/1969/737_757_755">
+<b>1969</b> 737 </ref>Art. 80 Bst. <i>b</i>, 767; <ref href="https://fedlex.data.admin.ch/eli/oc/1977/237_237_237">
+<b>1977</b> 237 </ref>Ziff. II 3, <ref href="https://fedlex.data.admin.ch/eli/oc/1977/862_862_862">862 </ref>Art. 52 Ziff. 2, <ref href="https://fedlex.data.admin.ch/eli/oc/1977/1323_1323_1323">1323 </ref>Ziff. III; <b>1978</b> 688 Art. 88 Ziff. 3, <ref href="https://fedlex.data.admin.ch/eli/oc/1977/1450__">1450</ref>;<ref href="https://fedlex.data.admin.ch/eli/oc/1979/42_42_42">
+<b>1979</b> 42</ref>;<ref href="https://fedlex.data.admin.ch/eli/oc/1980/31_31_31">
+<b>1980</b> 31 </ref>Ziff. IV, 1718 Art. 52 Ziff. 2, <ref href="https://fedlex.data.admin.ch/eli/oc/1980/1819_1819_1819">1819 </ref>Art. 12 Abs. 1; <ref href="https://fedlex.data.admin.ch/eli/oc/1982/1676_1676_1676">
+<b>1982</b> 1676 </ref>Anhang Ziff. 13; <ref href="https://fedlex.data.admin.ch/eli/oc/1983/1886_1886_1886">
+<b>1983</b> 1886 </ref>Art. 36 Ziff. 1; <ref href="https://fedlex.data.admin.ch/eli/oc/1986/926_926_926">
+<b>1986</b> 926 </ref>Art. 59 Ziff. 1; <ref href="https://fedlex.data.admin.ch/eli/oc/1987/226_226_226">
+<b>1987</b> 226 </ref>Ziff. II 1, <ref href="https://fedlex.data.admin.ch/eli/oc/1987/1665_1665_1665">1665  </ref>Ziff. II; <b>1988</b> 1776 Anhang Ziff. II 1; <ref href="https://fedlex.data.admin.ch/eli/oc/1989/504_504_504">
+<b>1989</b> 504 </ref>Art. 33 Bst. <i>a</i>;<b>1990</b> 938 Ziff. III Abs. 5; <ref href="https://fedlex.data.admin.ch/eli/oc/1992/288_288_288">
+<b>1992</b> 288</ref>;<ref href="https://fedlex.data.admin.ch/eli/oc/1993/274_274_274">
+<b>1993</b> 274 </ref>Art. 75 Ziff. 1, <ref href="https://fedlex.data.admin.ch/eli/oc/1993/1945_1945_1945">1945 </ref>Anhang Ziff. 1; <ref href="https://fedlex.data.admin.ch/eli/oc/1995/1227_1227_1227">
+<b>1995</b> 1227 </ref>Anhang Ziff. 3, <ref href="https://fedlex.data.admin.ch/eli/oc/1995/4093_4093_4093">4093 </ref>Anhang Ziff. 4; <ref href="https://fedlex.data.admin.ch/eli/oc/1996/508_508_508">
+<b>1996</b> 508 </ref>Art. 36, <ref href="https://fedlex.data.admin.ch/eli/oc/1996/750_750_750">750 </ref>Art. 17, <ref href="https://fedlex.data.admin.ch/eli/oc/1996/1445_1445_1445">1445 </ref>Anhang Ziff. 2, <ref href="https://fedlex.data.admin.ch/eli/oc/1996/1498_1498_1498">1498 </ref>Anhang Ziff. 2; <ref href="https://fedlex.data.admin.ch/eli/oc/1997/1155_1155_1155">
+<b>1997</b> 1155 </ref>Anhang Ziff. 6, <ref href="https://fedlex.data.admin.ch/eli/oc/1997/2465_2465_2465">2465 </ref>Anhang Ziff. 5; <ref href="https://fedlex.data.admin.ch/eli/oc/1998/2847_2847_2847">
+<b>1998</b> 2847 </ref>Anhang Ziff. 3, <ref href="https://fedlex.data.admin.ch/eli/oc/1998/3033_3033_3033">3033 </ref>Anhang Ziff. 2; <ref href="https://fedlex.data.admin.ch/eli/oc/1999/149">
+<b>1999</b> 1118 </ref>Anhang Ziff. 1, <ref href="https://fedlex.data.admin.ch/eli/oc/1999/472">3071 </ref>Ziff. I 2; <ref href="https://fedlex.data.admin.ch/eli/oc/2000/54">
+<b>2000</b> 273 </ref>Anhang Ziff. 6, <ref href="https://fedlex.data.admin.ch/eli/oc/2000/92">416 </ref>Ziff. I 2, <ref href="https://fedlex.data.admin.ch/eli/oc/2000/95">505 </ref>Ziff. I 1, <ref href="https://fedlex.data.admin.ch/eli/oc/2000/374">2355 </ref>Anhang Ziff. 1, <ref href="https://fedlex.data.admin.ch/eli/oc/2000/453">2719</ref>;<ref href="https://fedlex.data.admin.ch/eli/oc/2001/21">
+<b>2001</b> 114 </ref>Ziff. I 4, <ref href="https://fedlex.data.admin.ch/eli/oc/2001/123">894 </ref>Art. 40 Ziff. 3, <ref href="https://fedlex.data.admin.ch/eli/oc/2001/150">1029  </ref>Art. 11 Abs. 2; <ref href="https://fedlex.data.admin.ch/eli/oc/2002/153">
+<b>2002</b> 863 </ref>Art. 35, <ref href="https://fedlex.data.admin.ch/eli/oc/2002/283">1904 </ref>Art. 36 Ziff. 1, <ref href="https://fedlex.data.admin.ch/eli/oc/2002/408">2767 </ref>Ziff. II, 3988 Anhang Ziff. 1; <ref href="https://fedlex.data.admin.ch/eli/oc/2003/314">
+<b>2003</b> 2133 </ref>Anhang Ziff. 7, <ref href="https://fedlex.data.admin.ch/eli/oc/2003/510">3543 </ref>Anhang Ziff. II 4 Bst. <i>a</i>, 4557 Anhang Ziff. II 1;  <ref href="https://fedlex.data.admin.ch/eli/oc/2004/221">
+<b>2004</b> 1985 </ref>Anhang Ziff. II 1, <ref href="https://fedlex.data.admin.ch/eli/oc/2004/723">4719 </ref>Anhang Ziff. II 1; <ref href="https://fedlex.data.admin.ch/eli/oc/2005/782">
+<b>2005</b> 5685 </ref>Anhang Ziff. 7]</p>
+</authorialNote> über die Organisation der Bundesrechtspflege wird aufgehoben.</p>
+</content>
+</paragraph>
+<paragraph eId="art_131/para_2">
+<num>2</num>
+<content>
+<p> Die Änderung bisherigen Rechts wird im Anhang geregelt.</p>
+</content>
+</paragraph>
+<paragraph eId="art_131/para_3">
+<num>3</num>
+<content>
+<p> Die Bundesversammlung kann diesem Gesetz widersprechende, aber formell nicht geänderte Bestimmungen in Bundesgesetzen durch eine Verordnung anpassen.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_132">
+<num>
+<b>Art. 132</b>
+</num>
+<heading>Übergangsbestimmungen</heading>
+<paragraph eId="art_132/para_1">
+<num>1</num>
+<content>
+<p> Dieses Gesetz ist auf die nach seinem Inkrafttreten eingeleiteten Verfahren des Bundesgerichts anwendbar, auf ein Beschwerdeverfahren jedoch nur dann, wenn auch der angefochtene Entscheid nach dem Inkrafttreten dieses Gesetzes ergangen ist.</p>
+</content>
+</paragraph>
+<paragraph eId="art_132/para_2">
+<num>2</num>
+<content>
+<p>
+<span>…</span>
+<span>
+<authorialNote>
+<p> Aufgehoben durch Anhang Ziff. 1 des BG vom 26. Sept. 2014, mit Wirkung seit   1. Jan. 2016 (<ref href="https://fedlex.data.admin.ch/eli/oc/2015/598">AS <b>2015</b> 3205</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2013/1358">BBl <b>2013</b> 7185</ref>).
+</p>
+</authorialNote>
+</span>
+</p>
+</content>
+</paragraph>
+<paragraph eId="art_132/para_3">
+<num>3</num>
+<content>
+<p> Die Amtsdauer der ordentlichen und nebenamtlichen Bundesrichter und Bundesrichterinnen, die gestützt auf das Bundesrechtspflegegesetz vom 16. Dezember 1943<authorialNote>
+<p> [BS <b>3</b> 531]</p>
+</authorialNote> oder den Bundesbeschluss vom 23. März 1984<authorialNote>
+<p> [<ref href="https://fedlex.data.admin.ch/eli/oc/1984/748_748_748">AS <b>1984</b> 748</ref>,<ref href="https://fedlex.data.admin.ch/eli/oc/1992/339_339_339">
+<b>1992</b> 339</ref>,<ref href="https://fedlex.data.admin.ch/eli/oc/1993/879_879_879">
+<b>1993</b> 879 </ref>Anhang 3 Ziff. 3]</p>
+</authorialNote> über die Erhöhung der Zahl der nebenamtlichen Richter des Bundesgerichts gewählt worden sind oder die in den Jahren 2007 und 2008 gewählt werden, endet am 31. Dezember 2008.<authorialNote>
+<p> Eingefügt durch Ziff. I 1 des BG vom 23. Juni 2006 über die Bereinigung und Aktualisierung der Totalrevision der Bundesrechtspflege, in Kraft seit 1. Jan. 2007 (<ref href="https://fedlex.data.admin.ch/eli/oc/2006/634">AS <b>2006</b> 4213</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/334">BBl <b>2006</b> 3067</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+<paragraph eId="art_132/para_4">
+<num>4</num>
+<content>
+<p> Die zahlenmässige Begrenzung der nebenamtlichen Bundesrichter und Bundesrichterinnen gemäss Artikel 1 Absatz 4 gilt erst ab 2009.<authorialNote>
+<p> Eingefügt durch Ziff. I 1 des BG vom 23. Juni 2006 über die Bereinigung und Aktualisierung der Totalrevision der Bundesrechtspflege, in Kraft seit 1. Jan. 2007 (<ref href="https://fedlex.data.admin.ch/eli/oc/2006/634">AS <b>2006</b> 4213</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2006/334">BBl <b>2006</b> 3067</ref>).
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_132_a">
+<num>
+<b>Art. 132</b>
+<i>a</i>
+<authorialNote>
+<p> Eingefügt durch Ziff. I 1 des BG vom 20. Juni 2014, in Kraft seit 1. Jan. 2016  (<ref href="https://fedlex.data.admin.ch/eli/oc/2015/3">AS <b>2015</b> 9</ref>;<ref href="https://fedlex.data.admin.ch/eli/fga/2013/1658">BBl <b>2013</b> 8435</ref>).
+</p>
+</authorialNote>
+</num>
+<heading>Übergangsbestimmung zur Änderung vom 20. Juni 2014</heading>
+<paragraph eId="art_132_a/para">
+<content>
+<p>Das Beschwerdeverfahren gegen Entscheide, die vor dem Inkrafttreten der Änderung vom 20. Juni 2014 dieses Gesetzes ergangen sind, richtet sich nach dem bisherigen Recht.</p>
+</content>
+</paragraph>
+</article>
+<article eId="art_133">
+<num>
+<b>Art. 133</b>
+</num>
+<heading>Referendum und Inkrafttreten</heading>
+<paragraph eId="art_133/para_1">
+<num>1</num>
+<content>
+<p> Dieses Gesetz untersteht dem fakultativen Referendum.</p>
+</content>
+</paragraph>
+<paragraph eId="art_133/para_2">
+<num>2</num>
+<content>
+<p> Der Bundesrat bestimmt das Inkrafttreten.</p>
+<p>Datum des Inkrafttretens: 1. Januar 2007<authorialNote>
+<p> Art. 1 Bst. a der V vom 1. März 2006 (<ref href="https://fedlex.data.admin.ch/eli/oc/2006/188">AS <b>2006</b> 1069</ref>)
+</p>
+</authorialNote>
+</p>
+</content>
+</paragraph>
+</article>
+</chapter>
+</body>
+<components>
+<component>
+<doc name="annex">
+<meta>
+<identification source="#ch.bk">
+<FRBRWork>
+<FRBRthis value="https://fedlex.data.admin.ch/eli/cc/2006/218/20240201/main-text"/>
+<FRBRuri value="https://fedlex.data.admin.ch/eli/cc/2006/218/20240201"/>
+<FRBRdate date="2005-06-17" name="jolux:dateDocument"/>
+<FRBRdate date="2007-01-01" name="jolux:dateEntryInForce"/>
+<FRBRdate date="2024-02-01" name="jolux:dateApplicability"/>
+<FRBRauthor href="#ch.bk" as="#publisher"/>
+<FRBRauthor href="#ch.bk" as="#rightsHolder"/>
+<FRBRcountry value="CH"/>
+<FRBRnumber value="173.110"/>
+<FRBRname xml:lang="fr" value="Loi du 17 juin 2005 sur le Tribunal fédéral (LTF)" shortForm="LTF"/>
+<FRBRname xml:lang="de" value="Bundesgesetz vom 17. Juni 2005 über das Bundesgericht (Bundesgerichtsgesetz, BGG)" shortForm="BGG"/>
+<FRBRname xml:lang="rm" value="Lescha federala dals 17 da zercladur 2005 davart il Tribunal federal (Lescha davart il tribunal federal, LTF)" shortForm="LTF"/>
+<FRBRname xml:lang="it" value="Legge del 17 giugno 2005 sul Tribunale federale (LTF)" shortForm="LTF"/>
+<FRBRauthoritative value="true"/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value="https://fedlex.data.admin.ch/eli/cc/2006/218/20240201/de/main-text"/>
+<FRBRuri value="https://fedlex.data.admin.ch/eli/cc/2006/218/20240201/de"/>
+<FRBRdate date="2005-06-17" name="jolux:dateDocument"/>
+<FRBRdate date="2007-01-01" name="jolux:dateEntryInForce"/>
+<FRBRdate date="2024-02-01" name="jolux:dateApplicability"/>
+<FRBRauthor href="#ch.bk" as="#publisher"/>
+<FRBRauthor href="#ch.bk" as="#rightsHolder"/>
+<FRBRlanguage language="de"/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value="https://fedlex.data.admin.ch/eli/cc/2006/218/20240201/de/xml/main-text"/>
+<FRBRuri value="https://fedlex.data.admin.ch/eli/cc/2006/218/20240201/de/xml"/>
+<FRBRdate date="2005-06-17" name="jolux:dateDocument"/>
+<FRBRdate date="2007-01-01" name="jolux:dateEntryInForce"/>
+<FRBRdate date="2024-02-01" name="jolux:dateApplicability"/>
+<FRBRauthor href="#ch.bk" as="#publisher"/>
+<FRBRauthor href="#ch.bk" as="#rightsHolder"/>
+<FRBRformat value="xml"/>
+</FRBRManifestation>
+</identification>
+</meta>
+<preface>
+<container name="headerOfAnnex">
+<block name="heading">Anhang</block>
+</container>
+</preface>
+<mainBody>
+<p>(Art. 131 Abs. 2)</p>
+<level eId="annex_u1/lvl_u1">
+<heading>Änderung bisherigen Rechts</heading>
+<content>
+<p>Die nachstehenden Bundesgesetze werden wie folgt geändert:</p>
+<p>…<authorialNote>
+<p> Die Änderungen können unter <ref href="https://fedlex.data.admin.ch/eli/oc/2006/218">AS <b>2006</b> 1205 </ref>konsultiert werden.</p>
+</authorialNote>
+</p>
+</content>
+</level>
+</mainBody>
+</doc>
+</component>
+</components>
+</act>
+</akomaNtoso>
