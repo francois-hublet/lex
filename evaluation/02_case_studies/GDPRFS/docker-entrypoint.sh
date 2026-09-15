@@ -128,7 +128,7 @@ PYTHONPATH="$APP" \
     "$PYTHON" gdprfs/myfs.py "$FUSE_MOUNT" -f -o allow_other &
 FUSE_PID=$!
 
-wait_for_port "FUSE ingest server" 7000 40
+wait_for_port "FUSE ingest server" 7000 180
 
 # Brief settle: let the enforcer process its initial log
 sleep 2

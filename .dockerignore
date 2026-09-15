@@ -1,0 +1,14 @@
+_build/
+*.install
+.git/
+**/.git/
+**/__pycache__/
+**/*.pyc
+**/.venv/
+**/*-venv/
+**/node_modules/
+**/output/
+**/db_snapshots/
+**/*.sqlite3
+**/*.db
+_opam/

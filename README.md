@@ -12,6 +12,11 @@ This repository contains:
 - A VS Code extension for Lex syntax highlighting (`vscode/lex/`)
 - Documentation (`doc/`) and examples (`example/`)
 
+## Artifact evaluation
+
+For CCS 2026 artifact evaluation, see [ARTIFACT.md](ARTIFACT.md) for a
+Docker-based, one-command reproduction of the paper's RQ1–RQ3 results.
+
 ## Installation
 
 Lex supports two setup options:

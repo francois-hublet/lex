@@ -47,7 +47,7 @@ RUN apt-get update \
         libz3-4 \
     && rm -rf /var/lib/apt/lists/*
 
-COPY --from=builder /home/opam/whyenf/enfguard /opt/whyenf/enfguard
+COPY --from=builder /home/opam/whyenf/bin/enfflash.exe /opt/whyenf/enfguard
 COPY --from=builder /home/opam/whyenf/enfflash/target/release/enfflash /usr/local/bin/enfflash
 RUN chmod +x /opt/whyenf/enfguard /usr/local/bin/enfflash
 
