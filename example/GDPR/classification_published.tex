@@ -1,0 +1,223 @@
+\iffalse
+\begin{longtable}{@{}lccccp{6cm}@{}}
+  \caption{Classification of formalized and refined \ac{GDPR} provisions in \textsc{GDPRSocial}.
+    F = Formalized $\mid$ C = Conservatively assumed $\mid$ E = Enforced at runtime $\mid$
+    I = Informally assumed and justified.
+    The assumed Boolean value for predicates marked with $+$ is such that the assumption
+    cannot degrade compliance.\label{tab:gdpr:classification}}\\
+\toprule
+\textbf{Section} & \textbf{F} & \textbf{C} & \textbf{E} & \textbf{I} & \textbf{Assumed predicates / \emph{Justification for lack of formalization}} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Section} & \textbf{F} & \textbf{C} & \textbf{E} & \textbf{I} & \textbf{Assumed predicates / \emph{Justification for lack of formalization}} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+
+{\small Article 1–4} & \Circle & \Circle & \Circle & \Circle & \emph{\small General definitions and scope of legislation}  \\
+{\small Article 5} & \LEFTcircle & \LEFTcircle & \LEFTcircle & \LEFTcircle &  \\
+\hspace{1.2em}{\small Paragraph 1} & \CIRCLE & \LEFTcircle & \LEFTcircle & \LEFTcircle &  \\
+\hspace{2.2em}{\small Point (a)} & \CIRCLE & \Circle & \LEFTcircle & \LEFTcircle & {\small \texttt{IsFair}, \texttt{IsTransparent}} \\
+\hspace{2.2em}{\small Point (b)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{IsArchival}, \texttt{IsExplicit}, \texttt{IsSpecified}} \\
+\hspace{2.2em}{\small Point (c)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{IsAdequate}, \texttt{IsLimitedToWhatIsNecessary}, \texttt{IsRelevant}} \\
+\hspace{2.2em}{\small Po
+  int (d)} & \CIRCLE & \LEFTcircle & \LEFTcircle & \LEFTcircle & {\small \texttt{IsUpToDate}, \texttt{UndueDataDelay}+} \\
+\hspace{2.2em}{\small Point (e)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{IsArchival}, \texttt{IsNecessary}, \texttt{JustifiesStorage}, \texttt{Stored}, \texttt{TechnicalAnd\allowbreak OrganisationalMeasures}} \\
+\hspace{2.2em}{\small Point (f)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{EnsuresAppropriateSecurity}} \\
+\hspace{1.2em}{\small Paragraph 2} & \Circle & \Circle & \Circle & \Circle & \emph{\small General obligations of the controller} \\
+\addlinespace[4pt]
+{\small Article 6} & \LEFTcircle & \LEFTcircle & \LEFTcircle & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 1} & \CIRCLE & \Circle & \Circle & \Circle &  \\
+\hspace{2.2em}{\small Subparagraph 1} & \CIRCLE & \CIRCLE & \Circle & \Circle &  \\
+\hspace{3.2em}{\small Point (a)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{3.2em}{\small Point (b)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{EndContract}+, \texttt{IsContractParty}+, \texttt{IsNecessaryForContract}+, \texttt{PrepareContract}+, \texttt{StartContract}+} \\
+\hspace{3.2em}{\small Point (c)–(d)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{3.2em}{\small Point (e)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsPerformanceOfPublicAuthorityTask}+, \texttt{IsPublicAuthority}+} \\
+\hspace{3.2em}{\small Point (f)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{2.2em}{\small Subparagraph 2} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsPerformanceOfPublicAuthorityTask}+, \texttt{IsPublicAuthority}+} \\
+\hspace{1.2em}{\small Paragraph 2--4} & \Circle & \Circle & \Circle & \Circle & \emph{\small Regulating special rules under member-state law}  \\
+\addlinespace[4pt]
+{\small Article 7} & \LEFTcircle & \Circle & \LEFTcircle & \LEFTcircle &  \\
+\hspace{1.2em}{\small Paragraph 1} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 2} & \LEFTcircle & \Circle & \Circle & \LEFTcircle &  \\
+\hspace{2.2em}{\small Point (1)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{ConsentDeclaration\allowbreak ContainsOtherMatters}, \texttt{IsClearAndPlainLanguage}, \texttt{IsDistinguishable\allowbreak FromOtherMatters}, \texttt{IsEasilyAccessible}, \texttt{IsIntelligible}} \\
+\hspace{2.2em}{\small Point (2)} & \Circle & \Circle & \Circle & \Circle & \emph{\small Declarations inconsistent with the law are void} \\
+\hspace{1.2em}{\small Paragraph 3} & \LEFTcircle & \Circle & \LEFTcircle & \Circle &  \\
+\hspace{2.2em}{\small Point (1)} & \Circle & \Circle & \Circle & \Circle & \emph{\small Built into the definition of consent} \\
+\hspace{2.2em}{\small Point (2)–(3)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{2.2em}{\small Point (4)} & \Circle & \Circle & \Circle & \Circle & \emph{\small Built into the definition of consent} \\
+\hspace{1.2em}{\small Paragraph 4} & \Circle & \Circle & \Circle & \Circle & \emph{\small Built into the definition of consent} \\
+\addlinespace[4pt]
+{\small Article 8} & \LEFTcircle & \Circle & \Circle & \LEFTcircle &  \\
+\hspace{1.2em}{\small Paragraph 1} & \LEFTcircle & \Circle & \Circle & \LEFTcircle &  \\
+\hspace{2.2em}{\small Subparagraph 1} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{AuthorizeConsent}, \texttt{HoldParentalResponsibility}, \texttt{IsChild}, \texttt{IsOfferOfInformationSocietyServices}+} \\
+\hspace{2.2em}{\small Subparagraph 2} & \Circle & \Circle & \Circle & \Circle & \emph{\small Regulating special rules under member-state law} \\
+\hspace{1.2em}{\small Paragraph 2} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{AuthorizeConsent}, \texttt{HoldParentalResponsibility}} \\
+\hspace{1.2em}{\small Paragraph 3} & \Circle & \Circle & \Circle & \Circle & \emph{\small Regulating special rules under member-state law}  \\
+\addlinespace[4pt]
+{\small Article 9} & \LEFTcircle & \LEFTcircle & \LEFTcircle & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 1} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 2} & \CIRCLE & \CIRCLE & \Circle & \Circle &  \\
+\hspace{2.2em}{\small Point (a)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{2.2em}{\small Point (b)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsNecessaryForEmploymentLaw}+} \\
+\hspace{2.2em}{\small Point (c)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsUnableToConsent}+} \\
+\hspace{2.2em}{\small Point (d)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{HasPhilosophicalAim}+, \texttt{HasPoliticalAim}+, \texttt{HasReligiousAim}+, \texttt{HasTradeUnionAim}+...} \\
+\hspace{2.2em}{\small Point (e)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{MakePublic}+} \\
+\hspace{2.2em}{\small Point (f)–(i)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{2.2em}{\small Point (j)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsNecessaryForArchivalPurposes}+} \\
+\hspace{1.2em}{\small Paragraph 3} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsSubjectToProfessionalSecrecy}+} \\
+\hspace{1.2em}{\small Paragraph 4} & \Circle & \Circle & \Circle & \Circle & \emph{\small Regulating special rules under member-state law} \\
+\addlinespace[4pt]
+{\small Article 10} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{ConcernsCriminalRegister}+...} \\
+{\small Article 11} & \Circle & \Circle & \Circle & \Circle & \emph{\small Clarifying which obligations do not apply} \\
+{\small Article 12} & \LEFTcircle & \LEFTcircle & \LEFTcircle & \LEFTcircle &  \\
+\hspace{1.2em}{\small Paragraph 1} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{IsClearAndPlainLanguage}, \texttt{IsConcise}, \texttt{IsEasilyAccessible}, \texttt{IsIntelligible}, \texttt{IsTransparentDeclaration}} \\
+\hspace{1.2em}{\small Paragraph 2} & \Circle & \Circle & \Circle & \Circle & \emph{\small General obligations of the controller}  \\
+\hspace{1.2em}{\small Paragraph 3} & \CIRCLE & \LEFTcircle & \LEFTcircle & \Circle & {\small \texttt{IsElectronicDeclaration}, \texttt{IsElectronicRequest}, \texttt{IsExtensionNecessary}+, \texttt{IsImpossibleElectronic}+, \texttt{IsReasonForRequestExtension}+, \texttt{RequestExtension}+, \texttt{RequestsNonElectronic}+, \texttt{UndueDelay}+} \\
+\hspace{1.2em}{\small Paragraph 4} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsReasonForRequestRefusal}+, \texttt{RefuseRequest}+} \\
+\hspace{1.2em}{\small Paragraph 5} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{ChargeForRequest}+...} \\
+\hspace{1.2em}{\small Paragraph 6--8} & \Circle & \Circle & \Circle & \Circle & \emph{\small Permission without a binding character / Providing for delegated acts} \\
+\addlinespace[4pt]
+{\small Article 13} & \LEFTcircle & \LEFTcircle & \LEFTcircle & \LEFTcircle & \\
+\hspace{1.2em}{\small Paragraph 1} & \CIRCLE & \LEFTcircle & \LEFTcircle & \LEFTcircle &  \\
+\hspace{2.2em}{\small Point (a)} & \CIRCLE & \LEFTcircle & \LEFTcircle & \LEFTcircle & {\small \texttt{IsControllerRepresentative}} \\
+\hspace{2.2em}{\small Point (b)–(d)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{2.2em}{\small Point (e)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{HasIntendedRecipientCategory}} \\
+\hspace{2.2em}{\small Point (f)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{HasIntendedTransfer}, \texttt{IsTransfer}, \texttt{IsTransferBasis}} \\
+\hspace{1.2em}{\small Paragraph 2} & \CIRCLE & \LEFTcircle & \LEFTcircle & \LEFTcircle &  \\
+\hspace{2.2em}{\small Point (a)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{HasStoragePeriod}, \texttt{IsRespected}} \\
+\hspace{2.2em}{\small Point (b)–(d)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{2.2em}{\small Point (e)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{HasStatutory\allowbreak ContractualRequirement}} \\
+\hspace{2.2em}{\small Point (f)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 3} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsNewPurpose}+} \\
+\hspace{1.2em}{\small Paragraph 4} & \Circle & \Circle & \Circle & \Circle & \emph{\small Built into the rules in the previous paragraphs}\\
+\addlinespace[4pt]
+{\small Article 14} & \LEFTcircle & \LEFTcircle & \LEFTcircle & \LEFTcircle &  \\
+\hspace{1.2em}{\small Paragraph 1} & \CIRCLE & \LEFTcircle & \LEFTcircle & \LEFTcircle &  \\
+\hspace{2.2em}{\small Point (a)–(d)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{2.2em}{\small Point (e)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{HasIntendedRecipientCategory}} \\
+\hspace{2.2em}{\small Point (f)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{HasIntendedTransfer}, \texttt{IsTransfer}, \texttt{IsTransferBasis}} \\
+\hspace{1.2em}{\small Paragraph 2} & \CIRCLE & \LEFTcircle & \LEFTcircle & \LEFTcircle &  \\
+\hspace{2.2em}{\small Point (a)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{HasStoragePeriod}, \texttt{IsRespected}} \\
+\hspace{2.2em}{\small Point (b)–(e)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{2.2em}{\small Point (f)} & \CIRCLE & \CIRCLE & \Circle & \CIRCLE & {\small \texttt{IsReception}, \texttt{IsReceptionSource}} \\
+\hspace{2.2em}{\small Point (g)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 3} & \CIRCLE & \LEFTcircle & \LEFTcircle & \Circle & {\small \texttt{IsReasonablePeriod}+, \texttt{UseForCommunication}+} \\
+\hspace{1.2em}{\small Paragraph 4} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsNewPurpose}} \\
+\hspace{1.2em}{\small Paragraph 5} & \LEFTcircle & \LEFTcircle & \Circle & \Circle &  \\
+\hspace{2.2em}{\small Point (a)} & \Circle & \Circle & \Circle & \Circle & \emph{\small Built into the rules in the previous paragraphs} \\
+\hspace{2.2em}{\small Point (b)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{DisproportionateEffortToInform}+} \\
+\hspace{2.2em}{\small Point (c)–(d)} & \Circle & \Circle & \Circle & \Circle & \emph{\small Regulating special rules under member-state law} \\
+\addlinespace[4pt]
+{\small Article 15} & \LEFTcircle & \LEFTcircle & \LEFTcircle & \LEFTcircle &  \\
+\hspace{1.2em}{\small Paragraph 1} & \CIRCLE & \Circle & \LEFTcircle & \LEFTcircle &  \\
+\hspace{2.2em}{\small Point (a)–(b)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{2.2em}{\small Point (c)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{HasIntendedRecipientCategory}} \\
+\hspace{2.2em}{\small Point (d)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{HasStoragePeriod}} \\
+\hspace{2.2em}{\small Point (e)–(f)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{2.2em}{\small Point (g)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{IsReception}, \texttt{IsReceptionSource}} \\
+\hspace{2.2em}{\small Point (h)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 2} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{HasIntendedTransfer}, \texttt{IsTransfer}, \texttt{IsTransferBasis}} \\
+\hspace{1.2em}{\small Paragraph 3} & \CIRCLE & \LEFTcircle & \Circle & \LEFTcircle & {\small \texttt{IsCommonlyUsedFormat}, \texttt{IsFurtherCopy}+} \\
+\hspace{1.2em}{\small Paragraph 4} & \Circle & \Circle & \Circle & \Circle & \emph{\small General requirement without clear formal semantics} \\
+\addlinespace[4pt]
+{\small Article 16} & \CIRCLE & \LEFTcircle & \LEFTcircle & \Circle & {\small \texttt{UndueDataDelay}+} \\
+{\small Article 17} & \LEFTcircle & \LEFTcircle & \LEFTcircle & \LEFTcircle &  \\
+\hspace{1.2em}{\small Paragraph 1} & \LEFTcircle & \LEFTcircle & \LEFTcircle & \LEFTcircle & {\small \texttt{UndueDataDelay}+} \\
+\hspace{2.2em}{\small Point (a)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{IsNecessary}} \\
+\hspace{2.2em}{\small Point (b)–(c)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{2.2em}{\small Point (d)–(e)} & \Circle & \Circle & \Circle & \Circle & \emph{\small Regulating behavior in case of non-compliance with the law}  \\
+\hspace{2.2em}{\small Point (f)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 2} & \CIRCLE & \LEFTcircle & \LEFTcircle & \Circle & {\small \texttt{UndueDataDelay}+} \\
+\hspace{1.2em}{\small Paragraph 3} & \CIRCLE & \LEFTcircle & \LEFTcircle & \Circle &  \\
+\hspace{2.2em}{\small Point (a)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsNecessaryForFreedomOfExpression}+} \\
+\hspace{2.2em}{\small Point (b)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsPerformanceOfPublicAuthorityTask}+, \texttt{IsPublicAuthority}+} \\
+\hspace{2.2em}{\small Point (c)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{2.2em}{\small Point (d)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsNecessaryForArchivalPurposes}+} \\
+\hspace{2.2em}{\small Point (e)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\addlinespace[4pt]
+{\small Article 18} & \CIRCLE & \CIRCLE & \Circle & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 1} & \CIRCLE & \CIRCLE & \Circle & \Circle &  \\
+\hspace{2.2em}{\small Point (a)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{2.2em}{\small Point (b)} & \Circle & \Circle & \Circle & \Circle & \emph{\small Regulating behavior in case of non-compliance with the law} \\
+\hspace{2.2em}{\small Point (c)} & \CIRCLE & \Circle & \LEFTcircle & \LEFTcircle & {\small \texttt{DataIsNecessary\allowbreak ForJudicialClaims}} \\
+\hspace{2.2em}{\small Point (d)} & \CIRCLE & \CIRCLE & \Circle & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 2} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsStorage}} \\
+\hspace{1.2em}{\small Paragraph 3} & \CIRCLE & \Circle & \Circle & \Circle &  \\
+\addlinespace[4pt]
+{\small Article 19} & \CIRCLE & \LEFTcircle & \LEFTcircle & \Circle & {\small \texttt{UndueDataDelay}+} \\
+{\small Article 20} & \LEFTcircle & \LEFTcircle & \Circle & \LEFTcircle &  \\
+\hspace{1.2em}{\small Paragraph 1} & \CIRCLE & \Circle & \LEFTcircle & \LEFTcircle & {\small \texttt{IsCommonlyUsedFormat}, \texttt{IsMachineReadableFormat}, \texttt{IsStructuredFormat}} \\
+\hspace{1.2em}{\small Paragraph 2} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 3} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsPerformanceOfPublicAuthorityTask}+, \texttt{IsPublicAuthority}+} \\
+\hspace{1.2em}{\small Paragraph 4} & \Circle & \Circle & \Circle & \Circle & \emph{\small General requirement without clear formal semantics} \\
+\addlinespace[4pt]
+{\small Article 21} & \LEFTcircle & \LEFTcircle & \LEFTcircle & \LEFTcircle &  \\
+\hspace{1.2em}{\small Paragraph 1} & \CIRCLE & \LEFTcircle & \LEFTcircle & \Circle & {\small \texttt{DemonstrateOverridingCompellingGrounds}+} \\
+\hspace{1.2em}{\small Paragraph 2} & \Circle & \Circle & \Circle & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 3} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 4–5} & \Circle & \Circle & \Circle & \Circle &  \emph{\small Built into the definition of the declaration of rights / Non-binding permission} \\
+\hspace{1.2em}{\small Paragraph 6} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\addlinespace[4pt]
+{\small Article 22} & \LEFTcircle & \LEFTcircle & \LEFTcircle & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 1} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 2} & \LEFTcircle & \LEFTcircle & \LEFTcircle & \Circle &  \\
+\hspace{2.2em}{\small Point (a)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{EndContract}+, \texttt{IsContractParty}+, \texttt{IsNecessaryForContract}+, \texttt{PrepareContract}+, \texttt{StartContract}+} \\
+\hspace{2.2em}{\small Point (b)} & \Circle & \Circle & \Circle & \Circle & \emph{\small Regulating special rules under member-state law} \\
+\hspace{2.2em}{\small Point (c)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 3} & \Circle & \Circle & \Circle & \Circle & \emph{\small General requirement without clear formal semantics} \\
+\hspace{1.2em}{\small Paragraph 4} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{ImplementFundamentalRightsSafeguards}+} \\
+\addlinespace[4pt]
+{\small Article 23–29} & \Circle & \Circle & \Circle & \Circle & \emph{\small General obligations of the controller and processor} \\
+{\small Article 30} & \LEFTcircle & \Circle & \LEFTcircle & \LEFTcircle &  \\
+\hspace{1.2em}{\small Paragraph 1} & \CIRCLE & \Circle & \LEFTcircle & \LEFTcircle &  \\
+\hspace{2.2em}{\small Point (a)} & \CIRCLE & \Circle & \LEFTcircle & \LEFTcircle & {\small \texttt{IsControllerRepresentative}, \texttt{IsJointController}} \\
+\hspace{2.2em}{\small Point (b)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{2.2em}{\small Point (c)} & \CIRCLE & \Circle & \LEFTcircle & \LEFTcircle & {\small \texttt{HasDataSubjectCategory}} \\
+\hspace{2.2em}{\small Point (d)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{HasIntendedRecipientCategory}} \\
+\hspace{2.2em}{\small Point (e)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{Transfer}} \\
+\hspace{2.2em}{\small Point (f)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{HasStoragePeriod}} \\
+\hspace{2.2em}{\small Point (g)} & \CIRCLE & \Circle & \CIRCLE & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 2–4} & \Circle & \Circle & \Circle & \Circle & \emph{\small Redundant / General requirement without clear formal semantics} \\
+\hspace{1.2em}{\small Paragraph 5} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{IsOccasionalProcessing}+, \texttt{IsRiskyProcessing}} \\
+\addlinespace[4pt]
+{\small Article 31–43} & \Circle & \Circle & \Circle & \Circle & \emph{\small General obligations of the controller and processor} \\
+{\small Article 44} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{Transfer}} \\
+{\small Article 45} & \LEFTcircle & \Circle & \Circle & \LEFTcircle &  \\
+\hspace{1.2em}{\small Paragraph 1} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{AdequacyDecision}} \\
+\hspace{1.2em}{\small Paragraph 2–9} & \Circle & \Circle & \Circle & \Circle & \emph{\small Administrative procedures within the Commission}\\
+\addlinespace[4pt]
+{\small Article 46} & \LEFTcircle & \LEFTcircle & \Circle & \Circle &  \\
+\hspace{1.2em}{\small Paragraph 1} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{HasEnforceableRights}+, \texttt{Transfer}} \\
+\hspace{1.2em}{\small Paragraph 2} & \CIRCLE & \CIRCLE & \Circle & \Circle &  \\
+\hspace{2.2em}{\small Point (a)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsLegallyBindingInstrument}+} \\
+\hspace{2.2em}{\small Point (b)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsBindingCorporateRules}+} \\
+\hspace{2.2em}{\small Point (c)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsCommissionStandardClauses}+} \\
+\hspace{2.2em}{\small Point (d)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsSupervisoryAuthorityStandardClauses}+} \\
+\hspace{2.2em}{\small Point (e)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsApprovedCodeOfConduct}+} \\
+\hspace{2.2em}{\small Point (f)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsApprovedCertificationMechanism}+} \\
+\hspace{1.2em}{\small Paragraph 3} & \CIRCLE & \CIRCLE & \Circle & \Circle &  \\
+\hspace{2.2em}{\small Point (a)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{HasSupervisoryApproval}} \\
+\hspace{2.2em}{\small Point (b)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{HasSupervisoryApproval}} \\
+\hspace{1.2em}{\small Paragraph 4–5} & \Circle & \Circle & \Circle & \Circle & \emph{\small Administrative procedures / Regulating special rules under member-state law}\\
+\addlinespace[4pt]
+{\small Article 47–48} & \Circle & \Circle & \Circle & \Circle & \emph{\small Administrative procedures} \\
+{\small Article 49} & \LEFTcircle & \LEFTcircle & \Circle & \LEFTcircle &  \\
+\hspace{1.2em}{\small Paragraph 1} & \CIRCLE & \LEFTcircle & \Circle & \LEFTcircle &  \\
+\hspace{2.2em}{\small Subparagraph 1} & \CIRCLE & \LEFTcircle & \Circle & \LEFTcircle &  \\
+\hspace{3.2em}{\small Point (a)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{IsRisksOfTransfer}, \texttt{Transfer}} \\
+\hspace{3.2em}{\small Point (b)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{EndContract}+, \texttt{IsContractParty}+, \texttt{IsNecessaryForContract}+, \texttt{PrepareContract}+, \texttt{RequestContractPreparation}+, \texttt{StartContract}+} \\
+\hspace{3.2em}{\small Point (c)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{EndContract}+, \texttt{IsContractParty}+, \texttt{IsInInterestOf}+, \texttt{IsNecessaryForContract}+, \texttt{PrepareContract}+, \texttt{StartContract}+} \\
+\hspace{3.2em}{\small Point (d)–(e)} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{Transfer}} \\
+\hspace{3.2em}{\small Point (f)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsUnableToConsent}+} \\
+\hspace{3.2em}{\small Point (g)} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{FulfillsConsultationConditions}+, \texttt{IsOpenRegisterData}+} \\
+\hspace{2.2em}{\small Subparagraph 2} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{AssessTransfer}, \texttt{IsLimitedDSTransfer}, \texttt{IsNotRepetitiveTransfer}, \texttt{ReportLastResortTransfer}} \\
+\hspace{1.2em}{\small Paragraph 2} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{IsLegitimateInterestRegister}, \texttt{IsLimitedRegisterData}, \texttt{ValidRegister\allowbreak ConsultationRequest}} \\
+\hspace{1.2em}{\small Paragraph 3} & \CIRCLE & \CIRCLE & \Circle & \Circle & {\small \texttt{IsPerformanceOfPublicAuthorityTask}+, \texttt{IsPublicAuthority}+} \\
+\hspace{1.2em}{\small Paragraph 4–5} & \Circle & \Circle & \Circle & \Circle & \emph{\small Regulating special rules under member-state law}\\
+\hspace{1.2em}{\small Paragraph 6} & \CIRCLE & \Circle & \Circle & \CIRCLE & {\small \texttt{AssessTransfer}} \\
+\addlinespace[4pt]
+{\small Article 50–99} & \Circle & \Circle & \Circle & \Circle & \emph{\small Administrative procedures / Delegated acts and repealing of existing acts}
+\end{longtable}
