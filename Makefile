@@ -38,6 +38,10 @@ artifact-build:
 artifact-rq1:
 	./artifact/rq1_formalize.sh
 
+# RQ1: GDPR coverage by F/C/E/I category (Table 2).
+artifact-rq1-table2:
+	./artifact/rq1_table2.sh
+
 # RQ2: report the instrumented/baseline LOC breakdown (Table 3).
 artifact-rq2:
 	./artifact/rq2_loc.sh
