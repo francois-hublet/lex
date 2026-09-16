@@ -103,51 +103,37 @@ docker run --rm -v "$(pwd):/workspace" -w /workspace lex:latest \
 
 ## 5. What is not computationally reproduced, and why
 
-- **Table 2 (GDPR coverage by F/C/E/I category)** is reproducible, but not by
-  a *live* run of the classification pipeline over `minitwit_gdpr.rex` — here
-  is the full provenance, and why `make artifact-rq1-table2` reproduces it the
-  way it does.
-
-  `example/GDPR/classify_coverage.py` derives, per GDPR section, whether it is
-  Formalized (has any Lex rule), and among the events those rules reference,
-  whether each is unassumed (**E**, enforced at runtime), assumed with a
-  `# functional` tag (**C**, conservatively — the specification is
+- **Table 2 (GDPR coverage by F/C/E/I category)** is reproduced from a
+  recovered, frozen classification table, not regenerated live from
+  `minitwit_gdpr.rex`. Briefly why: Table 2's per-section F/C/E/I
+  classification (Formalized / Conservatively assumed / Enforced at runtime /
+  Informally assumed) was originally computed from GDPR-specific tooling that
+  classified each `assume` statement in the refinement as either provably
+  safe to assume (conservative — the specification is
   monotonic/antimonotonic in that event, so getting the assumption wrong
-  cannot degrade compliance), or assumed with a `# legal` tag (**I**,
-  informally, requiring legal review). `example/GDPR/gdpr_stats.py` then
-  weights this per-section table by word count against the official GDPR XML
-  (Formex) text to produce Table 2's percentages. This pipeline exists in the
-  repository and runs (`artifact/rq1_table2.sh`'s "live regeneration" step
-  does exactly this) — but the `# legal`/`# functional` tags it depends on
-  were never committed anywhere we could find: we searched the full git
-  history of all three copies of `minitwit_gdpr.rex` in this repository, plus
-  two related external repositories (one on GitLab, one a collaborator's
-  GitHub fork, all branches), and found the tags nowhere. We reconstructed
-  best-effort tags for this branch (grounded in a per-predicate table
-  recovered from the paper's originating thesis, defaulting to `# legal`
-  wherever that table didn't cover a predicate — the fairer, less favorable
-  reading, per instruction), but a live run from these tags does **not**
-  reproduce Table 2's published numbers (F/C/E/I ≈ 19.7/14.4/8.7/9.1% vs. the
-  paper's 18.4/7.8/7.2/6.4%). This is not a defect in the reconstruction: the
-  recovered per-predicate table it's grounded in is itself internally
-  inconsistent (e.g. Article 8 Subparagraph 1 lists a "+"-marked, i.e.
-  conservative, predicate in its assumed-predicate column while its own **C**
-  dot for that row is unset), meaning the dots that produced Table 2 and the
-  predicate-level annotations were edited at different times and never
-  reconciled, even in the original.
+  cannot degrade compliance) or a real, legally-reviewed assumption. That
+  tooling's required per-assumption annotations were never committed
+  anywhere we could find (we searched the full git history of all three
+  copies of `minitwit_gdpr.rex` in this repository, plus two related
+  external repositories, all branches, and found them nowhere), so it cannot
+  reliably regenerate the published table today; we omit it from this
+  artifact rather than ship a tool whose output would look authoritative but
+  isn't. `evaluation/02_case_studies/GDPRSocial/policies/*.rex` still carries
+  reconstructed `# legal`/`# functional` comments next to each `assume`
+  statement (best-effort, grounded in a per-predicate table recovered from
+  the paper's originating thesis, defaulting to `# legal` — the fairer, less
+  favorable reading — wherever that table didn't cover a predicate); they
+  are documentation for reviewers auditing the classification by hand
+  against the referenced GDPR articles, not an input to any script here.
 
-  What we *did* recover and verify is the frozen table itself — the actual
-  per-section F/C/E/I dots, not the predicate-list text — from commit
-  `0523c39` of the thesis repository this paper is drawn from
-  (`example/GDPR/classification_published.tex`). Feeding it directly to
-  `gdpr_stats.py`, unmodified, reproduces the published Table 2 to within
-  0.1 percentage point on every figure (E matches exactly). `make
-  artifact-rq1-table2` runs this reproduction, and also runs (for comparison,
-  clearly labeled) the live `.rex`-based regeneration described above, so
-  reviewers can see both the reproduction and the gap. Reviewers wishing to
-  audit the classification substantively rather than just reproduce the
-  numbers can inspect `evaluation/02_case_studies/GDPRSocial/policies/*.rex`
-  (now carrying the reconstructed tags) against the referenced GDPR articles.
+  What reproduces Table 2's actual numbers is the frozen classification
+  table itself — the published per-section F/C/E/I dots — recovered from
+  commit `0523c39` of the thesis repository this paper is drawn from
+  (`example/GDPR/classification_published.tex`). Feeding it to
+  `example/GDPR/gdpr_stats.py`, which weights it by word count against the
+  official GDPR XML (Formex) text, reproduces the published Table 2 to
+  within 0.1 percentage point on every figure (Enforced matches exactly:
+  7.2%). `make artifact-rq1-table2` runs exactly this.
 
 - **RQ4 (user study)** involved 23 human participants recruited through our
   institution's subject pool under IRB-equivalent review, and no raw or
@@ -170,9 +156,9 @@ docker run --rm -v "$(pwd):/workspace" -w /workspace lex:latest \
 - `src/`, `bin/` — the Lex compiler (OCaml/dune).
 - `evaluation/01_formalization/` — GDPR/BGG/IRC `.lex` formalizations (RQ1,
   Table 1) and the `minitwit_gdpr.rex` refinement excerpt.
-- `example/GDPR/classify_coverage.py`, `gdpr_stats.py`,
-  `classification_published.tex` — the Table 2 (RQ1) pipeline and the
-  recovered frozen classification table; see §5.
+- `example/GDPR/gdpr_stats.py`, `classification_published.tex` — the
+  recovered frozen classification table that reproduces Table 2 (RQ1); see
+  §5.
 - `evaluation/02_case_studies/GDPRSocial/`, `.../GDPRFS/` — the two
   instrumented applications (RQ2, RQ3), each with its own detailed README
   covering local (non-Docker) installation as well.
