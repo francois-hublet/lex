@@ -41,17 +41,17 @@ computationally reproducible; RQ4 is a human-subject study and is not.
 
 | RQ | Paper claim | Reproduction | Badge |
 |---|---|---|---|
-| RQ1 | Lex formalizes GDPR/BGG/IRC (Table 1) | `make artifact-rq1` | Functional + approximate Results |
+| RQ1 | Lex formalizes GDPR/BGG/IRC (Table 1) | `make artifact-rq1` | Functional + exact Results (LOC matches the paper exactly) |
 | RQ1 | GDPR coverage breakdown F/C/E/I (Table 2) | `make artifact-rq1-table2` | Functional + close Results (≤0.1pp on every figure) |
-| RQ2 | Instrumentation LOC and engineering effort (Table 3) | `make artifact-rq2` | Functional + close Results (Python/HTML/CSS line counts match within a few dozen lines) |
+| RQ2 | Instrumentation LOC and engineering effort (Table 3) | `make artifact-rq2` | Functional + close Results (Lex/Rex LOC exact; Python/HTML/CSS within a few dozen lines) |
 | RQ3 | Runtime latency overhead (Table 4) | `make artifact-rq3-fast` (and optionally `artifact-rq3-full`) | Functional + approximate Results |
 | RQ4 | User study (SUS, reading, auditing) | Not reproducible; materials only | Documented, see §5 |
 
 "Approximate Results" means: the scripts recompute the same statistic from
 the same source artifacts, but exact figures may differ slightly from the
-paper (different `cloc`/line-counting conventions for RQ1/RQ2; host-hardware-
-dependent latencies for RQ3). The scripts print the paper's original numbers
-alongside the reproduced ones for comparison, and each documents its
+paper (host-hardware-dependent latencies for RQ3). The scripts print the
+paper's original numbers alongside the reproduced ones for comparison, and
+each documents its
 expected margin of deviation.
 
 ## 3. Requirements
