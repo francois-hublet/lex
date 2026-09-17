@@ -42,7 +42,7 @@ computationally reproducible; RQ4 is a human-subject study and is not.
 | RQ | Paper claim | Reproduction | Badge |
 |---|---|---|---|
 | RQ1 | Lex formalizes GDPR/BGG/IRC (Table 1) | `make artifact-rq1` | Functional + approximate Results |
-| RQ1 | GDPR coverage breakdown F/C/E/I (Table 2) | `make artifact-rq1-table2` | Functional + close Results (≤0.1pp on every figure), see §5 for provenance |
+| RQ1 | GDPR coverage breakdown F/C/E/I (Table 2) | `make artifact-rq1-table2` | Functional + close Results (≤0.1pp on every figure) |
 | RQ2 | Instrumentation LOC and engineering effort (Table 3) | `make artifact-rq2` | Functional + close Results (Python/HTML/CSS line counts match within a few dozen lines) |
 | RQ3 | Runtime latency overhead (Table 4) | `make artifact-rq3-fast` (and optionally `artifact-rq3-full`) | Functional + approximate Results |
 | RQ4 | User study (SUS, reading, auditing) | Not reproducible; materials only | Documented, see §5 |
@@ -102,17 +102,6 @@ docker run --rm -v "$(pwd):/workspace" -w /workspace lex:latest \
 ```
 
 ## 5. What is not computationally reproduced, and why
-
-- **Table 2 (GDPR coverage by F/C/E/I category)** uses the original
-  per-section classification (`example/GDPR/classification_published.tex`),
-  not a live regeneration from `minitwit_gdpr.rex`. `make
-  artifact-rq1-table2` weights this table by word count against the GDPR
-  XML (Formex) text via `example/GDPR/gdpr_stats.py`, reproducing the
-  published percentages to within 0.1 percentage point on every figure.
-  `evaluation/02_case_studies/GDPRSocial/policies/*.rex` also carries
-  `# legal`/`# functional` annotations next to each `assume` statement for
-  reviewers auditing the classification against the refinement code
-  directly; these are documentation, not a script input.
 
 - **RQ4 (user study)** involved 23 human participants recruited through our
   institution's subject pool under IRB-equivalent review, and no raw or
