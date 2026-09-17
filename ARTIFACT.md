@@ -103,17 +103,16 @@ docker run --rm -v "$(pwd):/workspace" -w /workspace lex:latest \
 
 ## 5. What is not computationally reproduced, and why
 
-- **Table 2 (GDPR coverage by F/C/E/I category)** ships as the original
-  per-section classification (`example/GDPR/classification_published.tex`)
-  rather than being regenerated live from `minitwit_gdpr.rex`.
-  `make artifact-rq1-table2` weights this table by word count against the
-  GDPR XML (Formex) text via `example/GDPR/gdpr_stats.py`, reproducing the
+- **Table 2 (GDPR coverage by F/C/E/I category)** uses the original
+  per-section classification (`example/GDPR/classification_published.tex`),
+  not a live regeneration from `minitwit_gdpr.rex`. `make
+  artifact-rq1-table2` weights this table by word count against the GDPR
+  XML (Formex) text via `example/GDPR/gdpr_stats.py`, reproducing the
   published percentages to within 0.1 percentage point on every figure.
-  `evaluation/02_case_studies/GDPRSocial/policies/*.rex` additionally
-  carries `# legal`/`# functional` annotations next to each `assume`
-  statement, for reviewers who want to audit the classification against
-  the refinement code directly; these are documentation, not a script
-  input.
+  `evaluation/02_case_studies/GDPRSocial/policies/*.rex` also carries
+  `# legal`/`# functional` annotations next to each `assume` statement for
+  reviewers auditing the classification against the refinement code
+  directly; these are documentation, not a script input.
 
 - **RQ4 (user study)** involved 23 human participants recruited through our
   institution's subject pool under IRB-equivalent review, and no raw or
