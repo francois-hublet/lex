@@ -3,8 +3,8 @@
 # approximately reproducing Table 3 (instrumented application statistics).
 #
 # Uses `cloc` (via a throwaway container, so nothing needs to be installed on
-# the host) to count Python/HTML/CSS lines, and a plain non-blank-line count
-# for the Lex/Rex formalization files.
+# the host) to count Python/HTML/CSS lines, and a plain line count (wc -l,
+# matching the paper's convention) for the Lex/Rex formalization files.
 #
 # Run from the repository root, after `git submodule update --init --recursive`.
 set -euo pipefail
@@ -19,8 +19,8 @@ cloc_run() {
     sh -c "apt-get update -qq >/dev/null && apt-get install -y -qq cloc >/dev/null && cloc --quiet --exclude-dir=__pycache__,migrations $*"
 }
 
-loc_nonblank() {
-  grep -cve '^[[:space:]]*$' "$1"
+loc() {
+  wc -l < "$1"
 }
 
 echo "════════════════════════════════════════════════════════════════"
@@ -44,16 +44,14 @@ cloc_run "GDPRFS" \
   "gdprfs external_consent_platform internal_purpose_platform LLManalyzer --exclude-dir=instrlib,__pycache__,tests"
 
 echo ""
-echo "── Lex / Rex formalization sizes (non-blank lines) ──"
-printf "%-40s %10s\n" "File" "LOC"
-printf "%-40s %10s\n" "GDPRSocial policies/gdpr.lex" "$(loc_nonblank $CS_DIR/GDPRSocial/policies/gdpr.lex)"
-printf "%-40s %10s\n" "GDPRSocial policies/minitwit_gdpr.rex" "$(loc_nonblank $CS_DIR/GDPRSocial/policies/minitwit_gdpr.rex)"
+echo "── Lex / Rex formalization sizes ──"
+printf "%-40s %10s %10s\n" "File" "LOC" "paper"
+printf "%-40s %10s %10s\n" "GDPRSocial policies/gdpr.lex" "$(loc $CS_DIR/GDPRSocial/policies/gdpr.lex)" "3,221"
+printf "%-40s %10s %10s\n" "GDPRSocial policies/minitwit_gdpr.rex" "$(loc $CS_DIR/GDPRSocial/policies/minitwit_gdpr.rex)" "1,021"
 
 echo ""
 echo "Note: expect the GDPRSocial/GDPRFS Python and HTML/CSS code line counts"
 echo "above to closely match Table 3 (within a few dozen lines). They will not"
 echo "match the +766/+0 *instrumentation delta* split exactly, since that"
 echo "split (application logic vs. a single enforcer.py) required manual"
-echo "inspection in the paper. The Lex/Rex formalization sizes are a plain"
-echo "non-blank-line count (cf. Table 1's note) and will read lower than the"
-echo "paper's cloc-based figures."
+echo "inspection in the paper."

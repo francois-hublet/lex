@@ -34,18 +34,16 @@ run minitwit_gdpr evaluation/01_formalization/minitwit_gdpr.rex
 
 echo ""
 echo "════════════════════════════════════════════════════════════════"
-echo " Table 1 comparison (lines of code, blank lines excluded)"
+echo " Table 1 comparison (lines of code)"
 echo "════════════════════════════════════════════════════════════════"
 printf "%-8s %10s %10s\n" "Law" "LOC (here)" "LOC (paper)"
 for pair in "gdpr:evaluation/01_formalization/gdpr.lex:3221" \
             "bgg:evaluation/01_formalization/bgg.lex:234" \
             "irc:evaluation/01_formalization/irc.lex:131"; do
   IFS=: read -r name src paper <<<"$pair"
-  loc=$(grep -cve '^[[:space:]]*$' "$src")
+  loc=$(wc -l < "$src")
   printf "%-8s %10s %10s\n" "$name" "$loc" "$paper"
 done
 
 echo ""
-echo "Note: this LOC count is a simple non-blank-line count and may differ"
-echo "slightly from the cloc-based figures reported in Table 1 of the paper."
 echo "Compiled .sig/.mfotl artifacts are under artifact/out/rq1/."
