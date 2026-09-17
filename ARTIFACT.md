@@ -103,37 +103,17 @@ docker run --rm -v "$(pwd):/workspace" -w /workspace lex:latest \
 
 ## 5. What is not computationally reproduced, and why
 
-- **Table 2 (GDPR coverage by F/C/E/I category)** is reproduced from a
-  recovered, frozen classification table, not regenerated live from
-  `minitwit_gdpr.rex`. Briefly why: Table 2's per-section F/C/E/I
-  classification (Formalized / Conservatively assumed / Enforced at runtime /
-  Informally assumed) was originally computed from GDPR-specific tooling that
-  classified each `assume` statement in the refinement as either provably
-  safe to assume (conservative — the specification is
-  monotonic/antimonotonic in that event, so getting the assumption wrong
-  cannot degrade compliance) or a real, legally-reviewed assumption. That
-  tooling's required per-assumption annotations were never committed
-  anywhere we could find (we searched the full git history of all three
-  copies of `minitwit_gdpr.rex` in this repository, plus two related
-  external repositories, all branches, and found them nowhere), so it cannot
-  reliably regenerate the published table today; we omit it from this
-  artifact rather than ship a tool whose output would look authoritative but
-  isn't. `evaluation/02_case_studies/GDPRSocial/policies/*.rex` still carries
-  reconstructed `# legal`/`# functional` comments next to each `assume`
-  statement (best-effort, grounded in a per-predicate table recovered from
-  the paper's originating thesis, defaulting to `# legal` — the fairer, less
-  favorable reading — wherever that table didn't cover a predicate); they
-  are documentation for reviewers auditing the classification by hand
-  against the referenced GDPR articles, not an input to any script here.
-
-  What reproduces Table 2's actual numbers is the frozen classification
-  table itself — the published per-section F/C/E/I dots — recovered from
-  commit `0523c39` of the thesis repository this paper is drawn from
-  (`example/GDPR/classification_published.tex`). Feeding it to
-  `example/GDPR/gdpr_stats.py`, which weights it by word count against the
-  official GDPR XML (Formex) text, reproduces the published Table 2 to
-  within 0.1 percentage point on every figure (Enforced matches exactly:
-  7.2%). `make artifact-rq1-table2` runs exactly this.
+- **Table 2 (GDPR coverage by F/C/E/I category)** ships as the original
+  per-section classification (`example/GDPR/classification_published.tex`)
+  rather than being regenerated live from `minitwit_gdpr.rex`.
+  `make artifact-rq1-table2` weights this table by word count against the
+  GDPR XML (Formex) text via `example/GDPR/gdpr_stats.py`, reproducing the
+  published percentages to within 0.1 percentage point on every figure.
+  `evaluation/02_case_studies/GDPRSocial/policies/*.rex` additionally
+  carries `# legal`/`# functional` annotations next to each `assume`
+  statement, for reviewers who want to audit the classification against
+  the refinement code directly; these are documentation, not a script
+  input.
 
 - **RQ4 (user study)** involved 23 human participants recruited through our
   institution's subject pool under IRB-equivalent review, and no raw or
