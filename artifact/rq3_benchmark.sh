@@ -32,9 +32,9 @@ docker run --rm -v "$OUT_DIR/gdprsocial:/app/output" "$IMG_SOCIAL" \
   bash benchmark/privacy_testsuite/run_benchmark.sh baseline
 
 echo ""
-echo "── GDPRSocial: enforced (gdpr policy) ──"
+echo "── GDPRSocial: enforced (minitwit_gdpr policy) ──"
 docker run --rm -v "$OUT_DIR/gdprsocial:/app/output" "$IMG_SOCIAL" \
-  bash benchmark/privacy_testsuite/run_benchmark.sh gdpr /opt/whyenf/enfguard
+  bash benchmark/privacy_testsuite/run_benchmark.sh minitwit_gdpr /opt/whyenf/enfguard
 
 echo ""
 echo "── GDPRFS: baseline (no FUSE) ──"

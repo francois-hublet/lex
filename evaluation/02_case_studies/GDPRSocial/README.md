@@ -79,7 +79,7 @@ From this folder:
 
 ```bash
 # Enforced benchmark (requires a built enfguard executable):
-bash benchmark/privacy_testsuite/run_benchmark.sh gdpr ~/Git/whyenf/enfguard
+bash benchmark/privacy_testsuite/run_benchmark.sh minitwit_gdpr ~/Git/whyenf/enfguard
 
 # Un-instrumented baseline (no enforcer needed):
 bash benchmark/privacy_testsuite/run_benchmark.sh baseline
@@ -138,7 +138,7 @@ mkdir -p output
 docker run --rm -it \
   -v "$(pwd)/output:/app/output" \
   gdprsocial:latest \
-  bash benchmark/privacy_testsuite/run_benchmark.sh gdpr /opt/whyenf/enfguard
+  bash benchmark/privacy_testsuite/run_benchmark.sh minitwit_gdpr /opt/whyenf/enfguard
 
 # Un-instrumented baseline (no enforcer argument needed):
 docker run --rm -it \
