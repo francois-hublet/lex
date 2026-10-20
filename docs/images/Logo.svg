@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="670"
+   height="246.80789"
+   viewBox="0 0 670 246.80789"
+   role="img"
+   aria-labelledby="logo-title"
+   version="1.1"
+   id="svg2118"
+   sodipodi:docname="Logo.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2122" />
+  <sodipodi:namedview
+     id="namedview2120"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.0429825"
+     inkscape:cx="90.605547"
+     inkscape:cy="69.512192"
+     inkscape:window-width="2560"
+     inkscape:window-height="1043"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="text2114" />
+  <title
+     id="logo-title">Compliance by Design</title>
+  <!-- Purple monogram -->
+  <!-- Purple monogram -->
+  <g
+     fill="#400040"
+     id="g2066"
+     transform="translate(0,-4.1921016)">
+    <!-- Central L: unchanged -->
+    <path
+       d="m 140,46 h 27 c 6,8 12,12 17,12 6,0 12,-5 17,-12 h 27 v 6 c -21,0 -29,6 -29,25 v 139 c 0,16 5,20 27,20 h 17 c 39,0 59,-12 70,-42 h 9 l -16,55 H 140 v -6 c 22,-2 27,-7 27,-23 V 77 c 0,-20 -7,-25 -27,-25 z"
+       id="path2050" />
+    <!-- Ring, beam and scales lowered together -->
+    <g
+       transform="translate(0,4.1921016)"
+       id="g2064">
+      <!-- Balance beam -->
+      <path
+         d="M 51.692582,62.093427 164,33 168,45 60,73 Z M 198,25 313,0 316,12 201,37 Z"
+         id="path2052"
+         sodipodi:nodetypes="cccccccccc" />
+      <!-- Pivot ring -->
+      <path
+         fill-rule="evenodd"
+         d="m 205,35 a 22,22 0 1 1 -44,0 22,22 0 1 1 44,0 z m -11,0 a 11,10 0 1 0 -22,0 11,10 0 1 0 22,0 z"
+         id="path2054" />
+      <!-- Left suspension -->
+      <path
+         d="M 51.409639,62.199555 61,67 100,148 H 88 L 56,80 26,148 H 14 Z"
+         id="path2056"
+         sodipodi:nodetypes="cccccccc" />
+      <!-- Left bowl -->
+      <path
+         d="m 0,144 h 114 c 0,28 -25,51 -57,51 C 25,195 0,172 0,144 Z"
+         id="path2058" />
+      <!-- Right suspension -->
+      <path
+         d="M 305,5 313.09617,0.08024463 354,91 H 342 L 309,18 278,91 h -12 z"
+         id="path2060"
+         sodipodi:nodetypes="cccccccc" />
+      <!-- Right bowl -->
+      <path
+         d="m 252,87 h 114 c 0,29 -25,52 -57,52 -32,0 -57,-23 -57,-52 z"
+         id="path2062" />
+    </g>
+  </g>
+  <!-- Orange sits above purple at the overlap -->
+  <g
+     fill="#BE7B00"
+     id="g2074"
+     style="fill:#bd7900;fill-opacity:0.713198"
+     transform="translate(0,-4.1921016)">
+    <!-- Reversed E -->
+    <path
+       d="m 324,41 h 117 l 9,9 v 188 l -9,10 H 324 V 230 H 431 V 152 H 324 V 135 H 431 V 58 H 324 Z"
+       id="path2068"
+       style="fill:#bd7900;fill-opacity:0.713198" />
+    <!-- Script x -->
+    <path
+       d="m 496,119 c 15,-4 31,-10 43,-10 13,0 16,15 23,43 17,-24 33,-43 48,-43 10,0 16,5 16,11 0,8 -5,13 -12,13 -6,0 -9,-5 -14,-5 -10,0 -22,17 -33,35 l 15,56 c 3,11 6,16 12,11 6,-5 11,-12 15,-18 l 6,4 c -12,19 -25,34 -39,34 -14,0 -18,-11 -23,-31 l -8,-29 c -16,23 -37,60 -57,60 -13,0 -22,-5 -22,-13 0,-7 6,-11 12,-11 7,0 10,5 16,5 10,0 30,-26 47,-50 l -11,-44 c -3,-13 -5,-15 -13,-15 -5,0 -12,2 -19,4 z"
+       id="path2070"
+       style="fill:#bd7900;fill-opacity:0.713198" />
+    <circle
+       cx="651.5"
+       cy="232.5"
+       r="18.5"
+       id="circle2072"
+       style="fill:#bd7900;fill-opacity:0.713198" />
+  </g>
+  <!-- Divider -->
+  <!--
+    Real serif typography.
+    Explicit letter positions prevent spacing from collapsing.
+    -->
+  <!-- Wordmark: EB Garamond, uniform size -->
+  <g
+     fill="#400040"
+     font-family="'EB Garamond', serif"
+     font-size="34px"
+     font-weight="400"
+     font-style="normal"
+     font-kerning="none"
+     id="g2116"
+     transform="translate(0,-4.1921016)">
+    <g
+       aria-label="COMPLIANCE BY DESIGN"
+       id="text2114"
+       style="font-size:48px;letter-spacing:6.25px" />
+  </g>
+  <metadata
+     id="metadata2241">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Compliance by Design</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -334,7 +334,7 @@ class Application:
             env = dict(self._env)
             if not self.is_baseline and policy and policy != "uninstrumented":
                 env["INSTRLIB_FORMULA"] = f"policies/{policy}.mfotl"
-                env["INSTRLIB_SIG"] = "policies/consent.sig"
+                env["INSTRLIB_SIG"] = f"policies/{policy}.sig"
 
             scenario_names = [
                 "timeline",
