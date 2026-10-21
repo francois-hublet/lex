@@ -189,6 +189,13 @@ docker run --rm --privileged --device /dev/fuse \
 
 ### Start all services (local)
 
+The enforcer needs the `-fix-since` option, which instrlib passes from the
+`INSTRLIB_EXTRA_ARGS` environment variable (the Docker image sets it already):
+
+```bash
+export INSTRLIB_EXTRA_ARGS=-fix-since
+```
+
 ```bash
 source .gdprfs-venv/bin/activate
 

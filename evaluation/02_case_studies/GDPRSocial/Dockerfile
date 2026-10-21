@@ -29,5 +29,8 @@ RUN chmod +x /opt/whyenf/enfguard /usr/local/bin/enfflash
 EXPOSE 8000
 
 ENV INSTRLIB_EXE=/opt/whyenf/enfguard
+# -fix-since: let the enforcer rewrite  L S R  with fv(L) ⊆ fv(R)  into the
+# equivalent  (L ∨ ¬⧫R) S R  (operands of S must have the same free variables).
+ENV INSTRLIB_EXTRA_ARGS=-fix-since
 
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000", "--noreload"]

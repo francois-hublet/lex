@@ -5,6 +5,7 @@ from subprocess import Popen, PIPE, STDOUT
 from threading import Thread, Event
 from time import time, sleep
 import datetime
+import os
 import re
 import json
 from typing import Any, List, Dict, Set, Tuple, Union
@@ -101,7 +102,8 @@ class EnfGuard(PDP):
             '-sig',     self.sig,
             '-formula', self.formula,
             '-json',
-        ]
+        # Extra enforcer options, e.g. INSTRLIB_EXTRA_ARGS="-fix-since".
+        ] + os.environ.get('INSTRLIB_EXTRA_ARGS', '').split()
     
     def parse_events(self, input_string : str) -> Dict[str, Set[Tuple[str, ...]]]:
         event_pattern = r'(\w+)\(((?:[^()"]|"(?:[^"\\]|\\.)*")*)\)' #r'(\w+)\((.*?)\)'

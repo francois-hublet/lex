@@ -274,7 +274,8 @@ rule "r_LegitimateInterest"
 
 rule "r_IsOverriddenByDataSubjectInterests"
     whenever
-        Use(d, ds) OR Write(d, p)
+        Use(d, ds)
+        NOT StopSession(inUid) SINCE StartSession(inUid, p, reason)
         NOT (p = "service")
     refine
         IsOverriddenByDataSubjectInterests("GDPRFS", "ds's interests", ds)

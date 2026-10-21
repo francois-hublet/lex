@@ -57,6 +57,13 @@ pip install -r benchmark/privacy_testsuite/requirements.txt
 
 ### 3) Run
 
+The enforcer needs the `-fix-since` option, which instrlib passes from the
+`INSTRLIB_EXTRA_ARGS` environment variable (the Docker image sets it already):
+
+```bash
+export INSTRLIB_EXTRA_ARGS=-fix-since
+```
+
 ```bash
 make clean
 make run
