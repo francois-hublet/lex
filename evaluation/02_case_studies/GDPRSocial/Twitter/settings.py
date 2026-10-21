@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'twitt.apps.TwittConfig',
+    'twitt',
     'bootstrapform',
     'haystack',
 ]
@@ -102,7 +102,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
 ]
-DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_ROOT = ''
 
@@ -127,6 +127,8 @@ AUTH_USER_MODEL = "twitt.User"
 # Enforcement
 
 INSTRLIB_EXE = os.environ.get('INSTRLIB_EXE', './enfguard')
+# Extra enforcer options passed by instrlib (latest Enfflash needs -fix-since).
+os.environ.setdefault('INSTRLIB_EXTRA_ARGS', '-fix-since')
 INSTRLIB_FORMULA = os.environ.get('INSTRLIB_FORMULA', 'policies/minitwit_gdpr.mfotl')
 INSTRLIB_SIG = os.environ.get('INSTRLIB_SIG', 'policies/minitwit_gdpr.sig')
 INSTRLIB_FUNC = os.environ.get('INSTRLIB_FUNC', 'policies/gdpr.py')

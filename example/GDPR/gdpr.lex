@@ -2239,7 +2239,7 @@ point "a"
 rule
     whenever
         ONCE (Request(ds, rq, c) AND IsRestrictionRequest(rq, d, p) AND ContestsAccuracy(rq, d, d'))
-        ((NOT EXISTS d''. Rectify(d, d'')) SINCE RequestResponse(ds, rq, rs)) OR NOT ONCE LiftRestriction(c, d, rq)
+        ((NOT EXISTS d''. Rectify(d, d'')) SINCE (RequestResponse(ds, rq, rs) AND ONCE ContestsAccuracy(rq, d, d'))) OR NOT ONCE LiftRestriction(c, d, rq)
     constitute
         Restricted(d, p)
 
