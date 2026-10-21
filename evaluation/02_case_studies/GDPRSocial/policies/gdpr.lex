@@ -2084,7 +2084,7 @@ point "b"
 rule
     whenever
         (ONCE (EXISTS rq. Request(ds, rq, c) AND IsErasureRequest(rq, d)) AND RequestResponse(ds, rq, rs)) OR (DataReview(c, d) AND PersonalData(d, ds))
-        NOT (EXISTS pr, a, d, p. (NOT WithdrawConsent(ds, p, c)) SINCE (DataProcessing(pr, c, a, d) AND PersonalData(d, ds) AND (IsLawful(a, "6(1)(a)") OR IsLawful(a, "9(2)(a)"))) AND NOT (EXISTS ba. IsLawful(a, ba)))
+        EXISTS pr, a, p. (ONCE (DataProcessing(pr, c, a, d) AND PersonalData(d, ds) AND HasPurpose(a, p) AND (IsLawful(a, "6(1)(a)") OR IsLawful(a, "9(2)(a)")))) AND ((NOT GiveConsent(ds, p, c)) SINCE WithdrawConsent(ds, p, c)) AND NOT (EXISTS ba. IsLawful(a, ba))
     constitute
         IsObligedToDelete(c, d)
 
@@ -2236,7 +2236,7 @@ point "a"
 rule
     whenever
         ONCE (Request(ds, rq, c) AND IsRestrictionRequest(rq, d, p) AND ContestsAccuracy(rq, d, d'))
-        ((NOT EXISTS d''. Rectify(d, d'')) SINCE RequestResponse(ds, rq, rs)) OR NOT ONCE LiftRestriction(c, d, rq)
+        ((NOT EXISTS d''. Rectify(d, d'')) SINCE (RequestResponse(ds, rq, rs) AND ONCE ContestsAccuracy(rq, d, d'))) OR NOT ONCE LiftRestriction(c, d, rq)
     constitute
         Restricted(d, p)
 

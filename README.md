@@ -29,7 +29,7 @@ computationally reproducible; RQ4 is a human-subject study and is not.
 |---|---|---|---|
 | RQ1 | Lex formalizes GDPR/BGG/IRC (Table 1) | `make artifact-rq1` | Functional + exact Results (LOC matches the paper exactly) |
 | RQ1 | GDPR coverage breakdown F/C/E/I (Table 2) | `make artifact-rq1-table2` | Functional + close Results (≤0.1pp on every figure) |
-| RQ2 | Instrumentation LOC and engineering effort (Table 3) | `make artifact-rq2` | Functional + exact Results (7 of 8 LOC figures exact; GDPRSocial's instrumented Python is within 9 of 2,445) |
+| RQ2 | Instrumentation LOC and engineering effort (Table 3) | `make artifact-rq2` | Functional + exact Results (all 8 LOC figures exact) |
 | RQ3 | Runtime latency overhead (Table 4) | `make artifact-rq3-fast` (and optionally `artifact-rq3-full`) | Functional + approximate Results |
 | RQ4 | User study (SUS, reading, auditing) | Not reproducible; materials only | Documented, see §5 |
 

@@ -20,7 +20,10 @@ RUN apt-get update \
 USER opam
 WORKDIR /home/opam
 
-RUN git clone -b enfflash https://github.com/runtime-enforcement/whyenf.git whyenf
+# Pin the enforcer to a fixed revision of the enfflash branch.
+ARG WHYENF_REV=25826c4fbfffcd34c3b263fb4fe0757654e9722c
+RUN git clone -b enfflash https://github.com/runtime-enforcement/whyenf.git whyenf \
+    && git -C whyenf checkout ${WHYENF_REV}
 WORKDIR /home/opam/whyenf
 
 RUN opam update \
