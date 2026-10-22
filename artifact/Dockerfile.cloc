@@ -1,0 +1,5 @@
+# cloc, for counting the case studies' lines of code (artifact/rq2_loc.sh).
+FROM ubuntu:24.04
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends cloc \
+    && rm -rf /var/lib/apt/lists/*

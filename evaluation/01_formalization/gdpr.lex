@@ -1,7 +1,7 @@
 law "GDPR"
 
 note "This is a draft formalization of GDPR Articles 5-10, 12-22, 30, 45(1), 46(1), 49"
-note "Author: XXXX"
+note "Authors: François Hublet, Jakob Merane, Jonas Degelo, Wei-En Hsieh, Srđan Krstić, David Basin"
 note "Date: 29 April 2026"
 note "Status: Tested"
 

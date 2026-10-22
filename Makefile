@@ -23,12 +23,14 @@ IMG_LEX      := lex:latest
 IMG_ENFFLASH := whyenf-enfflash:latest
 IMG_SOCIAL   := gdprsocial:latest
 IMG_FS       := gdprfs:latest
+IMG_CLOC     := lex-cloc:latest
 # Parallel jobs for the opam builds in the Lex and EnfFlash images.
 OPAMJOBS     ?= 4
 
 .PHONY: artifact-build artifact-policies artifact-rq1 artifact-rq1-table2 artifact-rq2 artifact-rq3-fast artifact-rq3-full artifact-table4 artifact-clean
 
-# Build every Docker image used by the artifact (Lex compiler + both case studies).
+# Build every Docker image used by the artifact (Lex compiler, both case studies,
+# and cloc for RQ2).
 # The case-study policies are compiled from their .rex sources (artifact-policies)
 # before the application images are built.
 artifact-build:
@@ -38,6 +40,7 @@ artifact-build:
 	docker build --build-arg OPAMJOBS=$(OPAMJOBS) -f $(CS_DIR)/GDPRSocial/Dockerfile.enfflash -t $(IMG_ENFFLASH) $(CS_DIR)
 	docker build -f $(CS_DIR)/GDPRSocial/Dockerfile -t $(IMG_SOCIAL) $(CS_DIR)
 	docker build -f $(CS_DIR)/GDPRFS/Dockerfile -t $(IMG_FS) $(CS_DIR)
+	docker build -f artifact/Dockerfile.cloc -t $(IMG_CLOC) artifact
 
 # Compile the GDPRSocial/GDPRFS refinements (.rex) into the policies the apps enforce.
 artifact-policies:
@@ -69,4 +72,4 @@ artifact-table4:
 	./artifact/rq3_table4.sh
 
 artifact-clean:
-	-docker rmi $(IMG_LEX) $(IMG_ENFFLASH) $(IMG_SOCIAL) $(IMG_FS)
+	-docker rmi $(IMG_LEX) $(IMG_ENFFLASH) $(IMG_SOCIAL) $(IMG_FS) $(IMG_CLOC)
