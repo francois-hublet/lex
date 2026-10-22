@@ -11,7 +11,12 @@
 # in the environment, or a GDPRFS/openai.secret file (OPENAI_API_KEY=sk-...).
 #
 # Expected runtime: GDPRSocial's two runs take ~5-7 minutes each (n up to
-# 10,000, cf. paper Section RQ3); GDPRFS's runs take well under a minute.
+# 10,000, cf. paper Section RQ3). GDPRFS is benchmarked at the paper's preload
+# sizes (10^2, 10^3, 10^4 files); preloading 10^4 files dominates its runtime.
+# Environment overrides: FS_PRELOAD (default 100,1000,10000), FS_N (iterations
+# per setup, default 3; the paper uses 20), FS_TIMEOUT (seconds per GDPRFS run).
+#
+# Finally, artifact/rq3_table4.sh aggregates all CSVs into Table 4's layout.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -20,7 +25,12 @@ CS_DIR="evaluation/02_case_studies"
 IMG_SOCIAL="${IMG_SOCIAL:-gdprsocial:latest}"
 IMG_FS="${IMG_FS:-gdprfs:latest}"
 OUT_DIR="$(pwd)/artifact/out/rq3"
-mkdir -p "$OUT_DIR/gdprsocial" "$OUT_DIR/gdprfs"
+# GDPRFS: preloaded file counts (Table 4 rows) and iterations per setup.
+FS_PRELOAD="${FS_PRELOAD:-100,1000,10000}"
+FS_N="${FS_N:-3}"
+FS_TIMEOUT="${FS_TIMEOUT:-7200}"
+mkdir -p "$OUT_DIR/gdprsocial/baseline" "$OUT_DIR/gdprsocial/enforced" \
+         "$OUT_DIR/gdprfs/baseline" "$OUT_DIR/gdprfs/gdpr_no_llm" "$OUT_DIR/gdprfs/gdpr_with_llm"
 
 echo "════════════════════════════════════════════════════════════════"
 echo " RQ3 — Runtime performance (mode: ${MODE})"
@@ -28,31 +38,33 @@ echo "════════════════════════�
 
 echo ""
 echo "── GDPRSocial: baseline ──"
-docker run --rm -v "$OUT_DIR/gdprsocial:/app/output" "$IMG_SOCIAL" \
+docker run --rm -v "$OUT_DIR/gdprsocial/baseline:/app/output" "$IMG_SOCIAL" \
   bash benchmark/privacy_testsuite/run_benchmark.sh baseline
 
 echo ""
 echo "── GDPRSocial: enforced (minitwit_gdpr policy) ──"
-docker run --rm -v "$OUT_DIR/gdprsocial:/app/output" "$IMG_SOCIAL" \
+docker run --rm -v "$OUT_DIR/gdprsocial/enforced:/app/output" "$IMG_SOCIAL" \
   bash benchmark/privacy_testsuite/run_benchmark.sh minitwit_gdpr /opt/whyenf/enfguard
 
-echo ""
-echo "── GDPRFS: baseline (no FUSE) ──"
-docker run --rm -v "$OUT_DIR/gdprfs:/app/benchmark/results" "$IMG_FS" \
-  python3 -m benchmark.simple --mode baseline --n 3
-
-echo ""
-echo "── GDPRFS: enforced, no LLM (requires --privileged + /dev/fuse) ──"
-# Bounded as a safety net; a healthy run finishes in well under a minute.
-if ! timeout 300 docker run --rm --privileged --device /dev/fuse \
-  -v "$OUT_DIR/gdprfs:/app/benchmark/results" "$IMG_FS" \
-  python3 -m benchmark.simple --mode gdpr_no_llm --n 3; then
+# GDPRFS: each mode is benchmarked at every preload size in FS_PRELOAD. Preloading
+# writes files through the FUSE mount, so every run needs --privileged + /dev/fuse.
+fs_run() {
+  local mode="$1"; shift
   echo ""
-  echo "!! GDPRFS enforced-mode run did not complete within 5 minutes and was"
-  echo "!! aborted. Check that /dev/fuse is available and that the container"
-  echo "!! ran with --privileged; see ARTIFACT.md §7 (Troubleshooting)."
-  echo "!! RQ1/RQ2 and GDPRSocial's RQ3 results above are unaffected."
-fi
+  echo "── GDPRFS: ${mode} (preload ${FS_PRELOAD}, ${FS_N} iterations) ──"
+  if ! timeout "$FS_TIMEOUT" docker run --rm --privileged --device /dev/fuse "$@" \
+    -v "$OUT_DIR/gdprfs/${mode}:/app/benchmark/results" "$IMG_FS" \
+    python3 -m benchmark.simple --mode "$mode" --n "$FS_N" --preload "$FS_PRELOAD"; then
+    echo ""
+    echo "!! GDPRFS ${mode} run failed or did not complete within ${FS_TIMEOUT}s."
+    echo "!! Check that /dev/fuse is available and that the container ran with"
+    echo "!! --privileged; see ARTIFACT.md (Troubleshooting). A shorter run:"
+    echo "!!   FS_PRELOAD=100 make artifact-rq3-fast"
+  fi
+}
+
+fs_run baseline
+fs_run gdpr_no_llm
 
 if [[ "$MODE" == "full" ]]; then
   KEY="${OPENAI_API_KEY:-}"
@@ -64,20 +76,19 @@ if [[ "$MODE" == "full" ]]; then
     echo "!! MODE=full requires an OpenAI API key. Set OPENAI_API_KEY or create"
     echo "!! $CS_DIR/GDPRFS/openai.secret (OPENAI_API_KEY=sk-...). Skipping the LLM run."
   else
-    echo ""
-    echo "── GDPRFS: enforced, with LLM analyzer (gpt-5.4-mini) ──"
-    docker run --rm --privileged --device /dev/fuse \
-      -e OPENAI_API_KEY="$KEY" \
-      -v "$OUT_DIR/gdprfs:/app/benchmark/results" "$IMG_FS" \
-      python3 -m benchmark.simple --mode gdpr_with_llm --n 3
+    fs_run gdpr_with_llm -e OPENAI_API_KEY="$KEY"
   fi
 fi
 
 echo ""
+./artifact/rq3_table4.sh
+
+echo ""
 echo "════════════════════════════════════════════════════════════════"
 echo " Results written to:"
-echo "   $OUT_DIR/gdprsocial/minitwitter_<timestamp>/  (per-request latency CSVs)"
-echo "   $OUT_DIR/gdprfs/simple_perf_results*.csv"
+echo "   $OUT_DIR/gdprsocial/{baseline,enforced}/minitwitter_<timestamp>/report.csv"
+echo "   $OUT_DIR/gdprfs/<mode>/simple_perf_results_preload<sizes>.csv"
+echo "   $OUT_DIR/table4.txt  (Table 4 layout, printed above)"
 echo ""
 echo "Compare against Table 4 in the paper. Absolute latencies depend on host"
 echo "hardware (the paper uses a 2.4 GHz Intel i5, 32 GB RAM, 20 repetitions);"

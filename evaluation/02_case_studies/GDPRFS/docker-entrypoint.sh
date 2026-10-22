@@ -25,6 +25,7 @@ FUSE_MOUNT=/tmp/mnt
 # ── Determine whether the requested mode needs FUSE ─────────────────────────
 # Scan all args for --mode <val> or --mode=<val>
 REQUESTED_MODE="baseline"
+HAS_PRELOAD=false
 PREV=""
 for arg in "$@"; do
     if [ "$PREV" = "--mode" ]; then
@@ -32,12 +33,15 @@ for arg in "$@"; do
     fi
     case "$arg" in
         --mode=*) REQUESTED_MODE="${arg#--mode=}" ;;
+        --preload|--preload=*) HAS_PRELOAD=true ;;
     esac
     PREV="$arg"
 done
 
 NEEDS_FUSE=false
-if [ "$REQUESTED_MODE" = "gdpr_no_llm" ] || [ "$REQUESTED_MODE" = "gdpr_with_llm" ] || [ "$REQUESTED_MODE" = "all" ]; then
+# --preload writes its files through the FUSE mount, so it needs the stack even
+# when only the baseline is benchmarked.
+if [ "$REQUESTED_MODE" = "gdpr_no_llm" ] || [ "$REQUESTED_MODE" = "gdpr_with_llm" ] || [ "$REQUESTED_MODE" = "all" ] || $HAS_PRELOAD; then
     NEEDS_FUSE=true
 fi
 

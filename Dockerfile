@@ -20,6 +20,12 @@ USER opam
 WORKDIR /home/opam/lex
 COPY --chown=opam:opam . /home/opam/lex
 
+# Limit opam's build parallelism (opam's default is nproc); building Z3 with one
+# job per core can exhaust memory on many-core machines. Lower it with
+# --build-arg OPAMJOBS=2 (make artifact-build OPAMJOBS=2) if memory is tight.
+ARG OPAMJOBS=4
+ENV OPAMJOBS=${OPAMJOBS}
+
 RUN opam update \
     && opam install -y \
         dune \
@@ -32,6 +38,15 @@ RUN opam update \
         pyml=20250807 \
         alcotest \
     && eval $(opam env) \
-    && dune build
+    && dune build \
+    && chmod -R a+rX /home/opam
+# (chmod: the artifact scripts run this image as the host user, via
+# docker run --user, on a bind-mounted checkout; the opam switch under
+# /home/opam must therefore be readable by any user.)
 
-CMD ["bash"]
+# Run commands directly instead of through the base image's `opam exec --`
+# entrypoint, which writes logs under /home/opam/.opam and therefore fails for
+# any other user. Login shells (sh -lc ..., bash -l) load the opam environment
+# from ~/.profile.
+ENTRYPOINT []
+CMD ["bash", "-l"]
