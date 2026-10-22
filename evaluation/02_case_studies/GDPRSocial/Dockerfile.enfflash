@@ -26,6 +26,12 @@ RUN git clone -b enfflash https://github.com/runtime-enforcement/whyenf.git whye
     && git -C whyenf checkout ${WHYENF_REV}
 WORKDIR /home/opam/whyenf
 
+# Limit opam's build parallelism (opam's default is nproc); building Z3 with one
+# job per core can exhaust memory on many-core machines. Lower it with
+# --build-arg OPAMJOBS=2 (make artifact-build OPAMJOBS=2) if memory is tight.
+ARG OPAMJOBS=4
+ENV OPAMJOBS=${OPAMJOBS}
+
 RUN opam update \
     && opam install -y \
         dune \

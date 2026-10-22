@@ -20,7 +20,7 @@ run() {
   echo "── Compiling ${name} (${src}) ──"
   # The compiler prints a verbose per-rule debug trace to stdout; keep the
   # terminal readable by redirecting it to a log file alongside the output.
-  docker run --rm -v "$(pwd):/workspace" -w /workspace "$IMG_LEX" \
+  docker run --rm --user "$(id -u):$(id -g)" -v "$(pwd):/workspace" -w /workspace "$IMG_LEX" \
     sh -lc "dune exec -- ./bin/main.exe '${src}' -o /workspace/artifact/out/rq1/${name}" \
     > "$OUT_DIR/${name}.compile.log" 2>&1
   ls -lh "$OUT_DIR/${name}."* 2>/dev/null || true

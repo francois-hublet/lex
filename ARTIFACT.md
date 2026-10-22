@@ -4,20 +4,13 @@ This document accompanies the paper submission to CCS 2026 and describes how
 to build and exercise the artifact for the "Functional" and "Results
 Reproduced" badges.
 
-The paper is under double-blind review; this repository and artifact
-scripts contain no author-identifying information. If you redistribute this
-branch for anonymous review (e.g. as a zip or an anonymized mirror), strip
-the git history rather than sharing this repository directly, since commit
-authorship is not anonymized.
-
-**Validation status:** every command below (`artifact-build`,
-`artifact-rq1`, `artifact-rq1-table2`, `artifact-rq2`, `artifact-rq3-fast`,
-including GDPRFS's `--privileged`/`--device /dev/fuse` path) has been run
-end-to-end on a clean Linux/Docker host as part of preparing this branch,
-and produces the outputs described in §4. `artifact-rq3-full` (the
-LLM-analyzer path) was not exercised here since it requires a
-reviewer-supplied OpenAI key, but the fallback behavior (skipping that one
-step) was verified.
+**Pinned versions.** The enforcer (EnfFlash) is built from the `enfflash`
+branch of [whyenf](https://github.com/runtime-enforcement/whyenf) at commit
+`25826c4` (`evaluation/02_case_studies/GDPRSocial/Dockerfile.enfflash`); the
+Lex compiler is built from this repository and its `enfguard/` submodule; the
+Python dependencies of both case studies are pinned to exact versions in
+their `requirements.txt`. `artifact-rq3-full` (the LLM-analyzer path) needs a
+reviewer-supplied OpenAI key; without one, that step is skipped.
 
 ## 1. Overview
 
@@ -30,9 +23,12 @@ this repository:
 | `GDPRSocial` | `evaluation/02_case_studies/GDPRSocial` | Instrumented Django microblogging app (RQ2, RQ3) |
 | `GDPRFS` | `evaluation/02_case_studies/GDPRFS` | Instrumented FUSE filesystem (RQ2, RQ3) |
 
-Both case-study apps are enforced at runtime by
-[WhyEnf/EnfGuard](https://github.com/runtime-enforcement/whyenf) (submodule
-`enfguard/`, plus the `enfflash` branch built as a separate image).
+Both case-study apps are enforced at runtime by EnfFlash, built from the
+`enfflash` branch of [WhyEnf/EnfGuard](https://github.com/runtime-enforcement/whyenf)
+(pinned commit, see above) as a separate image. The policies they enforce are
+compiled from the case studies' `.rex` refinements by
+`artifact/compile_policies.sh`, which `make artifact-build` runs before
+building the application images (`make artifact-policies` runs it alone).
 
 ## 2. Claims and how to reproduce them
 
@@ -60,6 +56,13 @@ expected margin of deviation.
   is required — everything runs inside the built images.
 - A Linux host with git submodule access to clone `enfguard/`.
 - ~6 GB free disk space for the four Docker images plus build cache.
+- Memory: the Lex and EnfFlash images build Z3 and other OCaml packages with
+  opam, limited to 4 parallel jobs (`OPAMJOBS`). 16 GB RAM is recommended; if
+  a build is killed for lack of memory, use `make artifact-build OPAMJOBS=2`
+  (or 1).
+- The scripts that compile Lex code run the Lex image as your host user
+  (`docker run --user "$(id -u):$(id -g)"`) on the bind-mounted checkout, so
+  they work for any host UID.
 - For `make artifact-rq3-fast` / `artifact-rq3-full`: the ability to run
   `docker run --privileged --device /dev/fuse` (GDPRFS mounts a real FUSE
   filesystem inside its container). If your evaluation environment cannot
@@ -70,9 +73,11 @@ expected margin of deviation.
   exercise GDPRFS's LLM-based file analyzer (`gpt-5.4-mini` in the paper).
   Without it, the LLM-analyzer benchmark step is skipped automatically and
   everything else still runs.
-- Expect a total of ~20–30 minutes end-to-end for `artifact-build` +
-  `artifact-rq1` + `artifact-rq2` + `artifact-rq3-fast` on a typical
-  workstation; GDPRSocial's two RQ3 runs dominate at ~5–7 minutes each.
+- Expect ~20–30 minutes for `artifact-build` + `artifact-rq1` +
+  `artifact-rq2`, plus ~5–7 minutes for each of GDPRSocial's two RQ3 runs.
+  GDPRFS's RQ3 runs are benchmarked at the paper's preload sizes (10², 10³,
+  10⁴ files); preloading 10⁴ files through FUSE takes considerably longer.
+  For a shorter pass, run `FS_PRELOAD=100,1000 make artifact-rq3-fast`.
 
 ## 4. Quick start
 
@@ -82,14 +87,21 @@ cd lex-artifact
 git checkout artifact
 git submodule update --init --recursive
 
-make artifact-build      # builds lex, whyenf-enfflash, gdprsocial, gdprfs images
+make artifact-build      # builds the lex image, compiles the case-study policies,
+                         # then builds the whyenf-enfflash, gdprsocial, gdprfs images
 make artifact-rq1        # Table 1: compile GDPR/BGG/IRC, report LOC
 make artifact-rq1-table2 # Table 2: GDPR coverage by F/C/E/I category
 make artifact-rq2        # Table 3: instrumented app LOC breakdown
-make artifact-rq3-fast   # Table 4: latency, baseline vs. enforced (no LLM)
+make artifact-rq3-fast   # Table 4: latency, baseline vs. enforced (no LLM);
+                         # ends with the aggregated table (make artifact-table4)
 # optional, needs --privileged/--device fuse already granted above, plus an API key:
 make artifact-rq3-full
 ```
+
+`artifact-rq3-*` accept the environment variables `FS_PRELOAD` (GDPRFS
+preload sizes, default `100,1000,10000`) and `FS_N` (GDPRFS iterations per
+setup, default 3; the paper uses 20). `make artifact-table4` re-prints the
+aggregated Table 4 from the latest results.
 
 Each target writes its output under `artifact/out/` (git-ignored) and also
 prints a human-readable summary to stdout.
@@ -97,7 +109,7 @@ prints a human-readable summary to stdout.
 Basic sanity check that the compiler itself works correctly (unit tests):
 
 ```bash
-docker run --rm -v "$(pwd):/workspace" -w /workspace lex:latest \
+docker run --rm --user "$(id -u):$(id -g)" -v "$(pwd):/workspace" -w /workspace lex:latest \
   sh -lc "dune build @runtest"
 ```
 
@@ -112,12 +124,22 @@ docker run --rm -v "$(pwd):/workspace" -w /workspace lex:latest \
   (`evaluation/03_user_study/evaluation.lex` and its generated
   documentation `evaluation.lex_doc.html`), and the Qualtrics survey
   instrument (`evaluation/03_user_study/Qualtrics Survey.pdf`).
+- **Table 2 (RQ1 coverage)** is not recomputed from the `.lex`/`.rex`
+  sources. The per-provision F/C/E/I classification behind it was made by
+  hand and frozen into the thesis this paper is drawn from; the annotations
+  that would let it be regenerated mechanically were not retained.
+  `make artifact-rq1-table2` recomputes Table 2's percentages from that
+  recovered classification table (`example/GDPR/classification_published.tex`)
+  and the GDPR's official Formex text (`example/GDPR/GDPR.xml`) using
+  `example/GDPR/gdpr_stats.py`; the word-count weighting is recomputed, the
+  classification itself is taken as given. Differences of <0.1pp come from
+  the Formex edition.
 - **Exact RQ3 latency figures** are hardware-dependent (paper: 2.4 GHz Intel
-  i5, 32 GB RAM, 20 repetitions). The scripts here run fewer repetitions by
-  default for a fast pass; expect the same qualitative pattern (moderate,
-  mostly sub-100ms enforcement overhead; GDPRFS write/erasure exceeding
-  100ms due to the LLM call / bulk file deletion) rather than matching
-  numbers.
+  i5, 32 GB RAM, native runs without containers, 20 repetitions). The scripts
+  here run in Docker with fewer GDPRFS repetitions by default (`FS_N=3`);
+  expect the same qualitative pattern (moderate enforcement overhead that
+  does not grow with n; GDPRFS write/erasure exceeding 100ms due to the LLM
+  call / bulk file deletion) rather than matching numbers.
 
 ## 6. Repository map for reviewers
 
@@ -133,7 +155,10 @@ docker run --rm -v "$(pwd):/workspace" -w /workspace lex:latest \
 - `evaluation/03_user_study/` — RQ4 materials (see §5).
 - `example/`, `docs/` — tutorial examples and the language documentation
   (`mkdocs`-based; not required for artifact evaluation).
-- `artifact/` — the reproduction scripts referenced above.
+- `artifact/` — the reproduction scripts referenced above, including
+  `compile_policies.sh` (compiles the case-study refinements into the
+  policies the applications enforce) and `rq3_table4.py` (aggregates the RQ3
+  CSVs into Table 4's layout).
 
 ## 7. Troubleshooting
 
@@ -148,3 +173,9 @@ docker run --rm -v "$(pwd):/workspace" -w /workspace lex:latest \
   purpose platform, FUSE daemon) before starting the benchmark; this can
   take a few seconds longer on a loaded host. If it hangs indefinitely,
   check that `--privileged --device /dev/fuse` was passed.
+- `docker build` of the `lex` or `whyenf-enfflash` image is killed while
+  building Z3 (out of memory): rebuild with fewer parallel opam jobs,
+  `make artifact-build OPAMJOBS=2`.
+- `mkdir(_build): Permission denied` when running a compile step: the
+  scripts pass `--user "$(id -u):$(id -g)"`; if you run the Lex image by
+  hand on a bind-mounted checkout, pass it too.
