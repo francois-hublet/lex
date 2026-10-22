@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 # RQ2 — instrumented application statistics, reproducing Table 3.
 #
-# Uses `cloc` (via a throwaway container, so nothing needs to be installed on
-# the host) to count Python/HTML/CSS lines, and wc -l (matching the paper's
-# convention) for the Lex/Rex formalization files. manage.py is excluded from
+# Uses `cloc` (in the image built from artifact/Dockerfile.cloc by
+# `make artifact-build`, so nothing needs to be installed on the host) to
+# count Python/HTML/CSS lines, and wc -l (matching the paper's convention)
+# for the Lex/Rex formalization files. manage.py is excluded from
 # the Python counts: it is Django's auto-generated management script, not
 # hand-written or instrumented application code, and excluding it is what
 # reproduces the paper's baseline figure exactly (see the comparison below).
@@ -13,7 +14,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 
 CS_DIR="evaluation/02_case_studies"
-CLOC_IMG="ubuntu:24.04"
+CLOC_IMG="${IMG_CLOC:-lex-cloc:latest}"
 
 # Runs cloc --csv in $1 over the remaining args, prints code-line totals for
 # Python/HTML/CSS as "python html css" (0 if a language didn't appear).
@@ -21,7 +22,7 @@ cloc_totals() {
   local dir="$1"; shift
   local csv
   csv=$(docker run --rm -v "$(pwd)/$CS_DIR:/repo" -w "/repo/$dir" "$CLOC_IMG" \
-    sh -c "apt-get update -qq >/dev/null && apt-get install -y -qq cloc >/dev/null && cloc --quiet --csv $*" 2>/dev/null)
+    cloc --quiet --csv "$@" 2>/dev/null)
   awk -F, '
     $2=="Python" {py=$5} $2=="HTML" {html=$5} $2=="CSS" {css=$5}
     END {print py+0, html+0, css+0}

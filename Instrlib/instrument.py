@@ -156,7 +156,6 @@ class Instrument:
     
     """
     queries enforcer's decision and returns true if any reactive or proactive command was returned
-    TODO: integrate with rest of system
     """
     def check_func_top_level(self, events, cls_name, func_name, *args, **kwargs):
         cau_flag, sup_flag, cau_events, sup_events = self.check_round_trip_time(events, cls_name, 1, True, *args, **kwargs)

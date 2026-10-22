@@ -23,4 +23,4 @@ suppressable event PersonalDataProcessing
 
 causable event EventWithoutDocstringOrParameters
     # a: string
-# TODO[JD] this event definition throws a pareser error, because of missing parameters
+# (this event definition is rejected by the parser: missing parameters)

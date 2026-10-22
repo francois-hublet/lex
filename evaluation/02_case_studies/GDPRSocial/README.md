@@ -39,7 +39,7 @@ ln -sfn ~/Git/whyenf/bin/enfflash.exe ~/Git/whyenf/enfguard
 From this folder:
 
 ```bash
-cd /home/franz/Git/Lex/evaluation/02_case_studies/GDPRSocial
+cd evaluation/02_case_studies/GDPRSocial
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt

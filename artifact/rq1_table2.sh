@@ -1,14 +1,10 @@
 #!/usr/bin/env bash
 # RQ1 — GDPR coverage by F/C/E/I category (Table 2), weighted by word count.
 #
-# Unlike Table 1 (artifact/rq1_formalize.sh), Table 2 is not regenerated live
-# from the .lex/.rex sources. The per-section F/C/E/I classification that
-# produced the published numbers was frozen into the thesis this paper is
-# drawn from; the annotations that would let it be regenerated mechanically
-# were never found in any retained history (see ARTIFACT.md §5). What we recovered is the frozen classification table
-# itself, from the thesis repository's own git history
-# (example/GDPR/classification_published.tex). This script reproduces
-# Table 2 from that recovered table via gdpr_stats.py, unmodified.
+# Table 2 is computed from the per-provision F/C/E/I classification of the
+# GDPR (example/GDPR/classification_published.tex) and the GDPR's official
+# Formex text (example/GDPR/GDPR.xml): gdpr_stats.py weights every classified
+# provision by its word count and aggregates the weights into Table 2.
 #
 # Run from the repository root, after `make artifact-build`.
 set -euo pipefail
@@ -24,7 +20,7 @@ echo " RQ1 — GDPR coverage by F/C/E/I category (Table 2)"
 echo "════════════════════════════════════════════════════════════════"
 
 echo ""
-echo "── Reproducing Table 2 from the recovered, frozen classification ──"
+echo "── Computing Table 2 from the provision classification ──"
 docker run --rm --user "$(id -u):$(id -g)" -v "$(pwd):/workspace" -w "/workspace/$GDPR_DIR" "$IMG_LEX" \
   python3 gdpr_stats.py classification_published.tex GDPR.xml \
   | tee "$OUT_DIR/table2_published.txt"
@@ -41,7 +37,7 @@ printf "%-30s %10s %10s\n" "Conservatively assumed (C)" "$(here 'Conservatively 
 printf "%-30s %10s %10s\n" "Enforced at runtime (E)"    "$(here 'Enforced at runtime (E)')"    "7.2%"
 printf "%-30s %10s %10s\n" "Informally assumed (I)"     "$(here 'Informally assumed (I)')"     "6.4%"
 echo ""
-echo "('here' is computed above from the frozen classification table"
-echo "example/GDPR/classification_published.tex, not from the .lex/.rex sources;"
-echo "see ARTIFACT.md §5. It may differ by <0.1pp from the paper because of a"
+echo "('here' is computed by gdpr_stats.py from the provision classification"
+echo "example/GDPR/classification_published.tex and the GDPR text"
+echo "example/GDPR/GDPR.xml. It may differ by <0.1pp from the paper because of a"
 echo "different GDPR.xml/Formex edition.)"

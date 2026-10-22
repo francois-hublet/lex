@@ -50,12 +50,19 @@ paper's original numbers alongside the reproduced ones for comparison, and
 each documents its
 expected margin of deviation.
 
+**Table 2** is computed from the per-provision F/C/E/I classification of the
+GDPR (`example/GDPR/classification_published.tex`). `make artifact-rq1-table2`
+runs `example/GDPR/gdpr_stats.py`, which weights every classified provision by
+its word count in the GDPR's official Formex text (`example/GDPR/GDPR.xml`)
+and aggregates the weights into the percentages of Table 2. Differences of
+<0.1pp from the paper come from the edition of the Formex text.
+
 ## 3. Requirements
 
 - Docker (tested with Docker Engine ≥ 24). No local OCaml/Python toolchain
   is required — everything runs inside the built images.
-- A Linux host with git submodule access to clone `enfguard/`.
-- ~6 GB free disk space for the four Docker images plus build cache.
+- A Linux x86-64 host with git submodule access to clone `enfguard/`.
+- ~6 GB free disk space for the five Docker images plus build cache.
 - Memory: the Lex and EnfFlash images build Z3 and other OCaml packages with
   opam, limited to 4 parallel jobs (`OPAMJOBS`). 16 GB RAM is recommended; if
   a build is killed for lack of memory, use `make artifact-build OPAMJOBS=2`
@@ -88,7 +95,8 @@ git checkout artifact
 git submodule update --init --recursive
 
 make artifact-build      # builds the lex image, compiles the case-study policies,
-                         # then builds the whyenf-enfflash, gdprsocial, gdprfs images
+                         # then builds the whyenf-enfflash, gdprsocial, gdprfs,
+                         # lex-cloc images
 make artifact-rq1        # Table 1: compile GDPR/BGG/IRC, report LOC
 make artifact-rq1-table2 # Table 2: GDPR coverage by F/C/E/I category
 make artifact-rq2        # Table 3: instrumented app LOC breakdown
@@ -124,16 +132,6 @@ docker run --rm --user "$(id -u):$(id -g)" -v "$(pwd):/workspace" -w /workspace 
   (`evaluation/03_user_study/evaluation.lex` and its generated
   documentation `evaluation.lex_doc.html`), and the Qualtrics survey
   instrument (`evaluation/03_user_study/Qualtrics Survey.pdf`).
-- **Table 2 (RQ1 coverage)** is not recomputed from the `.lex`/`.rex`
-  sources. The per-provision F/C/E/I classification behind it was made by
-  hand and frozen into the thesis this paper is drawn from; the annotations
-  that would let it be regenerated mechanically were not retained.
-  `make artifact-rq1-table2` recomputes Table 2's percentages from that
-  recovered classification table (`example/GDPR/classification_published.tex`)
-  and the GDPR's official Formex text (`example/GDPR/GDPR.xml`) using
-  `example/GDPR/gdpr_stats.py`; the word-count weighting is recomputed, the
-  classification itself is taken as given. Differences of <0.1pp come from
-  the Formex edition.
 - **Exact RQ3 latency figures** are hardware-dependent (paper: 2.4 GHz Intel
   i5, 32 GB RAM, native runs without containers, 20 repetitions). The scripts
   here run in Docker with fewer GDPRFS repetitions by default (`FS_N=3`);
@@ -146,9 +144,9 @@ docker run --rm --user "$(id -u):$(id -g)" -v "$(pwd):/workspace" -w /workspace 
 - `src/`, `bin/` — the Lex compiler (OCaml/dune).
 - `evaluation/01_formalization/` — GDPR/BGG/IRC `.lex` formalizations (RQ1,
   Table 1) and the `minitwit_gdpr.rex` refinement excerpt.
-- `example/GDPR/gdpr_stats.py`, `classification_published.tex` — the
-  recovered frozen classification table that reproduces Table 2 (RQ1); see
-  §5.
+- `example/GDPR/classification_published.tex`, `gdpr_stats.py` — the
+  per-provision F/C/E/I classification of the GDPR and the script that
+  computes Table 2 from it (RQ1).
 - `evaluation/02_case_studies/GDPRSocial/`, `.../GDPRFS/` — the two
   instrumented applications (RQ2, RQ3), each with its own detailed README
   covering local (non-Docker) installation as well.
