@@ -344,3 +344,7 @@ TSWLatexianTemp*
 
 __pycache__
 *.secret
+# paper video
+paper_video/video/media/
+paper_video/video/.venv/
+paper_video/video/tts/.venv/
